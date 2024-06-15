@@ -93,6 +93,22 @@
         </div>
       </div>
     </div>
+    <!-- Distribution Network -->
+    <div class="w-full bg-blackColor min-h-[680px] flex items-center justify-center">
+      <div class="container mx-auto flex flex-col">
+        <p class="text-[114px] text-white">
+          Join our <br>
+          distribution network
+        </p>
+        <span class="text-[36px] font-light text-white">Partner with us to be a force for positive change in the world.</span>
+        <NuxtLink to="/distributor" class="bg-white rounded-[8px] flex items-center gap-4 w-max px-4 py-2 mt-8">
+          <span>Explore All</span>
+          <svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.88 21.73" class="w-2">
+            <polyline stroke-miterlimit="10" fill="none" stroke="#1a1b1d" stroke-width="1" points=".35 .36 11.16 10.97 .35 21.37"/>
+          </svg>
+        </NuxtLink>
+      </div>
+    </div>
   </div>
 </template>
 

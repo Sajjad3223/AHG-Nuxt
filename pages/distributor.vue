@@ -16,7 +16,7 @@
           Join the AHG family for a journey of success and growth.
         </span>
         <img src="~/assets/images/distributor-earth.png" alt="Earth"
-        class="absolute -right-20 -bottom-8 max-w-[600px]"/>
+        class="absolute -right-20 -bottom-8 max-w-[600px] img-shadow"/>
       </div>
     </div>
 
@@ -53,13 +53,13 @@
       </div>
     </div>
 
-    <div class="bg-blackColor pt-[100px] flex justify-center items-center">
+    <div class="bg-blackColor py-[100px] flex justify-center items-center" >
       <div class="flex flex-col container mx-auto text-white">
         <h3 class="text-[114px] text-center font-medium leading-tight">
           Join our <br>
           Distribution Network
         </h3>
-        <form class="mt-24 grid grid-cols-2 gap-3">
+        <form class="mt-24 grid grid-cols-2 gap-x-16 gap-y-10">
           <BaseAHGInput name="Name" v-model="Name" label="Name" />
           <BaseAHGInput name="CellPhone" v-model="CellPhone" label="Cell Phone" />
           <BaseAHGInput name="Company" v-model="Company" label="Company" />
@@ -68,7 +68,10 @@
           <BaseAHGInput name="Country" v-model="Country" label="Country" />
           <BaseAHGInput name="WorkAddress" v-model="WorkAddress" label="Work Address" />
           <BaseAHGInput name="City" v-model="City" label="City" />
-          <BaseAHGInput name="Message" v-model="Message" label="Message" class="col-span-full"/>
+          <BaseAHGInput name="Message" v-model="Message" label="Message" class="col-span-full" multi-line/>
+          <BaseAHGButton color="white" width="200px" class="col-span-full mx-auto">
+            Submit
+          </BaseAHGButton>
         </form>
       </div>
     </div>

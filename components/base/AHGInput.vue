@@ -3,16 +3,19 @@ withDefaults(defineProps<{
   label:string,
   color:'white'|'black',
   name:string,
-  modelValue:string
+  modelValue:string,
+  multiLine?:boolean
 }>(),{
-  color:"black"
+  color:"black",
+  multiLine:false
 })
 </script>
 
 <template>
   <div class="flex flex-col gap-4 text-[20px]">
     <label :for="name">{{ label }}</label>
-    <input type="text" :name="name" :id="name" :class="['AhgInput',`AhgInput-${color}`]" :placeholder="`Enter Your ${label}`">
+    <input type="text" :name="name" :id="name" :class="['AhgInput',`AhgInput-${color}`]" :placeholder="`Enter Your ${label}`" v-if="!multiLine">
+    <textarea :name="name" :id="name" :placeholder="`Enter Your ${label}`" rows="5" :class="['AhgInput',`AhgInput-${color}`]" v-else></textarea>
   </div>
 </template>
 
