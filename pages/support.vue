@@ -3,19 +3,19 @@
     <div class="relative w-full grid place-items-center h-[90vh]"
          style="background-image: url(/images/Support-Banner.png);background-size: cover">
       <div class="container mx-auto relative flex flex-col justify-center">
-        <p class="text-[128px] text-blackColor leading-[1]" style="text-shadow: 4px 4px 5px rgba(126,133,144,0.5)">
+        <p class="text-[8vw] text-blackColor leading-[1]" style="text-shadow: 4px 4px 5px rgba(126,133,144,0.5)">
           You need <br>
           support?
         </p>
-        <p class="text-[36px] mt-8">
+        <p class="text-[2.5vw] 2xl:text-[36px] mt-8">
           Easy access to your support services!
         </p>
-        <p class="text-[24px] mt-4">
+        <p class="text-[20px] 2xl:text-[24px] mt-4">
           Explore our comprehensive resources, crafted <br>
           to cater to your needs.
         </p>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 243.87" class="w-[270px] absolute right-1/4 translate-y-5 translate-x-5">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 243.87" class="w-[200px] 2xl:w-[270px] absolute right-1/4 translate-y-5 translate-x-5">
         <path fill="white" d="M256.67,0h-51.33L0,243.87h64.17L205.33,77.01h51.33V0Z"/>
         <path fill="white" d="M123.07,192.53l43.76-51.34h38.5v-51.34h51.33v51.34h51.33v51.34h-51.33v51.34h-51.33v-51.34h-82.26Z"/>
       </svg>
@@ -56,37 +56,37 @@
         <p class="text-[36px] mt-8">
           You can access our product catalogues by downloading them below.
         </p>
-        <div class="flex items-center justify-between gap-10 mt-16 relative">
-          <button class="absolute -left-12 -translate-x-full">
+        <div class="flex items-center flex-wrap justify-between gap-10 mt-16 relative">
+          <button class="absolute -left-6 2xl:-left-12 -translate-x-full">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 107" width="50px" class="text-blackColor">
               <polyline stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round" stroke-width="7px" points="53.5 3.5 3.5 56.5 53.5 103.5"/>
             </svg>
           </button>
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
-            <h4 class="text-[30px]">Blood Glucose Monitor</h4>
-            <h5 class="text-[30px]">AHG-2022</h5>
+            <h4 class="text-[2vw] 2xl:text-[30px]">Blood Glucose Monitor</h4>
+            <h5 class="text-[2vw] 2xl:text-[30px]">AHG-2022</h5>
             <img src="~/assets/images/ahg-2022.png" alt="ahg 2022" class="my-8 mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto">
               Download
             </AHGButton>
           </div>
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
-            <h4 class="text-[30px]">Blood Glucose Monitor</h4>
-            <h5 class="text-[30px]">AHG-2285</h5>
+            <h4 class="text-[2vw] 2xl:text-[30px]">Blood Glucose Monitor</h4>
+            <h5 class="text-[2vw] 2xl:text-[30px]">AHG-2285</h5>
             <img src="~/assets/images/ahg-2285.png" alt="ahg 2285" class="my-8 mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto">
               Download
             </AHGButton>
           </div>
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
-            <h4 class="text-[30px] text-nowrap">Blood Pressure Monitor</h4>
-            <h5 class="text-[30px]">AHG-300</h5>
+            <h4 class="text-[2vw] 2xl:text-[30px] text-nowrap">Blood Pressure Monitor</h4>
+            <h5 class="text-[2vw] 2xl:text-[30px]">AHG-300</h5>
             <img src="~/assets/images/ahg-300.png" alt="ahg 300" class="my-8 mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto">
               Download
             </AHGButton>
           </div>
-          <button class="absolute -right-12 translate-x-full">
+          <button class="absolute -right-6 2xl:-right-12 translate-x-full">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 107" width="50px" class="text-blackColor rotate-180">
               <polyline stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round" stroke-width="7px" points="53.5 3.5 3.5 56.5 53.5 103.5"/>
             </svg>
@@ -98,13 +98,13 @@
     <div class="w-full bg-blackColor min-h-[680px] flex items-center justify-center">
       <div class="flex items-center container mx-auto relative text-white">
         <div class="flex flex-col scale-90 origin-left">
-          <h5 class="text-[64px]">
+          <h5 class="text-[4vw] 2xl:text-[64px]">
             AHG-2022 Diabetes Management App
           </h5>
-          <span class="text-[36px] mt-5">
+          <span class="text-[2.2vw] 2xl:text-[36px] mt-5">
           Take control of your health with effective blood glucose management.
         </span>
-          <h6 class="text-[50px] mt-12">
+          <h6 class="text-[3vw] 2xl:text-[50px] mt-12">
             SHARE YOUR HEALTH DATA WITH YOUR DOCTOR
           </h6>
           <p class="text-[24px] mt-5">
@@ -114,7 +114,7 @@
             your healthcare professionals
           </p>
         </div>
-        <img src="~/assets/images/qrcode.png" alt="qrCode" class="absolute right-0">
+        <img src="~/assets/images/qrcode.png" alt="qrCode" class="absolute right-12 2xl:right-0">
       </div>
     </div>
 
@@ -133,7 +133,7 @@
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
               <span class="text-[24px] self-center">Instruction Manual</span>
-              <div class="col-span-2 grid grid-cols-4 gap-4">
+              <div class="col-span-2 grid grid-cols-3 2xl:grid-cols-4 gap-4">
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[EN] English</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[AE/AR] ARABIC</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[FR] FRANCE</button>
@@ -150,7 +150,7 @@
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
               <span class="text-[24px] self-center">Instruction Manual</span>
-              <div class="col-span-2 grid grid-cols-4 gap-4">
+              <div class="col-span-2 grid grid-cols-3 2xl:grid-cols-4 gap-4">
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[EN] English</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[AE/AR] ARABIC</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[FR] FRANCE</button>
@@ -167,7 +167,7 @@
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
               <span class="text-[24px] self-center">Instruction Manual</span>
-              <div class="col-span-2 grid grid-cols-4 gap-4">
+              <div class="col-span-2 grid grid-cols-3 2xl:grid-cols-4 gap-4">
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[EN] English</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[AE/AR] ARABIC</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[FR] FRANCE</button>
@@ -184,7 +184,7 @@
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
               <span class="text-[24px] self-center">Instruction Manual</span>
-              <div class="col-span-2 grid grid-cols-4 gap-4">
+              <div class="col-span-2 grid grid-cols-3 2xl:grid-cols-4 gap-4">
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[EN] English</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[AE/AR] ARABIC</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[FR] FRANCE</button>
@@ -201,7 +201,7 @@
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
               <span class="text-[24px] self-center">Instruction Manual</span>
-              <div class="col-span-2 grid grid-cols-4 gap-4">
+              <div class="col-span-2 grid grid-cols-3 2xl:grid-cols-4 gap-4">
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[EN] English</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[AE/AR] ARABIC</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[FR] FRANCE</button>
@@ -218,7 +218,7 @@
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
               <span class="text-[24px] self-center">Instruction Manual</span>
-              <div class="col-span-2 grid grid-cols-4 gap-4">
+              <div class="col-span-2 grid grid-cols-3 2xl:grid-cols-4 gap-4">
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[EN] English</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[AE/AR] ARABIC</button>
                 <button class="bg-white w-full text-[20px] rounded-lg text-center py-4">[FR] FRANCE</button>
@@ -246,22 +246,9 @@
         </div>
       </div>
     </div>
-    <!-- Distribution Network -->
-    <div class="w-full bg-blackColor min-h-[680px] flex items-center justify-center">
-      <div class="container mx-auto flex flex-col">
-        <p class="text-[114px] text-white">
-          Join our <br>
-          distribution network
-        </p>
-        <span class="text-[36px] font-light text-white">Partner with us to be a force for positive change in the world.</span>
-        <NuxtLink to="/distributor" class="bg-white rounded-[8px] flex items-center gap-4 w-max px-4 py-2 mt-8">
-          <span>Explore All</span>
-          <svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.88 21.73" class="w-2">
-            <polyline stroke-miterlimit="10" fill="none" stroke="#1a1b1d" stroke-width="1" points=".35 .36 11.16 10.97 .35 21.37"/>
-          </svg>
-        </NuxtLink>
-      </div>
-    </div>
+
+    <AHGDistribution />
+
     <div class="w-full bg-lightColor min-h-[380px] flex items-center justify-center">
       <div class="container flex flex-col items-center mx-auto">
         <span class="text-[65px]">Request Repair & Warranty</span>

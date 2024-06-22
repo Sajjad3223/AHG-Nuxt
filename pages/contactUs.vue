@@ -7,13 +7,13 @@
           <h1 class="text-[7vw] leading-[1]" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
             Contact Us
           </h1>
-          <p class="text-[36px] my-10 leading-tight w-1/2">
+          <p class="text-[2vw] 2xl:text-[36px] my-10 leading-tight w-1/2">
             We value your interest in our products and stand ready to support you. <br>
             Let us assist you in finding the perfect solution that meets your needs and preferences.
           </p>
         </div>
         <img src="~/assets/images/world2.png" alt="world"
-        class="absolute -right-20 img-shadow"/>
+        class="absolute -right-20 scale-75 2xl:scale-100 img-shadow"/>
       </div>
     </div>
 

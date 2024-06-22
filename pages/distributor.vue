@@ -1,13 +1,13 @@
 
 <template>
   <div class="flex flex-col">
-    <div class="w-full bg-blackColor flex items-center justify-center h-[80vh] text-white">
+    <div class="w-full bg-blackColor flex items-center justify-center h-[90vh] text-white">
       <div class="flex flex-col container mx-auto relative">
-        <h1 class="text-[114px] leading-[1]" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
+        <h1 class="text-[6vw] leading-[1]" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
           Unlock Exclusive Benefits <br>
           as a Distributor!
         </h1>
-        <span class="text-[36px] my-10 leading-tight">
+        <span class="text-[2.1vw] 2xl:text-[36px] my-10 leading-tight">
           Step into success by becoming an American Health <br>
           Gate Distributor. Access high quality equipment,<br>
           and superior packaging.
@@ -16,7 +16,7 @@
           Join the AHG family for a journey of success and growth.
         </span>
         <img src="~/assets/images/distributor-earth.png" alt="Earth"
-        class="absolute -right-20 -bottom-8 max-w-[600px] img-shadow"/>
+        class="absolute right-0 2xl:-right-20 -bottom-16 max-w-[600px] img-shadow"/>
       </div>
     </div>
 
