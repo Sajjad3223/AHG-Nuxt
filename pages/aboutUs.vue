@@ -1,19 +1,19 @@
 <template>
   <div>
-    <div class="relative w-full grid place-items-center">
-      <img src="~/assets/images/aboutUs-banner.jpg" alt="home banner" class="w-full max-h-screen object-cover"/>
-      <div class="absolute container mx-auto">
-        <h2 class="text-[76px] text-blackColor" >
+    <div class="relative w-full grid place-items-center h-[90vh]"
+         style="background-image: url(/images/aboutUs-banner.jpg);background-size: cover;background-repeat: no-repeat;background-position: 60% 50%;">
+      <div class="flex flex-col container">
+        <h2 class="text-3xl text-blackColor leading-tight max-w-[50%]" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
           American Health Gate
         </h2>
-        <p class="text-[30px] mt-4">
-          welcomes to our health community, where a timeless commitment <br>
+        <p class="text-sm mt-4 max-w-[50%] leading-tight" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
+          welcomes to our health community, where a timeless commitment
           to quality living worldwide comes to life.
         </p>
       </div>
     </div>
     <div class="bg-blackColor w-full text-white">
-      <div class="container mx-auto pt-[180px] pb-[250px]">
+      <div class="container mx-auto py-[100px] lg:pb-[350px]">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 984 797" width="50vw" class="text-blackColor float-right"
              style="shape-outside: polygon(
                    85% 5%,
@@ -42,30 +42,30 @@
             </g>
           </g>
         </svg>
-        <p class="text-[18px] 2xl:text-[24px] text-justify mt-12">
+        <p class="text-sm text-justify leading-tight lg:mt-10">
           Welcome to American Health Gate (AHG), your gateway to a seamless and reliable healthcare experience. As a leading medical and homecare supply company, AHG is dedicated to enhancing the performance of the healthcare sector by providing cutting-edge devices, exceptional services, reliable support, and innovative solutions.
         </p>
-        <p class="text-[18px] 2xl:text-[24px] text-justify mt-5">
+        <p class="text-sm text-justify leading-tight mt-5">
           At AHG, we prioritize customer satisfaction and reliability, establishing ourselves among the industry's elite medical and home healthcare supply companies. Our tireless efforts focus on understanding your unique needs and offering innovative solutions.
           When you choose AHG as your partner, rest assured you will receive optimal care and support at every stage.
         </p>
-        <p class="text-[18px] 2xl:text-[24px] text-justify mt-5">
+        <p class="text-sm text-justify leading-tight mt-5">
           We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free bridge between you and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service centers, warehouses, and after-sales services, AHG ensures a seamless experience.
         </p>
       </div>
     </div>
-    <div class="py-[150px] flex items-center justify-center">
+    <div class="py-[100px] flex items-center justify-center">
       <div class="container mx-auto flex flex-col items-center space-y-20">
-        <div class="flex flex-col items-center space-y-12">
-          <h3 class="text-[8vw]">Our Mission</h3>
-          <div class="bg-lightColor rounded-[35px] h-[550px] w-full flex flex-col items-center justify-center px-[120px]"
+        <div class="flex w-full flex-col items-center space-y-12">
+          <h3 class="text-2xl">Our Mission</h3>
+          <div class="bg-lightColor rounded-[35px] p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[120px]"
                style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
-            <p class="text-[3vw] 2xl:text-[50px] text-center">
+            <p class="text-base leading-tight text-center">
               To support the healthcare sector <br>
               and enhance overall well-being and prosperity
             </p>
             <div class="bg-blackColor h-px w-[90%] my-5"></div>
-            <p class="text-[1.3vw] 2xl:text-[20px] text-center">
+            <p class="text-small leading-tight text-center">
               We are committed to providing reliable services that guarantee satisfaction for brands, suppliers, and customers alike.
               Customer focus is our guiding principle, making us a leading name in the industry. AHG continuously strives to improve
               service quality, maintain punctuality, and deliver innovative products. From pre-sale support to after-sales services for
@@ -75,16 +75,16 @@
           </div>
         </div>
         <div class="flex flex-col items-center space-y-12">
-          <h3 class="text-[8vw]">Our Vision</h3>
-          <div class="bg-lightColor rounded-[35px] h-[550px] w-full flex flex-col items-center justify-center px-[50px]"
+          <h3 class="text-2xl">Our Vision</h3>
+          <div class="bg-lightColor rounded-[35px] p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[50px]"
                style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
-            <p class="text-[3vw] 2xl:text-[50px] text-center">
+            <p class="text-base leading-tight text-center">
               Working towards a hassle-free ecosystem, <br>
               we are committed to a shared objective of advancing <br>
               the quality of life through cutting-edge technology.
             </p>
             <div class="bg-blackColor h-px w-[90%] my-5"></div>
-            <p class="text-[1.3vw] 2xl:text-[20px] text-center">
+            <p class="text-small leading-tight text-center">
               We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free bridge between you
               and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service centers, warehouses,
               and after-sales services, AHG ensures a seamless experience. Join us on the journey towards a healthier world.
