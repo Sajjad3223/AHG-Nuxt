@@ -28,7 +28,7 @@ const emits = defineEmits(['click']);
 
 <style scoped>
 .btn{
-  @apply text-sm md:text-lg rounded-[8px] flex items-center gap-4 justify-center px-4 py-2 ;
+  @apply text-xs md:text-lg rounded-[8px] flex items-center gap-4 justify-center px-4 py-2;
 }
 .btn-black{
   @apply bg-blackColor text-white;

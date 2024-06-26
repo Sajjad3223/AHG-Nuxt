@@ -1,6 +1,6 @@
 <template>
   <!-- Distribution Network -->
-  <div class="w-full bg-blackColor lg:min-h-[680px] flex items-center justify-center py-16">
+  <div class="w-full bg-blackColor lg:min-h-[500px] flex items-center justify-center py-16">
     <div class="container mx-auto flex flex-col">
       <p class="text-2xl leading-[1] text-white">
         Join our <br>

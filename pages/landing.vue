@@ -52,32 +52,32 @@
           <div class="bg-lightColor rounded-[30px] p-6 lg:px-10 lg:py-14 flex flex-col min-h-[40vw]">
             <AHGLogo color="blackColor" width="9vw"/>
             <span class="text-small mt-8">Blood Pressure Monitors</span>
-            <img src="~/assets/images/Blood-Pressure.png" alt="Blood Pressure" class="my-auto w-full max-w-[15vw] max-h-[15vw] object-contain img-shadow">
-            <BaseAHGButton class="ml-auto" color="black" is-show-more>
+            <img src="~/assets/images/Blood-Pressure.png" alt="Blood Pressure" class="m-auto w-full max-w-[15vw] max-h-[15vw] object-contain img-shadow">
+            <BaseAHGButton class="ml-auto mt-4" color="black" is-show-more width="100%">
               <span>Learn More</span>
             </BaseAHGButton>
           </div>
           <div class="bg-lightColor rounded-[30px] p-6 lg:px-10 lg:py-14 flex flex-col min-h-[40vw]">
             <AHGLogo color="blackColor" width="9vw"/>
             <span class="text-small mt-8">Blood Glucose Monitors</span>
-            <img src="~/assets/images/Blood-Glucose.png" alt="Blood Glucose" class="my-auto w-full max-w-[15vw] max-h-[15vw] object-contain img-shadow">
-            <BaseAHGButton class="ml-auto" color="black" is-show-more>
+            <img src="~/assets/images/Blood-Glucose.png" alt="Blood Glucose" class="m-auto w-full max-w-[15vw] max-h-[15vw] object-contain img-shadow">
+            <BaseAHGButton class="ml-auto mt-4" color="black" is-show-more width="100%">
               <span>Learn More</span>
             </BaseAHGButton>
           </div>
           <div class="bg-lightColor rounded-[30px] p-6 lg:px-10 lg:py-14 flex flex-col min-h-[40vw]">
             <AHGLogo color="blackColor" width="9vw"/>
             <span class="text-small mt-8">Digital Body Scales</span>
-            <img src="~/assets/images/Body-Scale.png" alt="Body Scale" class="my-auto w-full max-w-[15vw] max-h-[15vw] object-contain img-shadow">
-            <BaseAHGButton class="ml-auto" color="black" is-show-more>
+            <img src="~/assets/images/Body-Scale.png" alt="Body Scale" class="m-auto w-full max-w-[15vw] max-h-[15vw] object-contain img-shadow">
+            <BaseAHGButton class="ml-auto mt-4" color="black" is-show-more width="100%">
               <span>Learn More</span>
             </BaseAHGButton>
           </div>
           <div class="bg-lightColor rounded-[30px] p-6 lg:px-10 lg:py-14 flex flex-col min-h-[40vw]">
             <AHGLogo color="blackColor" width="9vw"/>
             <span class="text-small mt-8">Digital Thermometer</span>
-            <img src="~/assets/images/Thermometer.png" alt="Thermometer" class="my-auto w-full max-w-[15vw] max-h-[15vw] object-contain img-shadow">
-            <BaseAHGButton class="ml-auto" color="black" is-show-more>
+            <img src="~/assets/images/Thermometer.png" alt="Thermometer" class="m-auto w-full max-w-[15vw] max-h-[15vw] object-contain img-shadow">
+            <BaseAHGButton class="ml-auto mt-4" color="black" is-show-more width="100%">
               <span>Learn More</span>
             </BaseAHGButton>
           </div>

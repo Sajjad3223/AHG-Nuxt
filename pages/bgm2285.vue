@@ -27,7 +27,7 @@
         </AHGButton>
         <div class="flex items-end justify-center gap-5 relative lg:absolute right-0 bottom-0 mt-10 lg:m-0">
           <img src="~/assets/images/bgmPage/2022/img.png" class="img-shadow max-h-[100px] lg:max-h-[220px]"/>
-          <img src="~/assets/images/bgmPage/2285/img.png" class="img-shadow max-h-[200px] lg:max-h-[350px]"/>
+          <img src="~/assets/images/bgmPage/2285/img.png" class="img-shadow max-h-[200px] lg:max-h-[300px]"/>
           <img src="~/assets/images/bgmPage/2022/img_7.png" class="img-shadow max-h-[200px] lg:max-h-[450px]"/>
         </div>
       </div>
