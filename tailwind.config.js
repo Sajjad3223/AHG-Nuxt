@@ -9,6 +9,9 @@ export default {
     "./error.vue",
   ],
   theme: {
+    fontFamily:{
+      'inter':['"Inter"'],
+    },
     extend: {
       colors:{
         blackColor:'#1A1B1D',

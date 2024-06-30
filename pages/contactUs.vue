@@ -2,18 +2,18 @@
 <template>
   <div class="flex flex-col">
     <div class="w-full bg-blackColor flex items-center justify-center h-[80vh] text-white">
-      <div class="flex items-center container mx-auto relative">
-        <div class="flex flex-col">
+      <div class="flex flex-col lg:flex-row gap-5 items-center container mx-auto relative">
+        <div class="flex flex-col lg:w-3/5">
           <h1 class="text-2xl leading-[1]" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
             Contact Us
           </h1>
-          <p class="text-base my-10 leading-tight w-1/2">
+          <p class="text-base my-10 leading-tight">
             We value your interest in our products and stand ready to support you. <br>
             Let us assist you in finding the perfect solution that meets your needs and preferences.
           </p>
         </div>
         <img src="~/assets/images/world2.png" alt="world"
-        class="absolute -right-40 lg:-right-20 md:scale-75 2xl:scale-100 img-shadow"/>
+        class="img-shadow lg:absolute -translate-y-16 right-0 max-w-[50vw] 2xl:max-w-[42vw] origin-right"/>
       </div>
     </div>
 

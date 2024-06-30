@@ -3,7 +3,7 @@
     <div class="flex items-center container mx-auto py-6">
       <!--  LOGO   -->
       <AHGLogo width="10vw" color="white" />
-      <ul class="hidden ml-auto uppercase md:flex items-center text-xs gap-5 lg:text-base xl:gap-[5vw] text-white">
+      <ul class="hidden ml-auto uppercase md:flex items-center gap-5 text-xs lg:text-[16px] xl:gap-[6vw] text-white">
         <li>
           <NuxtLink>
             Home

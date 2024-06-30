@@ -17,18 +17,15 @@
 </script>
 
 <style>
-*{
-  font-family: "Inter Light",sans-serif;
-}
 .container{
   max-width: 1400px;
 }
 .text-small{
-  font-size: clamp(12px,1.042vw,24px) !important;
+  font-size: clamp(12px,1.042vw,20px) !important;
   line-height: normal;
 }
 .text-sm{
-  font-size: clamp(12px,1.563vw,28px) !important;
+  font-size: clamp(12px,5vw,30px) !important;
   line-height: normal;
 }
 .text-base{
@@ -41,6 +38,9 @@
 }
 .text-xl{
   font-size: clamp(30px,3.333vw,64px) !important;
+}
+.text-2lg{
+  font-size: clamp(30px,3.7vw,76px) !important;
 }
 .text-2xl{
   font-size: clamp(35px,5.938vw,114px) !important;

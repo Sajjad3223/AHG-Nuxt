@@ -1,11 +1,5 @@
-<script setup lang="ts">
-withDefaults(defineProps<{
-  isBpm?:boolean
-}>(),{isBpm:false})
-</script>
-
 <template>
-  <div class="bg-lightColor py-[5vw] relative">
+  <div :class="['packaging',`packaging-${color}`]">
     <div class="container mx-auto flex flex-col">
       <h2 class="text-2xl z-10 leading-[1.2]" style="text-shadow: 2px 2px 5px #92A1A8">
         Affordable <br>
@@ -28,6 +22,24 @@ withDefaults(defineProps<{
   </div>
 </template>
 
-<style scoped>
+<script setup lang="ts">
+const props = withDefaults(defineProps<{
+  color?:'white'|'light',
+  isBpm?:boolean,
+}>(),{
+  color:'light',
+  isBpm:false
+})
+</script>
 
+<style scoped>
+.packaging{
+  @apply py-[5vw] relative;
+}
+.packaging-light{
+  @apply bg-lightColor;
+}
+.packaging-white{
+  @apply bg-white;
+}
 </style>

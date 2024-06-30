@@ -1,21 +1,21 @@
 <template>
   <div>
-    <div class="relative w-full flex items-end py-5 md:p-0 md:items-center h-[60vh] lg:h-[90vh]"
-         style="background-image: url(/images/Support-Banner.png);background-size: cover;background-position: 70% 50%">
+    <div class="relative w-full flex items-end py-5 md:p-0 md:items-center h-[90vh]"
+         style="background-image: url(/images/Support-Banner.jpg);background-size: cover;background-position: 70% 50%">
       <div class="container mx-auto relative flex flex-col justify-center">
-        <p class="text-xl text-blackColor leading-[1] md:max-w-[50%]" style="text-shadow: 2px 2px 5px rgba(255,255,255,0.4)">
+        <p class="text-2xl text-blackColor leading-[1] md:max-w-[50%]" style="text-shadow: 2px 2px 5px rgba(255,255,255,0.4)">
           You need
           support?
         </p>
         <p class="text-base mt-8">
           Easy access to your support services!
         </p>
-        <p class="text-sm mt-4 md:max-w-[50%]">
+        <p class="text-small mt-4 md:max-w-[50%]">
           Explore our comprehensive resources, crafted
           to cater to your needs.
         </p>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 243.87" class="w-[150px] lg:w-[270px] absolute right-1/4 top-1/3 lg:translate-y-5 translate-x-5">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 243.87" class="max-w-[150px] min-w-[150px] w-[20vw] lg:max-w-[270px] absolute right-1/4 top-1/3 lg:-translate-y-6 translate-x-5">
         <path fill="white" d="M256.67,0h-51.33L0,243.87h64.17L205.33,77.01h51.33V0Z"/>
         <path fill="white" d="M123.07,192.53l43.76-51.34h38.5v-51.34h51.33v51.34h51.33v51.34h-51.33v51.34h-51.33v-51.34h-82.26Z"/>
       </svg>

@@ -3,7 +3,7 @@
     <div class="relative w-full grid place-items-center h-[90vh]"
          style="background-image: url(/images/aboutUs-banner.jpg);background-size: cover;background-repeat: no-repeat;background-position: 60% 50%;">
       <div class="flex flex-col container">
-        <h2 class="text-3xl text-blackColor leading-tight max-w-[50%]" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
+        <h2 class="text-2lg text-blackColor leading-[1] max-w-[50%]" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
           American Health Gate
         </h2>
         <p class="text-sm mt-4 max-w-[50%] leading-tight" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="bg-blackColor w-full text-white">
-      <div class="container mx-auto py-[100px] lg:pb-[350px]">
+      <div class="container mx-auto py-[100px] min-h-[110vh]">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 984 797" width="50vw" class="text-blackColor float-right"
              style="shape-outside: polygon(
                    85% 5%,
@@ -42,23 +42,23 @@
             </g>
           </g>
         </svg>
-        <p class="text-sm text-justify leading-tight lg:mt-10">
+        <p class="wapper-text text-justify leading-tight lg:mt-10">
           Welcome to American Health Gate (AHG), your gateway to a seamless and reliable healthcare experience. As a leading medical and homecare supply company, AHG is dedicated to enhancing the performance of the healthcare sector by providing cutting-edge devices, exceptional services, reliable support, and innovative solutions.
         </p>
-        <p class="text-sm text-justify leading-tight mt-5">
+        <p class="wapper-text text-justify leading-tight mt-5">
           At AHG, we prioritize customer satisfaction and reliability, establishing ourselves among the industry's elite medical and home healthcare supply companies. Our tireless efforts focus on understanding your unique needs and offering innovative solutions.
           When you choose AHG as your partner, rest assured you will receive optimal care and support at every stage.
         </p>
-        <p class="text-sm text-justify leading-tight mt-5">
+        <p class="wapper-text text-justify leading-tight mt-5">
           We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free bridge between you and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service centers, warehouses, and after-sales services, AHG ensures a seamless experience.
         </p>
       </div>
     </div>
     <div class="py-[100px] flex items-center justify-center">
       <div class="container mx-auto flex flex-col items-center space-y-20">
-        <div class="flex w-full flex-col items-center space-y-12">
+        <div class="flex w-full flex-col items-center space-y-12 h-[90vh]">
           <h3 class="text-2xl">Our Mission</h3>
-          <div class="bg-lightColor rounded-[35px] p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[120px]"
+          <div class="bg-lightColor rounded-[35px] flex-1 p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[120px]"
                style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
             <p class="text-base leading-tight text-center">
               To support the healthcare sector <br>
@@ -74,9 +74,9 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col items-center space-y-12">
+        <div class="flex flex-col items-center space-y-12 h-[90vh]">
           <h3 class="text-2xl">Our Vision</h3>
-          <div class="bg-lightColor rounded-[35px] p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[50px]"
+          <div class="bg-lightColor rounded-[35px] flex-1 p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[50px]"
                style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
             <p class="text-base leading-tight text-center">
               Working towards a hassle-free ecosystem, <br>
@@ -97,3 +97,9 @@
     <AHGDistribution />
   </div>
 </template>
+
+<style scoped>
+.wapper-text{
+  font-size: clamp(14px,1.4vw,25px);
+}
+</style>
