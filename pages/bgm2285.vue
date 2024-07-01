@@ -1,35 +1,36 @@
 <template>
   <div>
-    <div class="relative w-full grid place-items-center py-[150px] bg-blackColor text-white">
-      <div class="container mx-auto relative flex flex-col justify-center">
-
-        <h1 class="text-3xl leading-[1]">
-          BLOOD GLUCOSE <br>
-          MONITOR
-        </h1>
-        <div class="flex items-center gap-2 mt-5">
-          <AHGLogo width="10vw" color="white"/>
-          <strong class="text-xl">-</strong>
-          <span class="text-lg">2285</span>
-        </div>
-        <div class="flex items-center my-10 gap-10 lg:w-3/5">
-          <div class="flex flex-col space-y-4 text-justify text-xs leading-tight">
-            <p>
-              Monitor your blood glucose effortlessly with the AHG-2285 – no coding needed, ensuring a quicker and easier testing process. With just 0.5ul of blood, you'll receive fast results in just 5 seconds, with a large LCD display. Record up to 1000 readings for a comprehensive half-year glucose history. The extended HCT range, from 20% to 70%, caters to a diverse demographic, making it suitable for the entire family.
-            </p>
-            <p>
-              The AHG 8 Electrode Test Strip guarantees unparalleled accuracy by eliminating various interferences, providing stable and precise readings. The AHG-2285 is not just a device; it's a comprehensive solution a commitment to ensuring a healthier tomorrow for you and the ones you hold dear.
-            </p>
+    <div class=" w-full grid place-items-center py-[150px] bg-blackColor text-white">
+      <div class="flex flex-col container mx-auto">
+        <div class="relative flex flex-col justify-center">
+          <h1 class="text-3xl leading-[1]">
+            BLOOD GLUCOSE <br>
+            MONITOR
+          </h1>
+          <div class="flex items-center gap-2 mt-5">
+            <AHGLogo width="10vw" color="white"/>
+            <strong class="text-xl">-</strong>
+            <span class="text-lg">2285</span>
+          </div>
+          <div class="flex items-center my-10 gap-10 lg:w-3/5">
+            <div class="flex flex-col space-y-4 text-justify text-xs leading-tight">
+              <p>
+                Monitor your blood glucose effortlessly with the AHG-2285 – no coding needed, ensuring a quicker and easier testing process. With just 0.5ul of blood, you'll receive fast results in just 5 seconds, with a large LCD display. Record up to 1000 readings for a comprehensive half-year glucose history. The extended HCT range, from 20% to 70%, caters to a diverse demographic, making it suitable for the entire family.
+              </p>
+              <p>
+                The AHG 8 Electrode Test Strip guarantees unparalleled accuracy by eliminating various interferences, providing stable and precise readings. The AHG-2285 is not just a device; it's a comprehensive solution a commitment to ensuring a healthier tomorrow for you and the ones you hold dear.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-end justify-center gap-4 w-2/5 relative lg:absolute -right-12 bottom-0 mt-10 lg:m-0">
+            <img src="~/assets/images/bgmPage/2022/img.png" class="img-shadow max-h-[100px] lg:max-h-[150px]"/>
+            <img src="~/assets/images/bgmPage/2285/img.png" class="img-shadow max-h-[200px] lg:max-h-[300px]"/>
+            <img src="~/assets/images/bgmPage/2022/img_7.png" class="img-shadow max-h-[200px] lg:max-h-[300px]"/>
           </div>
         </div>
         <AHGButton color="white" width="200px" is-show-more>
           Join Us
         </AHGButton>
-        <div class="flex items-end justify-center gap-5 relative lg:absolute right-0 bottom-0 mt-10 lg:m-0">
-          <img src="~/assets/images/bgmPage/2022/img.png" class="img-shadow max-h-[100px] lg:max-h-[220px]"/>
-          <img src="~/assets/images/bgmPage/2285/img.png" class="img-shadow max-h-[200px] lg:max-h-[300px]"/>
-          <img src="~/assets/images/bgmPage/2022/img_7.png" class="img-shadow max-h-[200px] lg:max-h-[450px]"/>
-        </div>
       </div>
     </div>
 
@@ -40,8 +41,8 @@
             <AHGLogo color="black"/>
             <span class="text-xl">-2285</span>
           </div>
-          <span class="text-base">Blood Glucose Monitor</span>
-          <span class="text-sm">
+          <span class="text-[36px]">Blood Glucose Monitor</span>
+          <span class="text-[24px]">
             Revolutionize your approach to diabetes care with the AHG-2285 Blood Glucose Meter. This cutting-edge device effortlessly blends precision, convenience, and innovation, promising a health monitoring experience that transcends expectations.
           </span>
         </div>
@@ -51,7 +52,7 @@
               class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 max-w-[50%]">
               <span class="text-[24px]">Simple</span>
-              <span class="text-xs">
+              <span class="text-[20px]">
                 No coding, no connection required, making
                 the testing process quicker and easier
               </span>
@@ -62,7 +63,7 @@
               class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 max-w-[50%]">
               <span class="text-[24px]">Test strip ejector</span>
-              <span class="text-xs">
+              <span class="text-[20px]">
                 Strip ejector helps in maintaining hygiene and reducing
                 contamination risks by avoid to touch used strips
               </span>
@@ -73,7 +74,7 @@
               class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 w-[60%]">
               <span class="text-[24px]">Wide HCT range</span>
-              <span class="text-xs">20-70%, Suitable for everyone</span>
+              <span class="text-[20px]">20-70%, Suitable for everyone</span>
             </div>
             <img src="~/assets/images/bgmPage/2285/img_3.png" alt="">
           </div>
@@ -81,7 +82,7 @@
               class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 max-w-[50%]">
               <span class="text-[24px]">Large Memorie</span>
-              <span class="text-xs">
+              <span class="text-[20px]">
                 Large memorie for the comprehensive data
                 tracking and analysis
               </span>
@@ -187,16 +188,16 @@
     <div class="bg-lightColor py-[100px] relative">
       <div class="container mx-auto flex flex-col justify-between">
         <div class="flex flex-col flex-1">
-          <h6 class="text-sm">
+          <h6 class="text-[30px]">
             The technological leadership of the AHG-2022 lies in its test strip – a carbon silver structure with
             8-electrode on a single layer for enhancing the accuracy and reliability of the blood glucose readings.
           </h6>
 
           <div class="mt-10 flex flex-col space-y-8">
-            <span class="text-base">
+            <span class="text-[36px]">
               Detailed functions of those electrodes include:
             </span>
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-x-20 lg:w-5/6">
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-x-20 xl:w-5/6">
               <div class="flex flex-col border-b border-blackColor py-5 space-y-4">
                 <span class="text-base">
                   Code Calibration (Auto-Coding):
@@ -315,9 +316,9 @@
                 </li>
               </ul>
             </div>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center gap-5 max-w-[50%]">
               <img src="~/assets/images/bgmPage/2022/img_8.png" alt="" class="w-1/2 self-center max-w-[400px]">
-              <img src="~/assets/images/bgmPage/2285/img_6.png" alt="" class="w-1/2 self-center img-shadow max-w-[100px] lg:max-w-[250px] max-h-[200px] lg:max-h-[550px] -translate-y-[10%]">
+              <img src="~/assets/images/bgmPage/2285/img_6.png" alt="" class="w-1/2 self-center img-shadow max-w-[150px] -translate-y-[10%]">
             </div>
 
           </div>
@@ -422,26 +423,28 @@
       </div>
     </div>
 
-    <div class="w-full bg-blackColor min-h-[680px] flex items-center justify-center">
-      <div class="flex flex-col-reverse gap-5 lg:flex-row items-center container mx-auto relative text-white">
-        <div class="flex flex-col scale-90 origin-left">
-          <h5 class="text-xl">
-            AHG-2022 Diabetes Management App
-          </h5>
-          <span class="text-base mt-5">
-          Take control of your health with effective blood glucose management.
-        </span>
-          <h6 class="text-lg mt-12">
-            SHARE YOUR HEALTH DATA WITH YOUR DOCTOR
-          </h6>
-          <p class="text-sm mt-5">
-            Track and analyze your glucose levels to optimize diabetes <br>
-            management. Our app empowers you to elevate your check-up <br>
-            experience by easily sharing a comprehensive health journal with <br>
-            your healthcare professionals
-          </p>
+    <div class="w-full bg-blackColor py-[100px] flex flex-col justify-center">
+      <div class="container mx-auto relative">
+        <h5 class="text-xl text-white">
+          AHG-2022 Diabetes Management App
+        </h5>
+        <div class="flex flex-col-reverse gap-5 lg:flex-row items-center text-white">
+          <div class="flex flex-col scale-90 lg:max-w-[75%] origin-left">
+          <span class="text-[22px] xl:text-[36px] lg:mt-12">
+            Take control of your health with effective blood glucose management.
+          </span>
+            <h6 class="text-[30px] xl:text-[50px] mt-12">
+              SHARE YOUR HEALTH DATA WITH YOUR DOCTOR
+            </h6>
+            <p class="text-[15px] xl:text-[24px] text-justify mt-5">
+              Track and analyze your glucose levels to optimize diabetes
+              management. Our app empowers you to elevate your check-up
+              experience by easily sharing a comprehensive health journal with
+              your healthcare professionals
+            </p>
+          </div>
+          <img src="~/assets/images/qrcode.png" alt="qrCode" class="lg:absolute lg:mt-0 mt-12 w-[25vw] max-w-[300px] right-12 2xl:right-0">
         </div>
-        <img src="~/assets/images/qrcode.png" alt="qrCode" class="lg:absolute right-12 2xl:right-0">
       </div>
     </div>
 

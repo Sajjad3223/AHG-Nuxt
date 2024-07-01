@@ -1,25 +1,28 @@
 <template>
   <div>
-    <div class="relative w-full grid place-items-center lg:h-[90vh]"
-         style="background-image: url(/images/bpm300-banner.jpg);background-size: auto; background-repeat: no-repeat; background-position: 100% 0;">
-      <div class="container mx-auto relative flex flex-col justify-center pt-[100vh] pb-12 lg:p-0">
-        <div class="bg-blackColor/80 rounded-[25px] p-8 lg:p-12 lg:w-2/3 text-white">
+    <div class="relative w-full grid place-items-center md:h-[90vh] bpm-banner">
+      <div class="container mx-auto relative flex flex-col justify-center pt-[100vh] pb-12 md:p-0">
+        <div class="bg-blackColor rounded-[25px] p-8 md:p-12 md:w-2/3 text-white">
           <div class="flex items-center gap-2">
-            <AHGLogo width="9vw" color="white" />
+            <AHGLogo width="9vw" color="white"/>
             <strong class="text-lg">-</strong>
             <span class="text-lg">300</span>
           </div>
           <span class="text-lg">Upper Arm Blood Pressure Monitor</span>
           <div class="flex flex-col-reverse lg:flex-row items-center my-10 gap-10">
-            <div class="flex flex-col flex-1 space-y-2 lg:space-y-5 text-justify text-small">
+            <div class="flex flex-col flex-1 space-y-2 md:space-y-5 text-justify text-small">
               <p>
-                A cutting-edge device employing the oscillometric method for swift and highly accurate blood pressure measurement. With support for two users and an additional Guest Mode, each can maintain their own measurement records, storing up to 199 memories individually.
+                A cutting-edge device employing the oscillometric method for swift and highly accurate blood pressure
+                measurement. With support for two users and an additional Guest Mode, each can maintain their own
+                measurement records, storing up to 199 memories individually.
               </p>
               <p>
-                Featuring a large 67 x 68 mm display with oversized digits, our blood pressure monitor ensures easy readability of displayed values. Stay informed about your health with clarity and precision using AHG 300.
+                Featuring a large 67 x 68 mm display with oversized digits, our blood pressure monitor ensures easy
+                readability of displayed values. Stay informed about your health with clarity and precision using AHG
+                300.
               </p>
             </div>
-            <img src="~/assets/images/Blood-Pressure.png" alt="Blood Pressure" class="w-1/2 lg:w-1/4 lg:h-full">
+            <img src="~/assets/images/Blood-Pressure.png" alt="Blood Pressure" class="w-1/2 md:w-1/4 md:h-full">
           </div>
           <AHGButton color="white" px="2rem" is-show-more>
             Join Us
@@ -34,43 +37,65 @@
           Measurements
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
-          <div class="flex items-center justify-center w-full rounded-xl bg-white text-blackColor py-5 gap-8 min-h-[90px]">
+          <div
+              class="flex items-center justify-center w-full rounded-xl bg-white text-blackColor py-5 gap-8 min-h-[90px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 74.94" width="70px">
-              <polyline stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" points="9.38 61.63 22.77 61.63 28.85 45.5 35.51 73.94 39 60.46 60.62 60.41"/>
-              <path stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" stroke-miterlimit="10" d="M48.58,16.16l-.89.85-12.57,12.13s-.02-.02-.02-.02l-12.61-12.07-1.03-.99c-3.5-3.34-3.61-8.88-.28-12.37,3.34-3.49,8.87-3.61,12.37-.27l1.54,1.47,1.36-1.32c3.47-3.36,9.01-3.26,12.36.22,3.36,3.47,3.25,9.01-.22,12.36Z"/>
+              <polyline stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="currentColor"
+                        stroke-width="2px" points="9.38 61.63 22.77 61.63 28.85 45.5 35.51 73.94 39 60.46 60.62 60.41"/>
+              <path stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" stroke-miterlimit="10"
+                    d="M48.58,16.16l-.89.85-12.57,12.13s-.02-.02-.02-.02l-12.61-12.07-1.03-.99c-3.5-3.34-3.61-8.88-.28-12.37,3.34-3.49,8.87-3.61,12.37-.27l1.54,1.47,1.36-1.32c3.47-3.36,9.01-3.26,12.36.22,3.36,3.47,3.25,9.01-.22,12.36Z"/>
               <g>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="10.57" y1="37.53" x2="16.75" y2="37.53"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="21.06" y1="37.53" x2="27.24" y2="37.53"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="31.85" y1="37.53" x2="38.03" y2="37.53"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="42.78" y1="37.53" x2="48.96" y2="37.53"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="53.18" y1="37.53" x2="59.36" y2="37.53"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="10.57" y1="37.53"
+                      x2="16.75" y2="37.53"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="21.06" y1="37.53"
+                      x2="27.24" y2="37.53"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="31.85" y1="37.53"
+                      x2="38.03" y2="37.53"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="42.78" y1="37.53"
+                      x2="48.96" y2="37.53"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="53.18" y1="37.53"
+                      x2="59.36" y2="37.53"/>
                 <g>
-                  <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" y1="37.53" x2="6.18" y2="37.53"/>
-                  <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="63.82" y1="37.53" x2="70" y2="37.53"/>
+                  <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" y1="37.53"
+                        x2="6.18" y2="37.53"/>
+                  <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="63.82"
+                        y1="37.53" x2="70" y2="37.53"/>
                 </g>
               </g>
             </svg>
             <span class="text-xs">Diastolic blood pressure</span>
           </div>
-          <div class="flex items-center justify-center w-full rounded-xl bg-white text-blackColor py-5 gap-8 min-h-[90px]">
+          <div
+              class="flex items-center justify-center w-full rounded-xl bg-white text-blackColor py-5 gap-8 min-h-[90px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 73.74" width="70px">
-              <path  fill="currentColor" stroke-width="0" d="M48.58,60.75l-.89.85-12.57,12.13s-.02-.02-.02-.02l-12.61-12.07-1.03-.99c-3.5-3.34-3.61-8.88-.28-12.37,3.34-3.49,8.87-3.61,12.37-.27l1.54,1.47,1.36-1.32c3.47-3.36,9.01-3.26,12.36.22,3.36,3.47,3.25,9.01-.22,12.36Z"/>
-              <polyline stroke-linecap="round" fill="none" stroke="currentColor" stroke-width="2px" points="9.38 17.13 22.77 17.13 28.85 1 35.51 29.44 39 15.96 60.62 15.91"/>
+              <path fill="currentColor" stroke-width="0"
+                    d="M48.58,60.75l-.89.85-12.57,12.13s-.02-.02-.02-.02l-12.61-12.07-1.03-.99c-3.5-3.34-3.61-8.88-.28-12.37,3.34-3.49,8.87-3.61,12.37-.27l1.54,1.47,1.36-1.32c3.47-3.36,9.01-3.26,12.36.22,3.36,3.47,3.25,9.01-.22,12.36Z"/>
+              <polyline stroke-linecap="round" fill="none" stroke="currentColor" stroke-width="2px"
+                        points="9.38 17.13 22.77 17.13 28.85 1 35.51 29.44 39 15.96 60.62 15.91"/>
               <g>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" y1="37.47" x2="6.18" y2="37.47"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="10.57" y1="37.47" x2="16.75" y2="37.47"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="21.06" y1="37.47" x2="27.24" y2="37.47"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="31.85" y1="37.47" x2="38.03" y2="37.47"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="42.78" y1="37.47" x2="48.96" y2="37.47"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="53.18" y1="37.47" x2="59.36" y2="37.47"/>
-                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="63.82" y1="37.47" x2="70" y2="37.47"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" y1="37.47" x2="6.18"
+                      y2="37.47"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="10.57" y1="37.47"
+                      x2="16.75" y2="37.47"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="21.06" y1="37.47"
+                      x2="27.24" y2="37.47"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="31.85" y1="37.47"
+                      x2="38.03" y2="37.47"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="42.78" y1="37.47"
+                      x2="48.96" y2="37.47"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="53.18" y1="37.47"
+                      x2="59.36" y2="37.47"/>
+                <line stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" x1="63.82" y1="37.47"
+                      x2="70" y2="37.47"/>
               </g>
             </svg>
             <span class="text-xs">Systolic blood pressure</span>
           </div>
-          <div class="flex items-center justify-center w-full rounded-xl bg-white text-blackColor py-5 gap-8 min-h-[90px]">
+          <div
+              class="flex items-center justify-center w-full rounded-xl bg-white text-blackColor py-5 gap-8 min-h-[90px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.5 28.15" width="32px">
-              <path fill="currentColor" stroke-width="0" d="M29.83,15.16l-.89.85-12.57,12.13s-.02-.02-.02-.02L3.73,16.06l-1.03-.99C-.79,11.72-.91,6.19,2.43,2.7c3.34-3.49,8.87-3.61,12.37-.27l1.54,1.47,1.36-1.32c3.47-3.36,9.01-3.26,12.36.22,3.36,3.47,3.25,9.01-.22,12.36Z"/>
+              <path fill="currentColor" stroke-width="0"
+                    d="M29.83,15.16l-.89.85-12.57,12.13s-.02-.02-.02-.02L3.73,16.06l-1.03-.99C-.79,11.72-.91,6.19,2.43,2.7c3.34-3.49,8.87-3.61,12.37-.27l1.54,1.47,1.36-1.32c3.47-3.36,9.01-3.26,12.36.22,3.36,3.47,3.25,9.01-.22,12.36Z"/>
             </svg>
             <span class="text-xs">Heart rate</span>
           </div>
@@ -78,7 +103,8 @@
 
         <div class="flex flex-col space-y-5 my-14">
           <div class="flex items-center gap-1">
-            <AHGLogo/><span class="text-4xl">-300</span>
+            <AHGLogo/>
+            <span class="text-4xl">-300</span>
           </div>
           <span class="text-base">Smart ARM Blood Pressure Monitor</span>
           <span class="text-sm">
@@ -87,10 +113,12 @@
         </div>
 
         <div class="grid lg:grid-cols-2 gap-5">
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">3.7-inch HD Screen</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   LED screen for clear readings
                 </li>
@@ -98,25 +126,31 @@
                   Large font, ideal for senior citizens
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%2015.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%2015.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">"Cuff Wearing" Detection</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Automatically checks cuff fit to
                   avoid inaccuracies.
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%2014.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%2014.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">One-button Operation</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Press the button for automatic measurement
                 </li>
@@ -124,25 +158,31 @@
                   Convenient and user-friendly
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%2013.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%2013.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">"Keep Still" Indicator</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Flashing reminder to remain still
                   during measurement.
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%2012.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%2012.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">2 User Mode + guest Mode </span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   2 users with 199 memories each
                 </li>
@@ -150,25 +190,31 @@
                   Guest Mode available
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%2011.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%2011.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">"Irregular Heartbeat" Indicator</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Flashing alert for irregular
                   heartbeat.
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%2010.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%2010.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">Hypertension Indicator</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Red for high blood pressure
                 </li>
@@ -179,92 +225,114 @@
                   Green for normal
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%209.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%209.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">Date & Time Display</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Real-time display of date and time
                   for added convenience.
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/date%20&%20time.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/date%20&%20time.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">Dual Power Supply</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Both Type-C charging and dry battery options
                   available for convenience and portability.
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%207.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%207.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">Average Value Display</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Provides the average value of the latest
                   2 or 3 data for increased reliability.
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/avarage%20value.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/avarage%20value.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">Dual Power Supply </span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Type-C charging cable and battery are both
                   available. for convenience and portability.
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%205.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%205.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">Unit Selection</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Choose between mmHg and kPa units
                   based on personal preference.
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/unit%20selection.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/unit%20selection.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">Adjustable Cuff</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
-                <li>
-                  Fits most adult upper arms with various
-                  sizes from 22cm to 42cm.
-                </li>
-              </ul>
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
+                  <li>
+                    Fits most adult upper arms with various
+                    sizes from 22cm to 42cm.
+                  </li>
+                </ul>
+                <img src="~/assets/images/bpmPage/Asset%203.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%203.png" alt="" class="img-shadow">
           </div>
-          <div class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
-            <div class="flex flex-col space-y-4 md:max-w-[50%]">
+          <div
+              class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            <div class="flex flex-col space-y-4 w-full">
               <span class="text-[24px]">Master Core Algorithm</span>
-              <ul class="list-disc flex flex-col space-y-2 ml-5">
+              <div class="flex flex-col items-center sm:flex-row sm:items-start justify-between gap-4 w-full">
+                <ul class="list-disc flex flex-col space-y-2 ml-5 md:max-w-[60%]">
                 <li>
                   Utilizes the latest chip and advanced
                   AI for enhanced measurement accuracy.
                 </li>
               </ul>
+              <img src="~/assets/images/bpmPage/Asset%202.png" alt="" class="img-shadow max-w-[150px]">
+              </div>
             </div>
-            <img src="~/assets/images/bpmPage/Asset%202.png" alt="" class="img-shadow">
           </div>
         </div>
 
@@ -272,7 +340,11 @@
           <h4 class="text-lg">Easy-to-Read Results with AHG Blood Pressure Monitor</h4>
           <div class="flex flex-col-reverse md:flex-row gap-5">
             <p class="text-justify flex-1 text-small">
-              AHG Blood Pressure Monitor are engineered to deliver precise and reliable measurements, displayed clearly on our advanced screen. With a focus on accuracy, our monitor present detailed results that are easy to read and interpret, helping you keep a close watch on your health. The intuitive design ensures that anyone can use our monitor with ease, making AHG a trusted choice for comprehensive blood pressure management.
+              AHG Blood Pressure Monitor are engineered to deliver precise and reliable measurements, displayed clearly
+              on our advanced screen. With a focus on accuracy, our monitor present detailed results that are easy to
+              read and interpret, helping you keep a close watch on your health. The intuitive design ensures that
+              anyone can use our monitor with ease, making AHG a trusted choice for comprehensive blood pressure
+              management.
             </p>
             <img src="~/assets/images/bpmPage/bpmDevice.png" alt="device" class="w-1/3 max-w-[450px] mx-auto">
           </div>
@@ -280,13 +352,13 @@
 
       </div>
     </div>
-    <div class="bg-lightColor py-[100px] relative">
+    <div class="bg-white py-[100px] relative">
       <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 justify-between">
         <div class="flex flex-col space-y-10 flex-1">
-          <h6 class="text-base font-medium" >
+          <h6 class="text-base font-medium">
             Meter Specifications
           </h6>
-          <div class="grid grid-cols-2 gap-4 md:gap-10 w-full">
+          <div class="grid sm:grid-cols-2 gap-4 md:gap-10 w-full">
             <div class="flex flex-col flex-wrap gap-5">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Measuring Method </span>
@@ -334,7 +406,8 @@
             </div>
           </div>
         </div>
-        <img src="~/assets/images/bpmPage/specification.png" alt="specifications" class="w-1/3 max-w-[450px] img-shadow">
+        <img src="~/assets/images/bpmPage/specification.png" alt="specifications"
+             class="w-1/3 max-w-[450px] img-shadow">
       </div>
     </div>
 
@@ -353,7 +426,28 @@ import AHGPackaging from "~/components/AHGPackaging.vue";
 </script>
 
 <style scoped>
-.img-shadow{
- filter:drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
+.img-shadow {
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.bpm-banner {
+  background-image: url(/images/bpm300-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: cover;
+}
+@media only screen and (max-width:1024px) {
+
+  .bpm-banner > div:first-child {
+    padding-top:
+  }
+}
+@media only screen and (max-width:768px) {
+  .bpm-banner{
+    background-size: 250vw;
+  }
+  .bpm-banner > div:first-child {
+    padding-top: clamp(0px,100vh,450px);
+  }
 }
 </style>
