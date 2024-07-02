@@ -1,7 +1,7 @@
 <template>
   <div :class="['packaging',`packaging-${color}`]">
     <div class="container mx-auto flex items-center gap-5">
-      <div class="flex flex-col w-[60%]">
+      <div class="flex flex-col w-[55%]">
         <h2 class="text-2xl z-10 leading-[1.2]" style="text-shadow: 2px 2px 5px #92A1A8">
           Affordable <br>
           luxury <br>
