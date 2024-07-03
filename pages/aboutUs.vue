@@ -3,10 +3,10 @@
     <div class="relative w-full grid place-items-center h-[90vh]"
          style="background-image: url(/images/aboutUs-banner.jpg);background-size: cover;background-repeat: no-repeat;background-position: 60% 50%;">
       <div class="flex flex-col container">
-        <h2 class="text-2lg text-blackColor leading-[1] max-w-[50%]" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
+        <h2 class="text-[24px] md:text-[36px] lg:text-[48px] xl:text-[64px] 2xl:text-[76px] text-blackColor leading-[1] md:max-w-[65%]" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
           American Health Gate
         </h2>
-        <p class="text-sm mt-4 max-w-[50%] leading-tight" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
+        <p class="text-[12px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[30px] mt-4 sm:max-w-[55%] leading-tight" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
           welcomes to our health community, where a timeless commitment
           to quality living worldwide comes to life.
         </p>
@@ -14,7 +14,8 @@
     </div>
     <div class="bg-blackColor w-full text-white">
       <div class="container mx-auto py-[100px] min-h-[110vh]">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 984 797" width="50vw" class="text-blackColor float-right"
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 984 797" width="50vw"
+             class="text-blackColor float-right "
              style="shape-outside: polygon(
                    85% 5%,
                    60% 5%,
@@ -100,6 +101,6 @@
 
 <style scoped>
 .wapper-text{
-  font-size: clamp(14px,1.4vw,25px);
+  font-size: clamp(10px,1.4vw,25px);
 }
 </style>

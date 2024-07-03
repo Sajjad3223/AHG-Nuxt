@@ -18,12 +18,12 @@
     </div>
     <div class="bg-blackColor w-full text-white">
       <div class="container mx-auto py-[8vw] flex flex-col items-stretch">
-        <p class="text-sm">
-          American Health Gate is at the forefront of healthcare technology, offering advanced devices <br>
-          such as Digital Blood Glucose Monitors, Digital Blood Pressure Monitor, <br>
+        <p class="text-tiny">
+          American Health Gate is at the forefront of healthcare technology, offering advanced devices
+          such as Digital Blood Glucose Monitors, Digital Blood Pressure Monitor,
           Digital Thermometer and Digital Body Scale.
         </p>
-        <p class="mt-4 text-sm">Redefining healthcare innovation for improved outcomes and a modern patient experience. </p>
+        <p class="mt-4 text-tiny">Redefining healthcare innovation for improved outcomes and a modern patient experience. </p>
         <h2 class="my-8 text-xl">
           Our Healthcare Products Range
         </h2>
@@ -38,7 +38,7 @@
               you need to stay healthy.
             </p>
             <AHGButton color="white" is-show-more>
-              <span>Discover all BP monitors</span>
+              <span class="text-xs">Discover all BP monitors</span>
             </AHGButton>
           </div>
           <img src="~/assets/images/Blood-Pressure.png" class="h-[20vw] max-h-[270px] img-shadow mx-auto" alt="Blood Pressure"/>
@@ -54,7 +54,7 @@
               to enhance your lifestyle.
             </p>
             <AHGButton color="white" is-show-more>
-              <span>Discover all BG monitors</span>
+              <span class="text-xs">Discover all BG monitors</span>
             </AHGButton>
           </div>
           <div class="hidden lg:flex absolute right-10 max-w-[50%] items-center gap-5">
@@ -72,44 +72,44 @@
           Experience AHG's devices – they're not just tools; <br>
           they're seamlessly integrated into your lifestyle.
         </h3>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
-          <div class="border border-white rounded-[30px] flex items-stretch justify-between relative p-8 lg:px-8 lg:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 xl:gap-7">
+          <div class="border border-white h-full xl:max-h-[550px] rounded-[30px] flex flex-col items-stretch justify-between relative p-8 lg:px-8 xl:py-16">
             <div class="flex flex-col">
-              <h4 class="text-lg ">
+              <h4 class="text-lg">
                 DIGITAL BODY SCALES
               </h4>
-              <p class="my-5 lg:my-12 text-small max-w-[80%]">
+              <p class="my-5 lg:mt-12 lg:mb-0 text-tiny max-w-[90%] font-light">
                 The scale does not only measure weight, but gives you
                 the full body composition so that you know
                 more about your health.
               </p>
-              <div class="flex flex-col-reverse xl:flex-row justify-between lg:justify-around h-full items-center relative gap-5">
-                <AHGButton color="white" is-show-more class="w-1/2">
-                  <span>Discover all Body Scales</span>
-                </AHGButton>
-                <div class="max-w-[284px] max-h-[245px]" >
-                  <img src="~/assets/images/Body-Scale2.png" class="w-full scale-75" alt="Body Scale"/>
-                </div>
+            </div>
+            <div class="flex flex-col-reverse xl:flex-row items-center relative xl:gap-5 flex-1">
+              <AHGButton color="white" is-show-more class="w-1/2 xl:-translate-y-8">
+                <span>Discover all Body Scales</span>
+              </AHGButton>
+              <div class="max-w-[284px] max-h-[250px] my-auto" >
+                <img src="~/assets/images/Body-Scale2.png" class="w-full scale-75 xl:scale-90 " alt="Body Scale"/>
               </div>
             </div>
           </div>
-          <div class="border border-white rounded-[30px] flex items-stretch justify-between relative p-8 lg:px-8 lg:py-16">
+          <div class="border border-white h-full xl:max-h-[550px] rounded-[30px] flex flex-col items-stretch justify-between relative p-8 lg:px-8 xl:py-16">
             <div class="flex flex-col">
               <h4 class="text-lg">
                 DIGITAL THERMOMETERS
               </h4>
-              <p class="my-5 lg:my-12 text-small max-w-[80%]">
+              <p class="my-5 lg:mt-12 lg:mb-0 text-tiny max-w-[90%] font-light">
                 Effortlessly track the body temperature of your loved ones
                 while seamlessly measuring room temperature and
                 surface temperatures.
               </p>
-              <div class="flex flex-col-reverse xl:flex-row justify-between lg:justify-around h-full items-center relative gap-5">
-                <AHGButton color="white" is-show-more class="w-1/2">
-                  <span>Discover all Thermometers</span>
-                </AHGButton>
-                <div class="w-[367x] h-[350px]" >
-                  <img src="~/assets/images/Thermometer.png" class="w-[367x] h-[350px] -rotate-45 scale-75" alt="Body Scale"/>
-                </div>
+            </div>
+            <div class="flex flex-col-reverse xl:flex-row  lg:justify-start items-center relative xl:gap-5 flex-1">
+              <AHGButton color="white" is-show-more class="w-1/2 xl:-translate-y-8">
+                <span>Discover all Thermometers</span>
+              </AHGButton>
+              <div class="w-[367x] max-h-[245px] mx-auto my-auto" >
+                <img src="~/assets/images/Thermometer.png" class="w-[367x] h-[350px] -rotate-45 -translate-y-12 scale-75 xl:scale-90" alt="Body Scale"/>
               </div>
             </div>
           </div>

@@ -1,9 +1,9 @@
 
 <template>
   <div class="flex flex-col">
-    <div class="w-full bg-blackColor flex items-center justify-center h-[80vh] text-white">
-      <div class="flex flex-col lg:flex-row gap-5 items-center container mx-auto relative">
-        <div class="flex flex-col lg:w-3/5">
+    <div class="w-full bg-blackColor flex items-center justify-center min-h-[90vh] text-white">
+      <div class="flex flex-col lg:flex-row gap-5 items-center container mx-auto">
+        <div class="flex flex-col  lg:w-1/2 xl:w-3/5">
           <h1 class="text-2xl leading-[1]" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
             Contact Us
           </h1>
@@ -13,7 +13,7 @@
           </p>
         </div>
         <img src="~/assets/images/world2.png" alt="world"
-        class="img-shadow lg:absolute -translate-y-16 right-0 max-w-[50vw] 2xl:max-w-[42vw] origin-right"/>
+        class="img-shadow lg:absolute -translate-y-16 right-0 max-w-[95vw] sm:max-w-[80vw] md:max-w-[60vw] xl:max-w-[50vw] 2xl:max-w-[45vw] origin-right"/>
       </div>
     </div>
 

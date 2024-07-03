@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="relative w-full flex items-end py-5 md:p-0 md:items-center h-[90vh]"
-         style="background-image: url(/images/Support-Banner.jpg);background-size: cover;background-position: 70% 50%">
+    <div class="relative w-full flex items-end py-5 md:p-0 md:items-center h-[60vh] lg:h-[90vh]"
+         style="background-image: url(/images/Support-Banner.jpg);background-size: cover;background-position: 80% 50%">
       <div class="container mx-auto relative flex flex-col justify-center">
         <p class="text-2xl text-blackColor leading-[1] md:max-w-[50%]" style="text-shadow: 2px 2px 5px rgba(255,255,255,0.4)">
           You need
@@ -15,7 +15,7 @@
           to cater to your needs.
         </p>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 243.87" class="max-w-[150px] min-w-[150px] w-[20vw] lg:max-w-[270px] absolute right-1/4 top-1/3 lg:-translate-y-6 translate-x-5">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 243.87" class="max-w-[150px] min-w-[150px] w-[20vw] lg:max-w-[270px] absolute right-1/3 md:right-1/4 top-1/3 lg:-translate-y-6 translate-x-5">
         <path fill="white" d="M256.67,0h-51.33L0,243.87h64.17L205.33,77.01h51.33V0Z"/>
         <path fill="white" d="M123.07,192.53l43.76-51.34h38.5v-51.34h51.33v51.34h51.33v51.34h-51.33v51.34h-51.33v-51.34h-82.26Z"/>
       </svg>
@@ -65,7 +65,7 @@
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
             <h4 class="text-base">Blood Glucose Monitor</h4>
             <h5 class="text-base">AHG-2022</h5>
-            <img src="~/assets/images/ahg-2022.png" alt="ahg 2022" class="my-8 max-w-[150px] lg:max-w-[200px] mx-auto">
+            <img src="~/assets/images/ahg-2022.png" alt="ahg 2022" class="my-8 h-[260px] mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto">
               Download
             </AHGButton>
@@ -73,7 +73,7 @@
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
             <h4 class="text-base">Blood Glucose Monitor</h4>
             <h5 class="text-base">AHG-2285</h5>
-            <img src="~/assets/images/ahg-2285.png" alt="ahg 2285" class="my-8 max-w-[150px] lg:max-w-[200px] mx-auto">
+            <img src="~/assets/images/ahg-2285.png" alt="ahg 2285" class="my-8 h-[260px] mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto">
               Download
             </AHGButton>
@@ -81,7 +81,7 @@
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
             <h4 class="text-base text-nowrap">Blood Pressure Monitor</h4>
             <h5 class="text-base">AHG-300</h5>
-            <img src="~/assets/images/ahg-300.png" alt="ahg 300" class="my-8 max-w-[150px] lg:max-w-[200px] mx-auto">
+            <img src="~/assets/images/ahg-300.png" alt="ahg 300" class="my-8 h-[260px] mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto">
               Download
             </AHGButton>
@@ -96,7 +96,7 @@
     </div>
 
     <div class="w-full bg-blackColor min-h-[680px] flex items-center justify-center">
-      <div class="flex flex-col-reverse gap-5 lg:flex-row items-center container mx-auto relative text-white">
+      <div class="flex flex-col-reverse gap-5 lg:flex-row items-center container mx-auto mt-12 lg:mt-0 relative text-white">
         <div class="flex flex-col scale-90 origin-left">
           <h5 class="text-xl">
             AHG-2022 Diabetes Management App
