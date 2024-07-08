@@ -24,9 +24,7 @@
   font-size: clamp(12px,1.042vw,20px) !important;
   line-height: normal;
 }
-.text-tiny{
-  font-size: clamp(12px,1.8vw,25px) !important;
-}
+
 .text-sm{
   font-size: clamp(12px,5vw,30px) !important;
   line-height: normal;

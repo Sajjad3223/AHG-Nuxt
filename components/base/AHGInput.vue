@@ -20,8 +20,11 @@ withDefaults(defineProps<{
 </template>
 
 <style scoped>
+label,.AhgInput{
+  @apply text-tiny;
+}
 .AhgInput{
-  @apply p-4 rounded-md border w-full bg-transparent focus:ring-0 outline-none;
+  @apply p-4 rounded-md border w-full bg-transparent focus:ring-0 outline-none placeholder-opacity-100 placeholder-white;
 }
 .AhgInput-white{
   @apply border-blackColor text-blackColor;

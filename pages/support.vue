@@ -15,7 +15,7 @@
           to cater to your needs.
         </p>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 243.87" class="max-w-[150px] min-w-[150px] w-[20vw] lg:max-w-[270px] absolute right-1/3 md:right-1/4 top-1/3 lg:-translate-y-6 translate-x-5">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 243.87" class="max-w-[150px] min-w-[150px] w-[20vw] lg:max-w-[270px] absolute right-1/3 md:right-1/4 top-1/2 -translate-y-[60%] translate-x-5">
         <path fill="white" d="M256.67,0h-51.33L0,243.87h64.17L205.33,77.01h51.33V0Z"/>
         <path fill="white" d="M123.07,192.53l43.76-51.34h38.5v-51.34h51.33v51.34h51.33v51.34h-51.33v51.34h-51.33v-51.34h-82.26Z"/>
       </svg>
@@ -56,8 +56,8 @@
         <p class="text-base mt-8">
           You can access our product catalogues by downloading them below.
         </p>
-        <div class="flex items-center flex-wrap justify-between gap-10 mt-16 relative">
-          <button class="absolute hidden md:block -left-6 2xl:-left-12 -translate-x-full">
+        <div class="flex items-stretch flex-wrap justify-between gap-10 mt-16 relative">
+          <button class="absolute hidden md:block -left-6 2xl:-left-12 -translate-x-full top-1/2 -translate-y-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 107" width="50px" class="text-blackColor">
               <polyline stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round" stroke-width="7px" points="53.5 3.5 3.5 56.5 53.5 103.5"/>
             </svg>
@@ -66,7 +66,7 @@
             <h4 class="text-base">Blood Glucose Monitor</h4>
             <h5 class="text-base">AHG-2022</h5>
             <img src="~/assets/images/ahg-2022.png" alt="ahg 2022" class="my-8 h-[260px] mx-auto">
-            <AHGButton color="black" is-show-more class="ml-auto">
+            <AHGButton color="black" is-show-more class="ml-auto mt-auto">
               Download
             </AHGButton>
           </div>
@@ -74,19 +74,19 @@
             <h4 class="text-base">Blood Glucose Monitor</h4>
             <h5 class="text-base">AHG-2285</h5>
             <img src="~/assets/images/ahg-2285.png" alt="ahg 2285" class="my-8 h-[260px] mx-auto">
-            <AHGButton color="black" is-show-more class="ml-auto">
+            <AHGButton color="black" is-show-more class="ml-auto mt-auto">
               Download
             </AHGButton>
           </div>
-          <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
+          <div class="flex-1 bg-white flex flex-col img-shadow rounded-[40px] p-8">
             <h4 class="text-base text-nowrap">Blood Pressure Monitor</h4>
             <h5 class="text-base">AHG-300</h5>
-            <img src="~/assets/images/ahg-300.png" alt="ahg 300" class="my-8 h-[260px] mx-auto">
+            <img src="~/assets/images/ahg-300.png" alt="ahg 300" class="m-auto h-[220px] w-fit">
             <AHGButton color="black" is-show-more class="ml-auto">
               Download
             </AHGButton>
           </div>
-          <button class="absolute hidden md:block -right-6 2xl:-right-12 translate-x-full">
+          <button class="absolute hidden md:block -right-6 2xl:-right-12 translate-x-full top-1/2 -translate-y-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 107" width="50px" class="text-blackColor rotate-180">
               <polyline stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round" stroke-width="7px" points="53.5 3.5 3.5 56.5 53.5 103.5"/>
             </svg>
@@ -107,7 +107,7 @@
           <h6 class="text-lg mt-12">
             SHARE YOUR HEALTH DATA WITH YOUR DOCTOR
           </h6>
-          <p class="text-sm mt-5">
+          <p class="text-sm mt-5 lg:w-2/3 xl:w-auto">
             Track and analyze your glucose levels to optimize diabetes <br>
             management. Our app empowers you to elevate your check-up <br>
             experience by easily sharing a comprehensive health journal with <br>

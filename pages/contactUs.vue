@@ -3,7 +3,7 @@
   <div class="flex flex-col">
     <div class="w-full bg-blackColor flex items-center justify-center min-h-[90vh] text-white">
       <div class="flex flex-col lg:flex-row gap-5 items-center container mx-auto">
-        <div class="flex flex-col  lg:w-1/2 xl:w-3/5">
+        <div class="flex flex-col  lg:w-1/2 xl:w-[55%]">
           <h1 class="text-2xl leading-[1]" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
             Contact Us
           </h1>

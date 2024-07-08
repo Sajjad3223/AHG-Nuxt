@@ -42,17 +42,17 @@
             <span class="text-xl">-2285</span>
           </div>
           <span class="text-[36px]">Blood Glucose Monitor</span>
-          <span class="text-[24px]">
+          <span class="text-tiny">
             Revolutionize your approach to diabetes care with the AHG-2285 Blood Glucose Meter. This cutting-edge device effortlessly blends precision, convenience, and innovation, promising a health monitoring experience that transcends expectations.
           </span>
         </div>
 
         <div class="grid md:grid-cols-2 gap-5">
           <div
-              class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
-            <div class="flex flex-col space-y-4 max-w-[50%]">
+              class="flex items-center justify-between gap-12 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            <div class="flex flex-col space-y-4  flex-1">
               <span class="text-[24px]">Simple</span>
-              <span class="text-[20px]">
+              <span class="text-tiny">
                 No coding, no connection required, making
                 the testing process quicker and easier
               </span>
@@ -60,10 +60,10 @@
             <img src="~/assets/images/bgmPage/2285/img_1.png" alt="">
           </div>
           <div
-              class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
-            <div class="flex flex-col space-y-4 max-w-[50%]">
+              class="flex items-center justify-between gap-12 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            <div class="flex flex-col space-y-4  flex-1">
               <span class="text-[24px]">Test strip ejector</span>
-              <span class="text-[20px]">
+              <span class="text-tiny">
                 Strip ejector helps in maintaining hygiene and reducing
                 contamination risks by avoid to touch used strips
               </span>
@@ -71,18 +71,18 @@
             <img src="~/assets/images/bgmPage/2285/img_2.png" alt="">
           </div>
           <div
-              class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
-            <div class="flex flex-col space-y-4 w-[60%]">
+              class="flex items-center justify-between gap-12 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            <div class="flex flex-col space-y flex-1">
               <span class="text-[24px]">Wide HCT range</span>
-              <span class="text-[20px]">20-70%, Suitable for everyone</span>
+              <span class="text-tiny">20-70%, Suitable for everyone</span>
             </div>
             <img src="~/assets/images/bgmPage/2285/img_3.png" alt="">
           </div>
           <div
-              class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
-            <div class="flex flex-col space-y-4 max-w-[50%]">
+              class="flex items-center justify-between gap-12 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            <div class="flex flex-col space-y-4  flex-1">
               <span class="text-[24px]">Large Memorie</span>
-              <span class="text-[20px]">
+              <span class="text-tiny">
                 Large memorie for the comprehensive data
                 tracking and analysis
               </span>
@@ -93,7 +93,7 @@
 
       </div>
     </div>
-    <div class="bg-white py-[100px] relative">
+    <div class="bg-white pb-[50px] relative">
       <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 justify-between">
         <div class="flex flex-col space-y-10 flex-1">
           <h6 class="text-lg font-medium">
@@ -103,80 +103,80 @@
             <div class="flex flex-col flex-wrap gap-5">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Sample </span>
-                <span class="text-xs">Fresh capillary whole blood</span>
+                <span class="text-tiny">Fresh capillary whole blood</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Enzyme </span>
-                <span class="text-xs">GOD/Glucose Oxidase</span>
+                <span class="text-tiny">GOD/Glucose Oxidase</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Test Time </span>
-                <span class="text-xs">5 seconds </span>
+                <span class="text-tiny">5 seconds </span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Measurement Range </span>
-                <span class="text-xs">10 to 600 mg/dL  </span>
+                <span class="text-tiny">10 to 600 mg/dL  </span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Automatic Shutoff </span>
-                <span class="text-xs">2 minutes after the last action </span>
+                <span class="text-tiny">2 minutes after the last action </span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Battery </span>
-                <span class="text-xs">Two AAA LR03 1.5V batteries</span>
+                <span class="text-tiny">Two AAA LR03 1.5V batteries</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Operating Temperature </span>
-                <span class="text-xs">41-113°F / 5-45°C</span>
+                <span class="text-tiny">41-113°F / 5-45°C</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Operating Relative humidity </span>
-                <span class="text-xs">10-90% (non-condensing)</span>
+                <span class="text-tiny">10-90% (non-condensing)</span>
               </div>
             </div>
             <div class="flex flex-col flex-wrap gap-5">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Test Measured </span>
-                <span class="text-xs">Glucose in fingertip capillary whole blood</span>
+                <span class="text-tiny">Glucose in fingertip capillary whole blood</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Sample Volume</span>
-                <span class="text-xs">About 0.5 μL</span>
+                <span class="text-tiny">About 0.5 μL</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Memory</span>
-                <span class="text-xs">Up to 1000 records with date and time</span>
+                <span class="text-tiny">Up to 1000 records with date and time</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Test averaging</span>
-                <span class="text-xs">
+                <span class="text-tiny">
                   7, 14, and 30-day average
                 </span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Display Size</span>
-                <span class="text-xs">37mm x 47mm</span>
+                <span class="text-tiny">37mm x 47mm</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Dimensions</span>
-                <span class="text-xs">93.5mm x 60.5mm x 20mm</span>
+                <span class="text-tiny">93.5mm x 60.5mm x 20mm</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Weight</span>
-                <span class="text-xs">86.2g(including battery)</span>
+                <span class="text-tiny">86.2g(including battery)</span>
               </div>
             </div>
           </div>
@@ -188,7 +188,7 @@
     <div class="bg-lightColor py-[100px] relative">
       <div class="container mx-auto flex flex-col justify-between">
         <div class="flex flex-col flex-1">
-          <h6 class="text-[30px]">
+          <h6 class="text-tiny">
             The technological leadership of the AHG-2022 lies in its test strip – a carbon silver structure with
             8-electrode on a single layer for enhancing the accuracy and reliability of the blood glucose readings.
           </h6>
@@ -197,8 +197,8 @@
             <span class="text-[36px]">
               Detailed functions of those electrodes include:
             </span>
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-x-20 xl:w-5/6">
-              <div class="flex flex-col border-b border-blackColor py-5 space-y-4">
+            <div class="grid md:grid-cols-2 gap-4 lg:gap-x-20 xl:w-5/6">
+              <div class="flex flex-col border-b border-blackColor pb-5 space-y-4">
                 <span class="text-base">
                   Code Calibration (Auto-Coding):
                 </span>
@@ -208,7 +208,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="flex flex-col border-b border-blackColor py-5 space-y-4">
+              <div class="flex flex-col border-b border-blackColor pb-5 space-y-4">
                 <span class="text-base">
                   Check Sample Sufficiency:
                 </span>
@@ -218,7 +218,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="flex flex-col border-b border-blackColor py-5 space-y-4">
+              <div class="flex flex-col border-b border-blackColor pb-5 space-y-4">
                 <span class="text-base">
                   Eliminate Hematocrit Interference:
                 </span>
@@ -228,7 +228,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="flex flex-col border-b border-blackColor py-5 space-y-4">
+              <div class="flex flex-col border-b border-blackColor pb-5 space-y-4">
                 <span class="text-base">
                   Recognize Control Solution:
                 </span>
@@ -238,7 +238,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="flex flex-col border-b border-blackColor py-5 space-y-4">
+              <div class="flex flex-col border-b border-blackColor pb-5 space-y-4">
                 <span class="text-base">
                   Eliminate Temperature Interference:
                 </span>
@@ -248,7 +248,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="flex flex-col border-b border-blackColor py-5 space-y-4">
+              <div class="flex flex-col border-b border-blackColor pb-5 space-y-4">
                 <span class="text-base">
                   Check Test Strip Damage:
                 </span>
@@ -258,7 +258,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="flex flex-col border-b border-blackColor md:border-none py-5 space-y-4">
+              <div class="flex flex-col border-b border-blackColor md:border-none pb-5 space-y-4">
                 <span class="text-base">
                   Check Humidity Exposure:
                 </span>
@@ -268,7 +268,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="flex flex-col border-b border-blackColor md:border-none py-5 space-y-4">
+              <div class="flex flex-col border-b border-blackColor md:border-none pb-5 space-y-4">
                 <span class="text-base">
                   Check Test Strip Compatibility:
                 </span>
@@ -287,28 +287,28 @@
                 Test Strips Specifications
               </span>
               <ul class="list-disc ml-5">
-                <li class="text-xs">
+                <li class="text-tiny">
                   Carbon silver structure electrode design
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   8 electrodes technology
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Enzyme: GOD/Glucose Oxidase
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Highly accurate & precise results
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Eliminates temperature interference
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   For self-testing and in-vitro diagnostic use only
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Storage Temperature: 2°C to 30°C / 36°F to 86°F
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Humidity: 10-90%
                 </li>
                 <li class="text-xs">
@@ -316,7 +316,7 @@
                 </li>
               </ul>
             </div>
-            <div class="flex items-center justify-center gap-5 max-w-[50%]">
+            <div class="flex items-center justify-center gap-5 flex-1">
               <img src="~/assets/images/bgmPage/2022/img_8.png" alt="" class="w-1/2 self-center max-w-[400px]">
               <img src="~/assets/images/bgmPage/2285/img_6.png" alt="" class="w-1/2 self-center img-shadow max-w-[150px] -translate-y-[10%]">
             </div>
@@ -343,7 +343,7 @@
                   Forward Spring Technology:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Minimizes pain and vibration during use.
                   </li>
                 </ul>
@@ -354,7 +354,7 @@
                   Independent Lancet Holder
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Ensures precise, painless lancet insertion.
                   </li>
                 </ul>
@@ -366,7 +366,7 @@
                   Ready for use or not:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     warning lancet stored or not
                   </li>
                 </ul>
@@ -379,7 +379,7 @@
                   Elastic Rail System:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Promotes smoother,
                     less painful lancet penetration.
                   </li>
@@ -393,7 +393,7 @@
                   11 Depth Settings:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Customizable settings for user
                     comfort and needs.
                   </li>
@@ -407,7 +407,7 @@
                   2-in-1 Button & Lancet Ejector:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Streamlined design for easy cleaning, with a safety feature
                     preventing lancet ejection without proper cap twisting.
                   </li>
@@ -450,7 +450,7 @@
 
     <AHGPackaging />
 
-    <AHGSupport color="black" />
+    <AHGSupport manual-button color="black" />
 
   </div>
 

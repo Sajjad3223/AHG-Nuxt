@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="relative w-full grid place-items-center h-[90vh]"
-         style="background-image: url(/images/aboutUs-banner.jpg);background-size: cover;background-repeat: no-repeat;background-position: 60% 50%;">
+         style="background-image: url(/images/aboutUs-banner.jpg);background-color:#fff;background-size: contain;background-repeat: no-repeat;background-position: 100% 50%;">
       <div class="flex flex-col container">
         <h2 class="text-[24px] md:text-[36px] lg:text-[48px] xl:text-[64px] 2xl:text-[76px] text-blackColor leading-[1] md:max-w-[65%]" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
           American Health Gate
@@ -61,12 +61,12 @@
           <h3 class="text-2xl">Our Mission</h3>
           <div class="bg-lightColor rounded-[35px] flex-1 p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[120px]"
                style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
-            <p class="text-base leading-tight text-center">
+            <p class="text-lg leading-tight text-center">
               To support the healthcare sector <br>
               and enhance overall well-being and prosperity
             </p>
-            <div class="bg-blackColor h-px w-[90%] my-5"></div>
-            <p class="text-small leading-tight text-center">
+            <div class="bg-blackColor h-px w-[95%] my-5"></div>
+            <p class="text-tiny leading-tight text-center lg:w-[95%]">
               We are committed to providing reliable services that guarantee satisfaction for brands, suppliers, and customers alike.
               Customer focus is our guiding principle, making us a leading name in the industry. AHG continuously strives to improve
               service quality, maintain punctuality, and deliver innovative products. From pre-sale support to after-sales services for
@@ -79,13 +79,13 @@
           <h3 class="text-2xl">Our Vision</h3>
           <div class="bg-lightColor rounded-[35px] flex-1 p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[50px]"
                style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
-            <p class="text-base leading-tight text-center">
+            <p class="text-lg leading-tight text-center">
               Working towards a hassle-free ecosystem, <br>
               we are committed to a shared objective of advancing <br>
               the quality of life through cutting-edge technology.
             </p>
-            <div class="bg-blackColor h-px w-[90%] my-5"></div>
-            <p class="text-small leading-tight text-center">
+            <div class="bg-blackColor h-px w-[95%] my-5"></div>
+            <p class="text-tiny leading-tight text-center lg:w-[95%]">
               We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free bridge between you
               and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service centers, warehouses,
               and after-sales services, AHG ensures a seamless experience. Join us on the journey towards a healthier world.
@@ -101,6 +101,6 @@
 
 <style scoped>
 .wapper-text{
-  font-size: clamp(10px,1.4vw,25px);
+  font-size: clamp(10px,1.45vw,25px);
 }
 </style>

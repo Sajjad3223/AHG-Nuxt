@@ -55,39 +55,39 @@
 
         <div class="grid lg:grid-cols-2 gap-5">
           <div
-              class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+              class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 max-w-[50%]">
               <span class="text-[24px] ">Auto coding</span>
-              <span class="text-[20px]">Easy and accurate</span>
+              <span class="text-[18px]">Easy and accurate</span>
             </div>
             <img src="~/assets/images/bgmPage/2022/img_2.png" alt="" class="img-shadow max-w-[50%] max-h-[70%]">
           </div>
           <div
-              class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+              class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 max-w-[50%]">
               <span class="text-[24px] ">Auto-sync via bluetooth</span>
-              <span class="text-[20px]">No Pairing Required</span>
+              <span class="text-[18px]">No Pairing Required</span>
             </div>
             <img src="~/assets/images/bgmPage/2022/img_3.png" alt="" class="img-shadow max-w-[50%] max-h-[70%]">
           </div>
           <div
-              class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+              class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 w-[60%]">
               <span class="text-[24px] ">Wide HCT range</span>
-              <span class="text-[20px]">20-70%</span>
+              <span class="text-[18px]">20-70%</span>
             </div>
             <img src="~/assets/images/bgmPage/2022/img_4.png" alt="" class="img-shadow mx-auto max-w-[50%] max-h-[70%]">
           </div>
           <div
-              class="flex items-center justify-between w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
-            <div class="flex flex-col space-y-4 max-w-[50%]">
-              <span class="text-[24px] ">"Rechargeable battery</span>
-              <span class="text-[20px]">
+              class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            <div class="flex flex-col space-y-4 max-w-[70%]">
+              <span class="text-[24px] ">Rechargeable battery</span>
+              <span class="text-[18px]">
                 Rechargeable lithium battery, more portable
                 USB charger cable included.
               </span>
             </div>
-            <img src="~/assets/images/bgmPage/2022/img_5.png" alt="" class="img-shadow absolute top-0 right-12 h-[90%] max-w-[50%] max-h-[70%]">
+            <img src="~/assets/images/bgmPage/2022/img_5.png" alt="" class="img-shadow absolute top-0 right-12 h-[90%] max-w-[50%]">
           </div>
         </div>
 
@@ -103,63 +103,63 @@
             <div class="flex flex-col flex-wrap gap-5">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Sample </span>
-                <span class="text-xs">Fresh capillary whole blood</span>
+                <span class="text-tiny">Fresh capillary whole blood</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Enzyme </span>
-                <span class="text-xs">GOD/Glucose Oxidase</span>
+                <span class="text-tiny">GOD/Glucose Oxidase</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Test Time </span>
-                <span class="text-xs">5 seconds </span>
+                <span class="text-tiny">5 seconds </span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Measurement Range </span>
-                <span class="text-xs">20 to 600 mg/dL  </span>
+                <span class="text-tiny">20 to 600 mg/dL  </span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Automatic Shutoff </span>
-                <span class="text-xs">2 minutes after the last action </span>
+                <span class="text-tiny">2 minutes after the last action </span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Operating Relative humidity </span>
-                <span class="text-xs">10-90% (non-condensing)</span>
+                <span class="text-tiny">10-90% (non-condensing)</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Operating Temperature </span>
-                <span class="text-xs">41-113°F / 5-45°C</span>
+                <span class="text-tiny">41-113°F / 5-45°C</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Data Port </span>
-                <span class="text-xs">Micro USB</span>
+                <span class="text-tiny">Micro USB</span>
               </div>
             </div>
             <div class="flex flex-col flex-wrap gap-5">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Test Measured </span>
-                <span class="text-xs">Glucose in fingertip capillary whole blood</span>
+                <span class="text-tiny">Glucose in fingertip capillary whole blood</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Sample Volume</span>
-                <span class="text-xs">0.8 μL</span>
+                <span class="text-tiny">0.8 μL</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Memory</span>
-                <span class="text-xs">Up to 500 records with date and time</span>
+                <span class="text-tiny">Up to 500 records with date and time</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Battery Type</span>
-                <span class="text-xs">
+                <span class="text-tiny">
                   Rechargeable, non-serviceable,250mAh,
                   3.7 Volt DC nominal, Lithium polymer
                   battery (5V input charge voltage)
@@ -168,17 +168,17 @@
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Display Size</span>
-                <span class="text-xs">32mm x 32mm</span>
+                <span class="text-tiny">32mm x 32mm</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Dimensions</span>
-                <span class="text-xs">83mm x 52mm x 18.7mm</span>
+                <span class="text-tiny">83mm x 52mm x 18.7mm</span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Weight</span>
-                <span class="text-xs">Approximately 53g</span>
+                <span class="text-tiny">Approximately 53g</span>
               </div>
             </div>
           </div>
@@ -190,7 +190,7 @@
     <div class="bg-lightColor py-[100px] relative">
       <div class="container mx-auto flex flex-col justify-between">
         <div class="flex flex-col space-y-10 flex-1">
-          <h6 class="text-[30px]">
+          <h6 class="text-[24px]">
             The technological leadership of the AHG-2022 lies in its test strip – a carbon silver structure with
             8-electrode on a single layer for enhancing the accuracy and reliability of the blood glucose readings.
           </h6>
@@ -289,31 +289,31 @@
                 Test Strips Specifications
               </span>
               <ul class="list-disc ml-5">
-                <li class="text-xs">
+                <li class="text-tiny">
                   Carbon silver structure electrode design
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   8 electrodes technology
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Enzyme: GOD/Glucose Oxidase
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Highly accurate & precise results
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Eliminates temperature interference
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   For self-testing and in-vitro diagnostic use only
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Storage Temperature: 2°C to 30°C / 36°F to 86°F
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Humidity: 10-90%
                 </li>
-                <li class="text-xs">
+                <li class="text-tiny">
                   Open shelf life: 6 months
                 </li>
               </ul>
@@ -330,10 +330,10 @@
 
     <div class="bg-white py-[100px] relative">
       <div class="container mx-auto flex flex-col justify-between">
-        <h2 class="text-[64px]">
+        <h2 class="text-[50px]">
           Innovative Comfort, Zero Pain Guarantee
         </h2>
-        <span class="text-[30px] mt-8">
+        <span class="text-[20px] mt-8">
           Experience utmost comfort with our lancing device, integrating advanced minimally invasive technology.
         </span>
 
@@ -345,7 +345,7 @@
                   Forward Spring Technology:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Minimizes pain and vibration during use.
                   </li>
                 </ul>
@@ -356,7 +356,7 @@
                   Independent Lancet Holder
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Ensures precise, painless lancet insertion.
                   </li>
                 </ul>
@@ -368,7 +368,7 @@
                   Ready for use or not:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     warning lancet stored or not
                   </li>
                 </ul>
@@ -381,7 +381,7 @@
                   Elastic Rail System:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Promotes smoother,
                     less painful lancet penetration.
                   </li>
@@ -395,7 +395,7 @@
                   11 Depth Settings:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Customizable settings for user
                     comfort and needs.
                   </li>
@@ -409,7 +409,7 @@
                   2-in-1 Button & Lancet Ejector:
                 </span>
                 <ul class="list-disc ml-5">
-                  <li class="text-xs">
+                  <li class="text-tiny">
                     Streamlined design for easy cleaning, with a safety feature
                     preventing lancet ejection without proper cap twisting.
                   </li>
@@ -452,7 +452,7 @@
 
     <AHGPackaging />
 
-    <AHGSupport color="black" />
+    <AHGSupport manual-button color="black" />
 
   </div>
 

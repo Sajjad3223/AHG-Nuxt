@@ -1,9 +1,8 @@
 <template>
   <div :class="['packaging',`packaging-${color}`]">
     <div class="container mx-auto flex items-center gap-5">
-      <div class="flex flex-col lg:w-[50%] w-[55%]">
+      <div class="flex flex-col lg:w-[50%] w-[55%] space-y-12">
         <h2 class="titr z-10 leading-[1.2]" style="text-shadow: 2px 2px 5px #92A1A8">
-          Affordable <br>
           luxury <br>
           packaging
         </h2>
@@ -49,9 +48,9 @@ h2.titr{
   @apply text-[8vw] sm:text-[52px] md:text-[58px] lg:text-[80px] xl:text-[100px] 2xl:text-[129px];
 }
 p.sub{
-  @apply text-[10px] sm:text-[18px] md:text-[20px] lg:text-[28px] xl:text-[36px];
+  @apply text-[10px] sm:text-[18px] md:text-[16px] xl:text-[23px];
 }
 span{
-  @apply text-[12px] sm:text-[18px] md:text-[20px] lg:text-[28px] xl:text-[36px];
+  @apply text-[12px] sm:text-[18px] md:text-[20px] lg:text-[28px] ;
 }
 </style>

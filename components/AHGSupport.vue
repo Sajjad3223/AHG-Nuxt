@@ -8,7 +8,7 @@
         <BaseAHGButton :color="color == 'black' ? 'white' : 'black'" px="2.5rem">
           <span >Contact Us</span>
         </BaseAHGButton>
-        <BaseAHGButton :color="color == 'black' ? 'white' : 'black'" px="2.5rem">
+        <BaseAHGButton :color="color == 'black' ? 'white' : 'black'" px="2.5rem" v-if="manualButton">
           <span >Manuals</span>
         </BaseAHGButton>
       </div>
@@ -18,9 +18,11 @@
 
 <script lang="ts" setup>
   withDefaults(defineProps<{
-    color:'white'|'black'
+    color:'white'|'black',
+    manualButton?:boolean
   }>(),{
-    color:"white"
+    color:"white",
+    manualButton:false
   })
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <!-- Distribution Network -->
   <div class="w-full bg-blackColor lg:min-h-[500px] flex items-center justify-center py-16">
-    <div class="container mx-auto flex flex-col">
+    <div class="container mx-auto flex flex-col space-y-8">
       <p class="text-2xl leading-[1] text-white">
         Join our <br>
         distribution network

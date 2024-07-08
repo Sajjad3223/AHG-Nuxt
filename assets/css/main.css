@@ -65,4 +65,8 @@
     html{
         scroll-behavior: smooth;
     }
+
+    .text-tiny{
+        font-size: clamp(12px,1.8vw,18px) !important;
+    }
 }
