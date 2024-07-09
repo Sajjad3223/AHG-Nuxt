@@ -5,10 +5,10 @@
       <span class="titr">You need support?</span>
       <span class="sub my-2" >Dedication to clients, dedication to products.</span>
       <div class="flex justify-center items-center gap-4 my-2">
-        <BaseAHGButton :color="color == 'black' ? 'white' : 'black'" px="2.5rem">
+        <BaseAHGButton to="/contactUs" :color="color == 'black' ? 'white' : 'black'" px="2.5rem" class="min-w-[200px] text-center">
           <span >Contact Us</span>
         </BaseAHGButton>
-        <BaseAHGButton :color="color == 'black' ? 'white' : 'black'" px="2.5rem" v-if="manualButton">
+        <BaseAHGButton :color="color == 'black' ? 'white' : 'black'" px="2.5rem" v-if="manualButton" class="min-w-[200px] text-center">
           <span >Manuals</span>
         </BaseAHGButton>
       </div>

@@ -5,17 +5,17 @@
       <AHGLogo width="10vw" color="white" />
       <ul class="hidden ml-auto uppercase md:flex items-center gap-5 text-xs lg:text-[16px] xl:gap-[6vw] 2xl:gap-16 text-white">
         <li>
-          <NuxtLink>
+          <NuxtLink to="/">
             Home
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink>
+          <NuxtLink to="/landing">
             PRODUCTS
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink>
+          <NuxtLink to="/support">
             SUPPORT
           </NuxtLink>
         </li>
@@ -25,7 +25,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink>
+          <NuxtLink to="/aboutUs">
             ABOUT US
           </NuxtLink>
         </li>

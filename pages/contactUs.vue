@@ -32,7 +32,7 @@
           <BaseAHGInput name="WorkAddress" v-model="WorkAddress" label="Work Address" />
           <BaseAHGInput name="City" v-model="City" label="City" />
           <BaseAHGInput name="Message" v-model="Message" label="Message" class="col-span-full" multi-line/>
-          <BaseAHGButton color="white" width="200px" class="col-span-full mx-auto">
+          <BaseAHGButton color="white" width="200px" class="col-span-full !text-[20px] mx-auto">
             Submit
           </BaseAHGButton>
         </form>

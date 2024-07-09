@@ -10,12 +10,12 @@
             </svg>
           </div>
           <div class="flex max-w-[210px] lg:w-1/4 flex-col space-y-4">
-            <div class="flex items-center gap-4">
-              <AHGLogo width="50px" color="black" />
+            <div class="flex items-center gap-3">
+              <AHGLogo width="60px" color="black" />
               <span class="text-xs lg:text-[24px]">Healthcare</span>
             </div>
             <hr>
-            <div class="flex flex-col space-y-3 text-[14px] lg:text-base">
+            <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
               <NuxtLink to="/" >AHG Products</NuxtLink>
               <NuxtLink to="/" >BGM Monitors</NuxtLink>
               <NuxtLink to="/" >BPM Monitors</NuxtLink>
@@ -28,7 +28,7 @@
               <span class="text-xs lg:text-[24px]">Our Company</span>
             </div>
             <hr>
-            <div class="flex flex-col space-y-3 text-[14px] lg:text-base">
+            <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
               <NuxtLink to="/" >About Us</NuxtLink>
               <NuxtLink to="/" >Careers</NuxtLink>
               <NuxtLink to="/" >Press</NuxtLink>
@@ -39,7 +39,7 @@
               <span class="text-xs lg:text-[24px]">Support</span>
             </div>
             <hr>
-            <div class="flex flex-col space-y-3 text-[14px] lg:text-base">
+            <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
               <NuxtLink to="/" >Customer Support</NuxtLink>
             </div>
           </div>
@@ -48,8 +48,8 @@
           <select name="" id="" class="pl-6 pr-24 py-3 appearance-none cursor-pointer rounded-lg border text-left">
             <option >English</option>
           </select>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.88 21.73" class="w-2 pointer-events-none text-blackColor rotate-90 absolute right-5">
-            <polyline stroke-miterlimit="10" fill="none" stroke="currentColor" stroke-width="1" points=".35 .36 11.16 10.97 .35 21.37"/>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.88 21.73" class="w-2 pointer-events-none text-borderColor rotate-90 absolute right-5">
+            <polyline stroke-miterlimit="10" fill="none" stroke="currentColor" stroke-width="1.5" points=".35 .36 11.16 10.97 .35 21.37"/>
           </svg>
         </div>
       </div>
@@ -91,3 +91,8 @@
 <script setup lang="ts">
 
 </script>
+<style scoped>
+hr{
+  border-color: rgb(26, 27, 29);
+}
+</style>

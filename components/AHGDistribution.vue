@@ -6,9 +6,10 @@
         Join our <br>
         distribution network
       </p>
-      <span class="text-base mb-8 font-light text-white">Partner with us to be a force for positive change in the world.</span>
-      <BaseAHGButton color="white" is-show-more>
-        <span>Explore All</span>
+      <span class="text-base mb-8 font-light text-white">Partner with us to be a force for positive change in the
+        world.</span>
+      <BaseAHGButton color="white" is-show-more class="!text-[19px]">
+        Explore All
       </BaseAHGButton>
     </div>
   </div>

@@ -6,7 +6,7 @@
         <h2 class="text-[24px] md:text-[36px] lg:text-[48px] xl:text-[64px] 2xl:text-[76px] text-blackColor leading-[1] md:max-w-[65%]" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
           American Health Gate
         </h2>
-        <p class="text-[12px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[30px] mt-4 sm:max-w-[55%] leading-tight" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
+        <p class="text-[12px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[29px] mt-4 sm:max-w-[65%] leading-tight" style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
           welcomes to our health community, where a timeless commitment
           to quality living worldwide comes to life.
         </p>
@@ -43,23 +43,23 @@
             </g>
           </g>
         </svg>
-        <p class="wapper-text text-justify leading-tight lg:mt-10">
+        <p class="wapper-text text-justify  leading-tight lg:mt-10 !text-[24px]">
           Welcome to American Health Gate (AHG), your gateway to a seamless and reliable healthcare experience. As a leading medical and homecare supply company, AHG is dedicated to enhancing the performance of the healthcare sector by providing cutting-edge devices, exceptional services, reliable support, and innovative solutions.
         </p>
-        <p class="wapper-text text-justify leading-tight mt-5">
+        <p class="wapper-text text-justify leading-tight mt-5 !text-[24px]">
           At AHG, we prioritize customer satisfaction and reliability, establishing ourselves among the industry's elite medical and home healthcare supply companies. Our tireless efforts focus on understanding your unique needs and offering innovative solutions.
           When you choose AHG as your partner, rest assured you will receive optimal care and support at every stage.
         </p>
-        <p class="wapper-text text-justify leading-tight mt-5">
+        <p class="wapper-text text-justify leading-tight mt-5 !text-[24px]">
           We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free bridge between you and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service centers, warehouses, and after-sales services, AHG ensures a seamless experience.
         </p>
       </div>
     </div>
     <div class="py-[100px] flex items-center justify-center">
-      <div class="container mx-auto flex flex-col items-center space-y-20">
-        <div class="flex w-full flex-col items-center space-y-12 h-[90vh]">
-          <h3 class="text-2xl">Our Mission</h3>
-          <div class="bg-lightColor rounded-[35px] flex-1 p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[120px]"
+      <div class="container mx-auto flex flex-col items-center space-y-20 ">
+        <div class="flex w-full flex-col items-center space-y-12">
+          <h3 class="text-2xl my-5">Our Mission</h3>
+          <div class="bg-lightColor rounded-[35px] flex-1 p-5  py-[40px] md:py-[70px] w-full flex flex-col items-center justify-center lg:px-[120px]"
                style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
             <p class="text-lg leading-tight text-center">
               To support the healthcare sector <br>
@@ -75,9 +75,10 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col items-center space-y-12 h-[90vh]">
-          <h3 class="text-2xl">Our Vision</h3>
-          <div class="bg-lightColor rounded-[35px] flex-1 p-5 lg:h-[550px] w-full flex flex-col items-center justify-center lg:px-[50px]"
+        <br/>
+        <div class="flex flex-col items-center space-y-14">
+          <h3 class="text-2xl my-5">Our Vision</h3>
+          <div class="bg-lightColor rounded-[35px] flex-1 p-5 py-[40px] md:py-[70px] w-full flex flex-col items-center justify-center lg:px-[50px]"
                style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
             <p class="text-lg leading-tight text-center">
               Working towards a hassle-free ecosystem, <br>

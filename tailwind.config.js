@@ -9,16 +9,16 @@ export default {
     "./error.vue",
   ],
   theme: {
-    fontFamily:{
-      'inter':['"Inter"'],
+    fontFamily: {
+      inter: ['"Inter"'],
     },
     extend: {
-      colors:{
-        blackColor:'#1A1B1D',
-        lightColor:'#E1E9ED',
-      }
+      colors: {
+        blackColor: "#1A1B1D",
+        lightColor: "#E1E9ED",
+        borderColor: "rgb(26, 27, 29)",
+      },
     },
   },
   plugins: [],
-}
-
+};
