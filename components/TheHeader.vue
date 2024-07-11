@@ -25,7 +25,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/aboutUs">
+          <NuxtLink to="/about-us">
             ABOUT US
           </NuxtLink>
         </li>

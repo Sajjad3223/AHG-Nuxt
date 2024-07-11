@@ -83,13 +83,15 @@
     }
 }
 
+.title {
+    @apply text-[25px] md:text-[52px] font-bold
+}
+
 select {
     @apply border-borderColor
 }
 
-.text-xl {
-
-}
+.text-xl {}
 
 @media screen and (max-width:768px) {
     h5.text-xl {
@@ -97,4 +99,32 @@ select {
         line-height: 38px !important;
 
     }
+}
+
+.page-enter-active {
+    transition: all 0.2s ease-out;
+}
+
+.page-leave-active {
+    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+}
+
+
+.layout-enter-active {
+    transition: all 0.2s ease-out;
+}
+
+.layout-leave-active {
+    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.layout-enter-from,
+.layout-leave-to {
+    transform: translateY(-20px);
+    opacity: 0;
 }

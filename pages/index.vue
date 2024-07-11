@@ -4,13 +4,13 @@
       <div class="relative flex justify-center lg:items-center w-full h-[60vh] lg:h-[90vh] pt-8"
         style="background-image: url(/images/HomeBanner.jpg);background-size: cover;background-repeat: no-repeat;background-position: 80% 50%">
         <div class="container mx-auto">
-          <p class="text-3xl text-white leading-[1] lg:max-w-[60%]"
-            style="text-shadow: 5px 5px 7px rgba(126,133,144,0.7)">
+          <p class="text-3xl font-semibold  text-white leading-[1] lg:max-w-[60%]"
+            style="text-shadow: 4px 1px 4px rgb(0 0 0 / 30%)">
             Seizing <br>
-            the future <br>
+            the future<br>
             of <span class="text-blackColor">Healthcare</span>
           </p>
-          <p class="text-base mt-4 max-w-[90%] md:max-w-[60%]">
+          <p class="text-base mt-7 max-w-[90%] md:max-w-[60%]">
             Crafting beloved technology at AHG, where better
             health seamlessly integrates into daily living.
           </p>
@@ -18,19 +18,19 @@
       </div>
     </div>
     <div class="bg-blackColor w-full text-white">
-      <div class="container mx-auto py-[8vw] flex flex-col items-stretch">
-        <p class="bodyTextSize">
-          American Health Gate is at the forefront of healthcare technology, offering advanced devices<br />
-          such as Digital Blood Glucose Monitors, Digital Blood Pressure Monitor,<br />
-          Digital Thermometer and Digital Body Scale.
+      <div class="container mx-auto py-[8vw] flex flex-col ">
+        <p class="text-[26px] font-normal w-[84%]">
+          American Health Gate is at the forefront of healthcare technology, offering advanced devices
+          such as Digital Blood Glucose Monitors, Digital Blood Pressure Monitor, Digital Thermometer
+          and Digital Body Scale.
         </p>
-        <p class="mt-4 bodyTextSize">Redefining healthcare innovation for improved outcomes and a modern patient
+        <p class="mt-5 text-[26px]">Redefining healthcare innovation for improved outcomes and a modern patient
           experience. </p>
-        <h2 class="my-8 text-xl">
+        <h2 class="mb-8 mt-12 text-xl font-bold">
           Our Healthcare Products Range
         </h2>
-        <div
-          class="border mt-5 border-white rounded-[30px] p-8 lg:p-12 flex flex-col-reverse gap-5 md:flex-row items-center justify-between relative">
+        <div class="border mt-5 border-white rounded-[30px]
+           p-8 lg:p-12 flex flex-col-reverse gap-5 md:flex-row items-center justify-between relative">
           <div class="flex flex-col space-y-5 lg:space-y-12">
             <h4 class="text-lg text-nowrap">
               BLOOD PRESSURE MONITORS
@@ -47,8 +47,8 @@
           <img src="~/assets/images/Blood-Pressure.png" class="h-[20vw] max-h-[270px] img-shadow mx-auto"
             alt="Blood Pressure" />
         </div>
-        <div
-          class="border border-white rounded-[30px] mt-5 p-8 lg:p-12 flex flex-col-reverse gap-5 md:flex-row items-center justify-between relative">
+        <div class="border border-white rounded-[30px] mt-5 p-8 
+          lg:p-12 flex flex-col-reverse gap-5 md:flex-row items-center justify-between relative">
           <div class="flex flex-col space-y-5 lg:space-y-12">
             <h4 class="text-lg text-nowrap">
               BLOOD GLUCOSE MONITORS
@@ -86,20 +86,21 @@
           they're seamlessly integrated into your lifestyle.
         </h3>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 xl:gap-7">
-          <div
-            class="border border-white h-full xl:max-h-[550px] rounded-[30px] flex flex-col items-stretch justify-between relative p-8 lg:px-8 xl:py-16">
+          <div class="border border-white h-full
+             xl:max-h-[550px] rounded-[30px] flex flex-col items-stretch justify-between relative p-8
+              lg:px-8 xl:py-12">
             <div class="flex flex-col">
               <h4 class="text-lg">
                 DIGITAL BODY SCALES
               </h4>
-              <div class="my-5 lg:mt-12 lg:mb-0 text-tiny max-w-[90%] font-light">
+              <div class="my-5 lg:mt-10 lg:mb-0 text-tiny max-w-[90%] font-light">
                 The scale does not only measure weight, but gives you<br />
                 the full body composition so that you know<br />
                 more about your health.
               </div>
             </div>
             <div class="flex flex-col-reverse xl:flex-row items-center relative xl:gap-5 flex-1">
-              <AHGButton color="white" is-show-more  class="w-1/2 show-more xl:-translate-y-8">
+              <AHGButton color="white" is-show-more class="w-1/2 show-more xl:-translate-y-8">
                 <span>Discover all Body Scales</span>
               </AHGButton>
               <div class="max-w-[284px] max-h-[250px] my-auto">
@@ -107,13 +108,13 @@
               </div>
             </div>
           </div>
-          <div
-            class="border border-white h-full xl:max-h-[550px] rounded-[30px] flex flex-col items-stretch justify-between relative p-8 lg:px-8 xl:py-16">
+          <div class="border border-white h-full xl:max-h-[550px] rounded-[30px] 
+            flex flex-col items-stretch justify-between relative p-8 lg:px-8 xl:py-12">
             <div class="flex flex-col">
               <h4 class="text-lg">
                 DIGITAL THERMOMETERS
               </h4>
-              <p class="my-5 lg:mt-12 lg:mb-0 text-tiny max-w-[90%] font-light">
+              <p class="my-5 lg:mt-10 lg:mb-0 text-tiny max-w-[90%] font-light">
                 Effortlessly track the body temperature of your loved ones
                 while seamlessly measuring room temperature and
                 surface temperatures.
@@ -147,11 +148,12 @@ import AHGPackaging from "~/components/AHGPackaging.vue";
 
 <style scoped>
 @media screen and (max-width:768px) {
-  .show-more{
+  .show-more {
     width: 100% !important;
     justify-content: space-between;
   }
 }
+
 .img-shadow {
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }

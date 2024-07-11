@@ -3,12 +3,12 @@
     <div class="relative w-full flex items-end py-5 md:p-0 md:items-center h-[60vh] lg:h-[90vh]"
       style="background-image: url(/images/Support-Banner.jpg);background-size: cover;background-position: 80% 50%">
       <div class="container mx-auto relative flex flex-col justify-center">
-        <p class="text-2xl text-blackColor leading-[1] md:max-w-[50%]"
+        <p class="text-3xl font-bold text-black leading-[1] md:max-w-[50%]"
           style="text-shadow: 2px 2px 5px rgba(255,255,255,0.4)">
           You need
           support?
         </p>
-        <p class="text-[36px] mt-8">
+        <p class="text-[32px] mt-8">
           Easy access to your support services!
         </p>
         <p class="text-[24px] mt-4 md:max-w-[50%]">
@@ -25,11 +25,11 @@
     </div>
     <div class="bg-blackColor w-full text-white">
       <div class="container mx-auto py-[80px] flex flex-col items-stretch">
-        <p class="text-sm">
+        <p class="text-[20px] md:text-[28px]">
           Our digital healthcare products inspire users. Experience motivation and empowerment on your wellness journey
           with us.
         </p>
-        <p class="mt-5 text-base">
+        <p class="mt-5  text-base font-bold">
           In which product category do you need support?
         </p>
         <div class="flex items-center flex-wrap gap-12 lg:gap-24 justify-center mt-20">
@@ -57,22 +57,22 @@
     </div>
     <div class="bg-lightColor py-[50px] relative">
       <div class="container mx-auto flex flex-col items-center">
-        <h2 class="text-[30px] md:text-[70px] font-medium">
+        <h2 class="font-bold text-[30px] md:text-[70px] font-medium">
           Products Catalogues
         </h2>
         <p class="text-base ">
           You can access our product catalogues by downloading them below.
         </p>
         <div class="flex items-stretch flex-wrap justify-between gap-5 mt-16 relative">
-          <button class="absolute hidden md:block -left-6 2xl:-left-12 -translate-x-full top-1/2 -translate-y-1/2">
+          <!-- <button class="absolute hidden md:block -left-6 2xl:-left-12 -translate-x-full top-1/2 -translate-y-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 107" width="50px" class="text-blackColor">
               <polyline stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round"
                 stroke-width="7px" points="53.5 3.5 3.5 56.5 53.5 103.5" />
             </svg>
-          </button>
+          </button> -->
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
             <h4 class="text-base">Blood Glucose Monitor</h4>
-            <h5 class="text-base">AHG-2022</h5>
+            <h5 class="text-base font-bold">AHG-2022</h5>
             <img src="~/assets/images/ahg-2022.png" alt="ahg 2022" class="my-6 h-[250px] mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto mt-auto">
               Download
@@ -80,7 +80,7 @@
           </div>
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
             <h4 class="text-base">Blood Glucose Monitor</h4>
-            <h5 class="text-base">AHG-2285</h5>
+            <h5 class="text-base font-bold">AHG-2285</h5>
             <img src="~/assets/images/ahg-2285.png" alt="ahg 2285" class="my-6 h-[250px] mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto mt-auto">
               Download
@@ -88,28 +88,27 @@
           </div>
           <div class="flex-1 bg-white flex flex-col img-shadow rounded-[40px] p-8">
             <h4 class="text-base text-nowrap">Blood Pressure Monitor</h4>
-            <h5 class="text-base">AHG-300</h5>
+            <h5 class="text-base font-bold">AHG-300</h5>
             <img src="~/assets/images/ahg-300.png" alt="ahg 300" class="mx-auto my-6 h-[250px] w-fit">
             <AHGButton color="black" is-show-more class="ml-auto">
               Download
             </AHGButton>
           </div>
-          <button class="absolute hidden md:block -right-6 2xl:-right-12 translate-x-full top-1/2 -translate-y-1/2">
+          <!-- <button class="absolute hidden md:block -right-6 2xl:-right-12 translate-x-full top-1/2 -translate-y-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 107" width="50px"
               class="text-blackColor rotate-180">
               <polyline stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round"
                 stroke-width="7px" points="53.5 3.5 3.5 56.5 53.5 103.5" />
             </svg>
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
 
     <div class="w-full bg-blackColor py-[30px]  md:py-[80px] flex items-center justify-center relative">
-      <div
-        class="flex flex-col-reverse gap-5 lg:flex-row items-center container mx-auto mt-12 lg:mt-0  text-white">
+      <div class="flex flex-col-reverse gap-5 lg:flex-row items-center container mx-auto mt-12 lg:mt-0  text-white">
         <div class="flex flex-col  origin-center md:origin-left">
-          <h5 class="text-xl">
+          <h5 class="text-xl font-bold">
             AHG-2022 Diabetes Management App
           </h5>
           <p class="text-base mt-12">
@@ -125,14 +124,15 @@
             your healthcare professionals
           </p>
         </div>
-        <img src="~/assets/images/qrcode.png" alt="qrCode" class="lg:absolute w-[50%] md:w-auto right-12 ">
+        <img src="~/assets/images/qrcode.png" alt="qrCode"
+          class="lg:absolute bottom-[15%] w-[50%] md:w-[200px] right-[13rem] ">
       </div>
     </div>
 
     <!-- Download Manual -->
     <div class="w-full bg-white flex items-center justify-center">
       <div class="container flex py-[100px] flex-col items-center mx-auto">
-        <h2 class="text-2xl font-medium">
+        <h2 class="text-2xl font-bold">
           Instruction Manuals
         </h2>
         <p class="text-base mt-12">
@@ -248,11 +248,12 @@
 
     <div class="w-full bg-lightColor  py-12 md:py-[80px] flex items-center justify-center">
       <div class="container flex flex-col space-y-4 items-center text-center mx-auto">
-        <span class="text-xl">Didn't find what you need?</span>
-        <p class="text-base !mt-3 md:!mt-8 "> If you can't find what you're looking for, feel free to contact us for
+        <span class="title">Didn't find what you need?</span>
+        <p class="text-[20px] md:text-[24px] !mt-0"> If you can't find what you're looking for, feel free to contact us
+          for
           support.</p>
         <div class="flex items-center justify-center gap-4 !mt-8 w-full">
-          <BaseAHGButton color="black" px="42px" class="max-[768px]:!w-full">
+          <BaseAHGButton to="/contact-us" color="black" px="42px" class="max-[768px]:!w-full">
             Contact Us
           </BaseAHGButton>
         </div>
@@ -263,10 +264,10 @@
 
     <div class="w-full bg-lightColor  py-12 md:py-[80px] flex items-center   justify-center">
       <div class="container flex flex-col space-y-4 text-center items-center mx-auto">
-        <span class="text-xl text-center">Request Repair & Warranty</span>
-        <span class="text-base !mt-3 md:!mt-8">Please let us know if you had any issue with our devices.</span>
+        <span class="title  text-center">Request Repair & Warranty</span>
+        <span class="text-[20px]  md:text-[24px] !mt-0">Please let us know if you had any issue with our devices.</span>
         <div class="flex items-center justify-center gap-4 !mt-3 md:!mt-8 w-full">
-          <BaseAHGButton color="black" px="42px" class="max-[768px]:!w-full">
+          <BaseAHGButton to="/contact-us" color="black" px="42px" class="max-[768px]:!w-full">
             Contact Us
           </BaseAHGButton>
         </div>

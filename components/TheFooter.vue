@@ -12,7 +12,7 @@
           <div class="flex max-w-[210px] lg:w-1/4 flex-col space-y-4">
             <div class="flex items-center gap-3">
               <AHGLogo width="60px" color="black" />
-              <span class="text-xs lg:text-[24px]">Healthcare</span>
+              <span class="text-xs font-bold lg:text-[24px]">Healthcare</span>
             </div>
             <hr>
             <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
@@ -25,7 +25,7 @@
           </div>
           <div class="flex max-w-[210px] lg:w-1/4 md:justify-self-center flex-col space-y-4">
             <div class="flex items-center gap-4">
-              <span class="text-xs lg:text-[24px]">Our Company</span>
+              <span class="text-xs font-bold lg:text-[24px]">Our Company</span>
             </div>
             <hr>
             <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
@@ -36,7 +36,7 @@
           </div>
           <div class="flex max-w-[210px] lg:w-1/4 md:justify-self-end flex-col space-y-4">
             <div class="flex items-center gap-4">
-              <span class="text-xs lg:text-[24px]">Support</span>
+              <span class="text-xs font-bold lg:text-[24px]">Support</span>
             </div>
             <hr>
             <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
@@ -93,6 +93,6 @@
 </script>
 <style scoped>
 hr{
-  border-color: rgb(26, 27, 29);
+  border-color: black;
 }
 </style>

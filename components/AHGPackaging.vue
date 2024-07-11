@@ -2,20 +2,19 @@
   <div :class="['packaging', `packaging-${color}`]">
     <div class="container mx-auto flex items-center gap-5">
       <div class="flex flex-col lg:w-[50%] w-[55%] space-y-12">
-        <h2 class="titr z-10 leading-[1.2]" style="text-shadow: 2px 2px 5px #92A1A8">
-          Affordable <br />
-          luxury <br>
+        <h2 class="titr font-semibold z-10 leading-[1.2]" style="text-shadow: 2px 2px 5px #92A1A8">
+          Luxury <br>
           packaging
         </h2>
-        <p class="sub z-10 mt-4 w-full ">
+        <p class="sub z-10 !mt-5 w-full leading-7">
           American Health Gate's exclusive packing, setting<br />
           a new standard a unique blend of luxury and quality.
         </p>
       </div>
       <div class="absolute right-0 top-1/2 -translate-y-1/2" v-if="!isBpm">
-        <img src="../assets/images/affordable-packaging.png" alt="Affordable Packaging" class="max-w-[55vw]">
-        <span class="absolute -top-10 md:top-0 right-5 md:right-1/4">
-          Lifetime <br>
+        <img src="../assets/images/affordable-packaging.png" alt="Affordable Packaging" class="max-w-[50vw]">
+        <span class="absolute -top-1 md:top-[8%] right-4 md:right-[12vw] leading-4 md:leading-8">
+          <b>Lifetime</b> <br>
           International Warranty
         </span>
       </div>
@@ -37,7 +36,7 @@ const props = withDefaults(defineProps<{
 
 <style scoped>
 .packaging {
-  @apply py-[5vw] relative;
+  @apply py-[8vw] relative;
 }
 
 .packaging-light {
