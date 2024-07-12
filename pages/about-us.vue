@@ -2,7 +2,7 @@
   <div>
     <div class="relative w-full grid place-items-center md:h-[90vh] h-[40vh]">
       <div class="bg-black/50 block md:hidden absolute top-0 w-full h-full -z-[1]"></div>
-      <img src="/images/aboutUs-banner.jpg"
+      <img src="/images/about-banner.jpg"
         class="absolute object-cover md:object-contain  -z-[2] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" />
       <div class="flex flex-col container z-20">
         <h2
