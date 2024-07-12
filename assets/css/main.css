@@ -6,6 +6,12 @@
     @apply md:text-[20px] text-[15px]
 }
 
+@media screen and (min-width:1024px) {
+    .container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
 @font-face {
     font-family: "Inter";
     src: url(/fonts/Inter-Thin.ttf) format("truetype");

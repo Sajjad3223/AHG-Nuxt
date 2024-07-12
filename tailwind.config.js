@@ -18,6 +18,10 @@ export default {
         lightColor: "#E1E9ED",
         borderColor: "rgb(26, 27, 29)",
       },
+      container: {
+        center: true,
+        padding: "5rem",
+      },
     },
   },
   plugins: [],

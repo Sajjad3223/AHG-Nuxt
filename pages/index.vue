@@ -6,13 +6,13 @@
           class="absolute object-cover  -z-[1] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" />
 
         <div class="container mx-auto">
-          <p class="text-3xl font-semibold  text-white leading-[1] lg:max-w-[60%]"
+          <p class="text-3xl font-semibold  text-white leading-[1] lg:max-w-[70%]"
             style="text-shadow: 4px 1px 4px rgb(0 0 0 / 30%)">
             Seizing <br>
             the future<br>
             of <span class="text-blackColor">Healthcare</span>
           </p>
-          <p class="text-[25px] md:text-[34px] mt-7 max-w-[90%] md:max-w-[60%]">
+          <p class="text-[25px] md:text-[34px] mt-7 max-w-[90%] md:max-w-[70%]">
             Crafting beloved technology at AHG, where better
             health seamlessly integrates into daily living.
           </p>
@@ -21,7 +21,7 @@
     </div>
     <div class="bg-blackColor w-full text-white">
       <div class="container mx-auto py-[8vw] flex flex-col ">
-        <p class="text-[26px] font-normal text-justify">
+        <p class="text-[27px] font-normal w-[98%]">
           American Health Gate is at the forefront of healthcare technology, offering advanced devices
           such as Digital Blood Glucose Monitors, Digital Blood Pressure Monitor, Digital Thermometer
           and Digital Body Scale.
