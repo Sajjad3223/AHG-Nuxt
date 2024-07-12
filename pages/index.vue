@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="relative w-full grid place-items-center">
-      <div class="relative flex justify-center lg:items-center w-full h-[60vh] lg:h-[90vh] pt-8"
-        style="background-image: url(/images/HomeBanner.jpg);background-size: cover;background-repeat: no-repeat;background-position: 80% 50%">
+      <div class="relative flex justify-center lg:items-center w-full h-[60vh] lg:h-[90vh] pt-8">
+        <img src="/images/homeBanner-2.jpg"
+          class="absolute object-cover  -z-[1] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" />
+
         <div class="container mx-auto">
           <p class="text-3xl font-semibold  text-white leading-[1] lg:max-w-[60%]"
             style="text-shadow: 4px 1px 4px rgb(0 0 0 / 30%)">
@@ -10,7 +12,7 @@
             the future<br>
             of <span class="text-blackColor">Healthcare</span>
           </p>
-          <p class="text-base mt-7 max-w-[90%] md:max-w-[60%]">
+          <p class="text-[25px] md:text-[34px] mt-7 max-w-[90%] md:max-w-[60%]">
             Crafting beloved technology at AHG, where better
             health seamlessly integrates into daily living.
           </p>
@@ -19,7 +21,7 @@
     </div>
     <div class="bg-blackColor w-full text-white">
       <div class="container mx-auto py-[8vw] flex flex-col ">
-        <p class="text-[26px] font-normal w-[84%]">
+        <p class="text-[26px] font-normal text-justify">
           American Health Gate is at the forefront of healthcare technology, offering advanced devices
           such as Digital Blood Glucose Monitors, Digital Blood Pressure Monitor, Digital Thermometer
           and Digital Body Scale.

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="relative w-full grid place-items-center h-[90vh]"
-      style="background-image: url(/images/aboutUs-banner.jpg);background-color:#fff;background-size: contain;background-repeat: no-repeat;background-position: 100% 50%;">
+      style="background-image: url(/images/aboutUs-banner.jpg);background-color:#fff;background-size: cover;background-repeat: no-repeat;background-position: 100% 50%;">
       <div class="flex flex-col container">
         <h2
           class="text-[24px] md:text-[36px] lg:text-[48px] xl:text-[64px] 2xl:text-[76px] text-blackColor leading-[1] md:max-w-[65%] font-bold"
