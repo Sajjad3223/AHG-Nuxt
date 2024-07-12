@@ -12,6 +12,12 @@
         padding-right: 5rem;
     }
 }
+@media screen and (max-width:768px) {
+    .container {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
 @font-face {
     font-family: "Inter";
     src: url(/fonts/Inter-Thin.ttf) format("truetype");

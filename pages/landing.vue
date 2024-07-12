@@ -55,7 +55,7 @@
         <div class="mt-8 lg:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-3  w-full mx-auto">
           <div class="bg-lightColor rounded-[30px] px-5 py-10  flex flex-col  gap-4">
             <AHGLogo color="blackColor" width="9vw" />
-            <span class="text-tiny">Blood Pressure Monitors</span>
+            <span class="text-[22px]">Blood Pressure Monitors</span>
             <img src="~/assets/images/Blood-Pressure.png" alt="Blood Pressure"
               class="w-2/3 h-[250px] lg:w-full object-contain img-shadow">
             <div class="hidden lg:block">
@@ -73,7 +73,7 @@
           </div>
           <div class="bg-lightColor rounded-[30px] px-5 py-10 flex flex-col  gap-4">
             <AHGLogo color="blackColor" width="9vw" />
-            <span class="text-tiny">Blood Glucose Monitors</span>
+            <span class="text-[22px]">Blood Glucose Monitors</span>
             <img src="~/assets/images/Blood-Glucose.png" alt="Blood Glucose"
               class="w-2/3 h-[250px] lg:w-full object-contain img-shadow">
             <div class="hidden lg:block">
@@ -91,7 +91,7 @@
           </div>
           <div class="bg-lightColor rounded-[30px] px-5 py-10 flex flex-col  gap-4">
             <AHGLogo color="blackColor" width="9vw" />
-            <span class="text-tiny">Digital Body Scales</span>
+            <span class="text-[22px]">Digital Body Scales</span>
             <img src="~/assets/images/Body-Scale.png" alt="Body Scale"
               class="w-2/3 lg:w-full h-[250px] object-contain img-shadow">
             <div class="hidden lg:block">
@@ -109,7 +109,7 @@
           </div>
           <div class="bg-lightColor rounded-[30px] px-5 py-10 flex flex-col  gap-4">
             <AHGLogo color="blackColor" width="9vw" />
-            <span class="text-tiny">Digital Thermometer</span>
+            <span class="text-[22px]">Digital Thermometer</span>
             <img src="~/assets/images/Thermometer.png" alt="Thermometer"
               class=" lg:w-full  h-[250px] object-contain img-shadow">
             <div class="hidden lg:block">

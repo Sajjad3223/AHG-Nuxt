@@ -1,14 +1,16 @@
 <template>
   <div>
-    <div class="relative w-full grid place-items-center h-[90vh]"
-      style="background-image: url(/images/aboutUs-banner.jpg);background-color:#fff;background-size: cover;background-repeat: no-repeat;background-position: 100% 50%;">
-      <div class="flex flex-col container">
+    <div class="relative w-full grid place-items-center md:h-[90vh] h-[40vh]">
+      <div class="bg-black/50 block md:hidden absolute top-0 w-full h-full -z-[1]"></div>
+      <img src="/images/aboutUs-banner.jpg"
+        class="absolute object-cover md:object-contain  -z-[2] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" />
+      <div class="flex flex-col container z-20">
         <h2
-          class="text-[24px] md:text-[36px] lg:text-[48px] xl:text-[64px] 2xl:text-[76px] text-blackColor leading-[1] md:max-w-[65%] font-bold"
+          class="text-[30px] xl:text-[54px] 2xl:text-[70px] text-white md:text-black leading-[1] md:max-w-[65%] font-bold"
           style="text-shadow: 3px 3px 7px rgba(0,0,0,0.25)">
           American Health Gate
         </h2>
-        <p class="text-[12px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[29px] mt-4 sm:max-w-[64%] leading-tight"
+        <p class="text-[15px]  text-white md:text-black 2xl:text-[29px] mt-4 sm:max-w-[64%] leading-tight"
           style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
           welcomes to our health community, where a timeless commitment
           to quality living worldwide comes to life.
@@ -16,9 +18,9 @@
       </div>
     </div>
     <div class="bg-blackColor w-full text-white">
-      <div class="container mx-auto py-[100px] min-h-[110vh]">
+      <div class="container  py-[100px] ">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 984 797"
-          width="55vw" class="text-blackColor float-right " style="shape-outside: polygon(
+          width="50vw" class="text-blackColor hidden md:block float-right min-[1920px]:w-[40vw]" style="shape-outside: polygon(
                    85% 5%,
                    60% 5%,
                    -5% 100%,
@@ -49,18 +51,18 @@
             </g>
           </g>
         </svg>
-        <p class="wapper-text text-justify  leading-tight lg:mt-10 !text-[25px]">
+        <p class="wapper-text text-justify  leading-tight lg:mt-10 !text-[22px]">
           Welcome to American Health Gate (AHG), your gateway to a seamless and reliable healthcare experience. As a
           leading medical and homecare supply company, AHG is dedicated to enhancing the performance of the healthcare
           sector by providing cutting-edge devices, exceptional services, reliable support, and innovative solutions.
         </p>
-        <p class="wapper-text text-justify leading-tight mt-5 !text-[25px]">
+        <p class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
           At AHG, we prioritize customer satisfaction and reliability, establishing ourselves among the industry's elite
           medical and home healthcare supply companies. Our tireless efforts focus on understanding your unique needs
           and offering innovative solutions.<br />
           When you choose AHG as your partner, rest assured you will receive optimal care and support at every stage.
         </p>
-        <p class="wapper-text text-justify leading-tight mt-5 !text-[25px]">
+        <p class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
           We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free bridge
           between you and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service
           centers, warehouses, and after-sales services, AHG ensures a seamless experience.
