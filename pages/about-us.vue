@@ -17,8 +17,8 @@
         </p>
       </div>
     </div>
-    <div class="bg-blackColor w-full text-white">
-      <div class="container  py-[100px] ">
+    <div class="bg-blackColor flex items-center w-full text-white">
+      <div class="container  py-[75px] ">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 984 797"
           width="50vw" class="text-blackColor hidden md:block float-right w-[60%]" style="shape-outside: polygon(
                    85% 5%,
@@ -51,22 +51,26 @@
             </g>
           </g>
         </svg>
-        <p class="wapper-text text-justify  leading-tight lg:mt-10 !text-[22px]">
-          Welcome to American Health Gate (AHG), your gateway to a seamless and reliable healthcare experience. As a
-          leading medical and homecare supply company, AHG is dedicated to enhancing the performance of the healthcare
-          sector by providing cutting-edge devices, exceptional services, reliable support, and innovative solutions.
-        </p>
-        <p class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
-          At AHG, we prioritize customer satisfaction and reliability, establishing ourselves among the industry's elite
-          medical and home healthcare supply companies. Our tireless efforts focus on understanding your unique needs
-          and offering innovative solutions.<br />
-          When you choose AHG as your partner, rest assured you will receive optimal care and support at every stage.
-        </p>
-        <p class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
-          We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free bridge
-          between you and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service
-          centers, warehouses, and after-sales services, AHG ensures a seamless experience.
-        </p>
+        <div>
+          <p class="wapper-text text-justify  leading-tight lg:mt-10 !text-[22px]">
+            Welcome to American Health Gate (AHG), your gateway to a seamless and reliable healthcare experience. As a
+            leading medical and homecare supply company, AHG is dedicated to enhancing the performance of the healthcare
+            sector by providing cutting-edge devices, exceptional services, reliable support, and innovative solutions.
+          </p>
+          <p class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
+            At AHG, we prioritize customer satisfaction and reliability, establishing ourselves among the industry's
+            elite
+            medical and home healthcare supply companies. Our tireless efforts focus on understanding your unique needs
+            and offering innovative solutions.<br />
+            When you choose AHG as your partner, rest assured you will receive optimal care and support at every stage.
+          </p>
+          <p class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
+            We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free
+            bridge
+            between you and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service
+            centers, warehouses, and after-sales services, AHG ensures a seamless experience.
+          </p>
+        </div>
       </div>
     </div>
     <div class="py-[100px] flex items-center justify-center">
