@@ -3,7 +3,7 @@
     <div class="relative w-full grid place-items-center md:h-[90vh] h-[40vh]">
       <div class="bg-black/50 block md:hidden absolute top-0 w-full h-full -z-[1]"></div>
       <img src="/images/about-banner.jpg"
-        class="absolute object-cover md:object-contain  -z-[2] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" />
+        class="absolute object-cover  -z-[2] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" />
       <div class="flex flex-col container z-20">
         <h2
           class="text-[30px] xl:text-[54px] 2xl:text-[70px] text-white md:text-black leading-[1] md:max-w-[65%] font-bold"
@@ -20,7 +20,7 @@
     <div class="bg-blackColor w-full text-white">
       <div class="container  py-[100px] ">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 984 797"
-          width="50vw" class="text-blackColor hidden md:block float-right min-[1920px]:w-[40vw]" style="shape-outside: polygon(
+          width="50vw" class="text-blackColor hidden md:block float-right w-[60%]" style="shape-outside: polygon(
                    85% 5%,
                    60% 5%,
                    -5% 100%,

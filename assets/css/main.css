@@ -98,7 +98,9 @@
 .title {
     @apply text-[25px] md:text-[52px] font-bold
 }
-
+.text-title{
+    @apply text-[25px] md:text-[28px];
+}
 select {
     @apply border-borderColor
 }

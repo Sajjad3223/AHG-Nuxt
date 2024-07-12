@@ -71,24 +71,24 @@
             </svg>
           </button> -->
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
-            <h4 class="text-base">Blood Glucose Monitor</h4>
-            <h5 class="text-base font-bold">AHG-2022</h5>
+            <h4 class="text-title">Blood Glucose Monitor</h4>
+            <h5 class="text-title font-bold ">AHG-2022</h5>
             <img src="~/assets/images/ahg-2022.png" alt="ahg 2022" class="my-6 h-[250px] mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto mt-auto">
               Download
             </AHGButton>
           </div>
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
-            <h4 class="text-base">Blood Glucose Monitor</h4>
-            <h5 class="text-base font-bold">AHG-2285</h5>
+            <h4 class="text-title">Blood Glucose Monitor</h4>
+            <h5 class="text-title font-bold">AHG-2285</h5>
             <img src="~/assets/images/ahg-2285.png" alt="ahg 2285" class="my-6 h-[250px] mx-auto">
             <AHGButton color="black" is-show-more class="ml-auto mt-auto">
               Download
             </AHGButton>
           </div>
           <div class="flex-1 bg-white flex flex-col img-shadow rounded-[40px] p-8">
-            <h4 class="text-base text-nowrap">Blood Pressure Monitor</h4>
-            <h5 class="text-base font-bold">AHG-300</h5>
+            <h4 class="text-title text-nowrap">Blood Pressure Monitor</h4>
+            <h5 class="text-title font-bold">AHG-300</h5>
             <img src="~/assets/images/ahg-300.png" alt="ahg 300" class="mx-auto my-6 h-[250px] w-fit">
             <AHGButton color="black" is-show-more class="ml-auto">
               Download
@@ -107,25 +107,24 @@
 
     <div class="w-full bg-blackColor py-[30px]  md:py-[80px] flex items-center justify-center relative">
       <div class="flex flex-col-reverse gap-5 lg:flex-row items-center container mx-auto mt-12 lg:mt-0  text-white">
-        <div class="flex flex-col  origin-center md:origin-left">
-          <h5 class="text-xl font-bold">
+        <div class="flex flex-col  origin-center md:origin-left w-[85%]">
+          <h5 class="title font-bold">
             AHG-2022 Diabetes Management App
           </h5>
-          <p class="text-base mt-12">
+          <p class="text-title !font-normal mt-2">
             Take control of your health with effective blood glucose management.
           </p>
-          <h6 class="text-lg mt-12">
+          <h6 class="text-[20px] md:text-[40px] mt-12">
             SHARE YOUR HEALTH DATA WITH YOUR DOCTOR
           </h6>
-          <p class="!text-[20px] mt-5 ">
-            Track and analyze your glucose levels to optimize diabetes <br>
-            management. Our app empowers you to elevate your check-up <br>
-            experience by easily sharing a comprehensive health journal with <br>
+          <p class="!text-[20px] mt-5 w-[85%]">
+            Track and analyze your glucose levels to optimize diabetes
+            management. Our app empowers you to elevate your check-up
+            experience by easily sharing a comprehensive health journal with
             your healthcare professionals
           </p>
         </div>
-        <img src="~/assets/images/qrcode.png" alt="qrCode"
-          class="lg:absolute bottom-[15%] w-[50%] md:w-[200px] right-[6%] ">
+        <img src="~/assets/images/qrcode.png" alt="qrCode" class="w-[15%] ">
       </div>
     </div>
 
@@ -138,7 +137,7 @@
         <p class="text-base mt-12">
           You can access our product instruction manuals by downloading them below.
         </p>
-        <ul class="mt-20 w-full flex flex-col space-y-5 relative">
+        <ul class="mt-20 w-full button-links flex flex-col space-y-5 relative">
           <li class="p-8 flex flex-col w-full rounded-[40px] bg-lightColor img-shadow">
             <h6 class="text-lg">Blood Glucose Monitor: AHG-2022</h6>
             <hr class="border-blackColor my-5">
@@ -289,5 +288,8 @@ import AHGButton from "~/components/base/AHGButton.vue";
 .col-span-full button {
   font-weight: 500;
   @apply text-[17px] transition-all hover:opacity-70
+}
+.button-links .bg-white{
+  box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.08);
 }
 </style>
