@@ -1,21 +1,22 @@
 <template>
   <div class="flex flex-col">
-    <div class="w-full bg-blackColor flex items-baseline pt-5 md:pt-0 md:items-center justify-center h-[90vh] md:pb-[150px] pb-0 text-white">
+    <div class="w-full bg-blackColor flex items-center pt-5
+       md:pt-0 md:items-center justify-center h-[90vh]  pb-0 text-white">
       <div class="flex flex-col gap-5 lg:gap-0 container mx-auto relative">
         <span class="text-small">American Health Gate Solutions</span>
-        <h1 class="text-xl font-bold lg:my-5 leading-tight text-left md:text-justify lg:max-w-[70%]"
+        <h1 class="text-[30px] md:text-[52px] font-bold lg:my-5 leading-tight text-left md:text-justify lg:max-w-[70%]"
           style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
           Delivering healthcare products <br class="hidden lg:block">
           that redefine your experience.
         </h1>
         <span
-          class="text-[23px] text-justify leading-tight  lg:max-w-[60%] xl:max-w-[43%]  min-[1618px]:!max-w-[50%] min-[1618px]:text-[27px]">
+          class="text-[24px] text-justify leading-tight  lg:max-w-[60%] xl:max-w-[50%]  min-[1618px]:!max-w-[50%] min-[1618px]:text-[27px]">
           Backed by a decade of experience, AHG is dedicated
           to developing the most advanced healthcare devices.
           Partner with us to shape the future.
         </span>
         <img src="~/assets/images/landing-banner.png" alt="Landing Banner"
-          class="lg:absolute right-16 min-[1600px]:-right-[4%] min-[1600px]:-bottom-[70%] -bottom-[70%] img-shadow w-[60vw] md:w-[35vw] self-center max-w-[600px]" />
+          class="landing-banner lg:absolute  img-shadow w-[60vw] md:w-[35vw] self-center max-w-[600px]" />
       </div>
     </div>
     <div class="bg-lightColor py-[100px] w-full flex items-center justify-center">
@@ -48,7 +49,7 @@
     <div class="bg-white py-[100px] flex justify-center items-center">
       <div class="flex flex-col container mx-auto">
         <h3 class="text-xl font-bold">AHG Healthcare Products</h3>
-        <span class="text-[30px] w-[94%] mt-2 md:mt-12">
+        <span class="text-[30px]  mt-2 md:mt-12">
           Step into our ecosystem of smart devices, shedding light on your health and fostering lasting improvements.
         </span>
         <div class="mt-8 lg:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-3  w-full mx-auto">
@@ -151,6 +152,11 @@
 <style scoped>
 .img-shadow {
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.landing-banner {
+  right: 9%;
+  transform: translate(9%, -5%);
 }
 </style>
 <script setup lang="ts">
