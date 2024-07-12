@@ -25,7 +25,7 @@
     </div>
     <div class="bg-blackColor w-full text-white">
       <div class="container mx-auto py-[80px] flex flex-col items-stretch">
-        <p class="text-[20px] md:text-[28px]">
+        <p class="text-[20px] md:text-[25px]">
           Our digital healthcare products inspire users. Experience motivation and empowerment on your wellness journey
           with us.
         </p>
@@ -57,7 +57,7 @@
     </div>
     <div class="bg-lightColor py-[50px] relative">
       <div class="container mx-auto flex flex-col items-center">
-        <h2 class="font-bold text-[30px] md:text-[70px] font-medium">
+        <h2 class="font-bold text-[30px] md:text-[70px]">
           Products Catalogues
         </h2>
         <p class="text-base ">
@@ -125,7 +125,7 @@
           </p>
         </div>
         <img src="~/assets/images/qrcode.png" alt="qrCode"
-          class="lg:absolute bottom-[15%] w-[50%] md:w-[200px] right-[13rem] ">
+          class="lg:absolute bottom-[15%] w-[50%] md:w-[200px] right-[6%] ">
       </div>
     </div>
 
