@@ -99,25 +99,28 @@
           </div>
         </div>
         <br />
-        <div class="flex flex-col items-center space-y-14 w-[94%] mx-auto">
+        <div class="flex flex-col items-center space-y-14  mx-auto">
           <h3 class="text-2xl my-5 font-bold">Our Vision</h3>
           <div
-            class="bg-lightColor rounded-[35px] flex-1 p-5 py-[40px] md:py-[70px] w-full flex flex-col items-center justify-center lg:px-[50px]"
+            class="bg-lightColor rounded-[35px] flex-1 p-5  mx-auto  py-[40px] md:py-[70px]  flex flex-col items-center justify-center lg:px-[30px]"
             style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
             <p class="text-[30px] md:text-[42px] leading-tight text-center font-light">
               Working towards a hassle-free ecosystem, <br>
               we are committed to a shared objective of advancing <br>
               the quality of life through cutting-edge technology.
             </p>
-            <div class="bg-blackColor h-px w-[94%] my-5"></div>
-            <p class="text-[18px]  text-center px-2">
+            <div class="bg-blackColor h-px w-[89%] my-5"></div>
+            <div class="text-[18px]  text-center  w-[90%]" style="white-space: pre-wrap;">
               We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free
               bridge between you
+                       
               and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service centers,
               warehouses,
+                    
+                    
               and after-sales services, AHG ensures a seamless experience. Join us on the journey towards a healthier
               world.
-            </p>
+            </div>
           </div>
         </div>
       </div>
