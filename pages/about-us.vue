@@ -78,14 +78,14 @@
         <div class="flex w-full flex-col items-center space-y-12 ">
           <h3 class="text-2xl my-5 font-bold">Our Mission</h3>
           <div
-            class="bg-lightColor rounded-[35px] flex-1 p-5 w-[94%] mx-auto  py-[40px] md:py-[70px]  flex flex-col items-center justify-center lg:px-[120px]"
+            class="bg-lightColor rounded-[35px] flex-1 p-5  mx-auto  py-[40px] md:py-[70px]  flex flex-col items-center justify-center lg:px-[100px]"
             style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
-            <p class="text-lg leading-tight text-center">
+            <p class="text-[30px] md:text-[42px] leading-tight text-center font-light">
               To support the healthcare sector <br>
               and enhance overall well-being and prosperity
             </p>
-            <div class="bg-blackColor h-px w-[95%] my-5"></div>
-            <p class="text-[18px] leading-tight text-center lg:w-[95%]">
+            <div class="bg-blackColor h-px w-full my-5"></div>
+            <p class="text-[18px]  text-center px-2">
               We are committed to providing reliable services that guarantee satisfaction for brands, suppliers, and
               customers alike.
               Customer focus is our guiding principle, making us a leading name in the industry. AHG continuously
@@ -104,13 +104,13 @@
           <div
             class="bg-lightColor rounded-[35px] flex-1 p-5 py-[40px] md:py-[70px] w-full flex flex-col items-center justify-center lg:px-[50px]"
             style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
-            <p class="text-lg !font-normal leading-tight text-center">
+            <p class="text-[30px] md:text-[42px] leading-tight text-center font-light">
               Working towards a hassle-free ecosystem, <br>
               we are committed to a shared objective of advancing <br>
               the quality of life through cutting-edge technology.
             </p>
-            <div class="bg-blackColor h-px w-[85%] my-5"></div>
-            <p class="text-[18px] leading-tight text-center lg:w-[85%]">
+            <div class="bg-blackColor h-px w-[94%] my-5"></div>
+            <p class="text-[18px]  text-center px-2">
               We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free
               bridge between you
               and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service centers,
