@@ -2,11 +2,11 @@
   <div class="flex contact flex-col">
     <div class="w-full bg-blackColor flex items-baseline pt-5 md:!pt-0 md:items-center justify-center md:min-h-[90vh] text-white">
       <div class="flex flex-col lg:flex-row gap-5 items-center container mx-auto">
-        <div class="flex flex-col  lg:w-1/2 xl:w-[60%]">
+        <div class="flex flex-col  lg:w-1/2 xl:w-[62%]">
           <h1 class="text-2xl font-bold leading-[1]" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
             Contact Us
           </h1>
-          <p class="text-[20px] md:text-[35px] my-10 leading-tight">
+          <p class="text-[20px] md:text-[31px] text-justify my-10 leading-tight">
             We value your interest in our products and stand ready to support you. <br>
             Let us assist you in finding the perfect solution that meets your needs and preferences.
           </p>
@@ -20,7 +20,7 @@
       Get in touch
     </div>
     <div class="bg-blackColor py-[100px] flex justify-center items-center">
-      <div class="flex flex-col container mx-auto text-white">
+      <div class="flex flex-col container mx-auto text-white w-[75%]">
         <form class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
           <BaseAHGInput name="Name" v-model="Name" label="Name" />
           <BaseAHGInput name="CellPhone" v-model="CellPhone" label="Cell Phone" />

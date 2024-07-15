@@ -26,20 +26,20 @@
         </h4>
         <div class="w-full flex flex-col mt-[80px]">
           <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-y-8 gap-x-28">
-            <div class="bg-blackColor w-full py-8 rounded-[8px] text-base text-white grid place-items-center">
+            <div class="bg-blackColor w-full py-8 rounded-[8px] text-[21px] md:text-[28px] px-2 text-center text-white grid place-items-center">
               Cutting-edge healthcare devices
             </div>
-            <div class="bg-blackColor w-full py-8 rounded-[8px] text-base text-white grid place-items-center">
+            <div class="bg-blackColor w-full py-8 rounded-[8px] text-[21px] md:text-[28px] px-2 text-center text-white grid place-items-center">
               Affordable luxury packaging
             </div>
-            <div class="bg-blackColor w-full py-8 rounded-[8px] text-base text-white grid place-items-center">
+            <div class="bg-blackColor w-full py-8 rounded-[8px] text-[21px] md:text-[28px] px-2 text-center text-white grid place-items-center">
               Connected healthcare options
             </div>
-            <div class="bg-blackColor w-full py-8 rounded-[8px] text-base text-white grid place-items-center">
+            <div class="bg-blackColor w-full py-8 rounded-[8px] text-[21px] md:text-[28px] px-2 text-center text-white grid place-items-center">
               Lifetime international warranty
             </div>
             <div
-              class="bg-blackColor w-full py-8 rounded-[8px] text-base col-span-full max-w-[650px] text-white grid place-items-center">
+              class="bg-blackColor w-full py-8 rounded-[8px] text-[21px] md:text-[28px] col-span-full max-w-[650px] text-white grid place-items-center">
               Competitive pricing
             </div>
           </div>
