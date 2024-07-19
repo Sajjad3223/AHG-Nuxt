@@ -42,7 +42,7 @@
               you with the confidence and information <br>
               you need to stay healthy.
             </p>
-            <AHGButton color="white" is-show-more class="show-more">
+            <AHGButton to="/bpm300" color="white" is-show-more class="show-more">
               Discover all BP monitors
             </AHGButton>
           </div>
@@ -60,7 +60,7 @@
               checks using a meter personalized <br>
               to enhance your lifestyle.
             </p>
-            <AHGButton color="white" is-show-more class="show-more">
+            <AHGButton to="/bgm2022" color="white" is-show-more class="show-more">
               Discover all BG monitors
             </AHGButton>
           </div>

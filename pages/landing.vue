@@ -59,13 +59,13 @@
             <img src="~/assets/images/Blood-Pressure.png" alt="Blood Pressure"
               class="w-2/3 h-[250px] lg:w-full object-contain img-shadow">
             <div class="hidden lg:block">
-              <BaseAHGButton class="text-tiny ml-auto mt-4" color="black" is-show-more width="max-content" px="1rem"
+              <BaseAHGButton to="/bpm300" class="text-tiny ml-auto mt-4" color="black" is-show-more width="max-content" px="1rem"
                 py="0.5rem" text-size="1.5rem">
                 <span>Learn More</span>
               </BaseAHGButton>
             </div>
             <div class="lg:hidden">
-              <BaseAHGButton class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%" py="0.5rem"
+              <BaseAHGButton to="/bpm300" class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%" py="0.5rem"
                 text-size="0.8rem">
                 <span>Learn More</span>
               </BaseAHGButton>
@@ -77,13 +77,13 @@
             <img src="~/assets/images/Blood-Glucose.png" alt="Blood Glucose"
               class="w-2/3 h-[250px] lg:w-full object-contain img-shadow">
             <div class="hidden lg:block">
-              <BaseAHGButton class="text-tiny ml-auto mt-4" color="black" is-show-more width="max-content" px="1rem"
+              <BaseAHGButton to="/bgm2285" class="text-tiny ml-auto mt-4" color="black" is-show-more width="max-content" px="1rem"
                 py="0.5rem" text-size="1.5rem">
                 <span>Learn More</span>
               </BaseAHGButton>
             </div>
             <div class="lg:hidden">
-              <BaseAHGButton class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%" py="0.5rem"
+              <BaseAHGButton to="/bgm2285" class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%" py="0.5rem"
                 text-size="0.8rem">
                 <span>Learn More</span>
               </BaseAHGButton>
@@ -95,13 +95,13 @@
             <img src="~/assets/images/Body-Scale.png" alt="Body Scale"
               class="w-2/3 lg:w-full h-[250px] object-contain img-shadow">
             <div class="hidden lg:block">
-              <BaseAHGButton class="text-tiny ml-auto mt-4" color="black" is-show-more width="max-content" px="1rem"
+              <BaseAHGButton to="/bgm2285" class="text-tiny ml-auto mt-4" color="black" is-show-more width="max-content" px="1rem"
                 py="0.5rem" text-size="1.5rem">
                 <span>Learn More</span>
               </BaseAHGButton>
             </div>
             <div class="lg:hidden">
-              <BaseAHGButton class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%" py="0.5rem"
+              <BaseAHGButton to="/bgm2285" class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%" py="0.5rem"
                 text-size="0.8rem">
                 <span>Learn More</span>
               </BaseAHGButton>

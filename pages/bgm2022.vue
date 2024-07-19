@@ -3,38 +3,39 @@
     <div class="relative w-full grid place-items-center py-[150px] bg-blackColor text-white">
       <div class="flex flex-col container mx-auto">
         <div class="relative flex flex-col justify-center">
-          <h1 class="text-3xl leading-[1]">
-            BLOOD GLUCOSE <br>
+          <h1 class="text-[35px] md:text-[105px] font-bold leading-[1.1]">
+            BLOOD GLUCOSE
             MONITOR
           </h1>
-          <div class="flex items-center gap-2 mt-5">
-            <AHGLogo width="10vw" color="white"/>
+          <div class="flex font-bold items-center gap-2 mt-5">
+            <AHGLogo width="8vw" color="white" />
             <strong class="text-xl">-</strong>
             <span class="text-lg">2022</span>
           </div>
-          <div class="flex items-center my-10 gap-10 lg:w-3/5">
-            <div class="flex flex-col space-y-4 text-justify text-small leading-tight">
+          <div class="flex items-center my-10 gap-10 lg:w-[65%]">
+            <div class="flex flex-col space-y-4 text-justify text-[18px] leading-tight">
               <p>
                 Our advanced meter features Bluetooth integration, allowing you to effortlessly sync readings to a free
                 smartphone app for convenient tracking on a popular health app. The extended HCT range, from 20%-70%,
                 accommodates a diverse demographic, making it suitable every member of your family, including the little
                 ones and expecting moms.
               </p>
-              <p>
-                The AHG 8 Electrode Test Strip ensures unparalleled accuracy, eliminating various interferences for stable
-                and precise readings. More than just a meter, the AHG-2022 is a comprehensive solution that combines
-                innovation, accuracy, and family-friendly design, promising a healthier tomorrow for you and your loved
-                ones.
+              <p class="w-[90%]">
+                The AHG 8 Electrode Test Strip ensures unparalleled accuracy, eliminating various
+                interferences for stable and precise readings. More than just a meter, the AHG-2022
+                is a comprehensive solution that combines innovation, accuracy, and family-friendly
+                design, promising a healthier tomorrow for you and your loved ones.
+
               </p>
             </div>
           </div>
-          <div class="flex items-end justify-center gap-2 w-2/5 relative lg:absolute -right-12 bottom-0 mt-10 lg:m-0">
-            <img src="~/assets/images/bgmPage/2022/img.png" class="img-shadow max-h-[100px] lg:max-h-[170px]"/>
-            <img src="~/assets/images/bgmPage/2022/img_1.png" class=" img-shadow max-h-[200px] lg:max-h-[270px]"/>
-            <img src="~/assets/images/bgmPage/2022/img_7.png" class=" img-shadow max-h-[200px] lg:max-h-[320px]"/>
+          <div class="flex items-end justify-center gap-2 w-2/5 relative lg:absolute -right-12 bottom-8 mt-10 lg:m-0">
+            <img src="~/assets/images/bgmPage/2022/img.png" class="img-shadow max-h-[100px] lg:max-h-[170px]" />
+            <img src="~/assets/images/bgmPage/2022/img_1.png" class=" img-shadow max-h-[200px] lg:max-h-[270px]" />
+            <img src="~/assets/images/bgmPage/2022/img_7.png" class=" img-shadow max-h-[200px] lg:max-h-[320px]" />
           </div>
         </div>
-        <AHGButton color="white" width="200px" is-show-more>
+        <AHGButton color="white" class="font-medium" width="200px" is-show-more>
           Join Us
         </AHGButton>
       </div>
@@ -44,18 +45,19 @@
       <div class="container mx-auto py-[80px] flex flex-col items-stretch">
         <div class="flex flex-col space-y-5 my-14">
           <div class="flex items-center gap-1">
-            <AHGLogo color="black"/>
+            <AHGLogo color="black" />
             <span class="text-xl">- 2022</span>
           </div>
           <span class="text-[36px]">Smart Bluetooth Blood Glucose Monitor</span>
           <span class="text-[24px]">
-            Experience the next level of diabetes care with the AHG-2022 Blood Glucose Meter, a cutting-edge device meticulously designed for seamless self-monitoring.
+            Experience the next level of diabetes care with the AHG-2022 Blood Glucose Meter, a cutting-edge device
+            meticulously designed for seamless self-monitoring.
           </span>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-5">
           <div
-              class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 max-w-[50%]">
               <span class="text-[24px] ">Auto coding</span>
               <span class="text-[18px]">Easy and accurate</span>
@@ -63,7 +65,7 @@
             <img src="~/assets/images/bgmPage/2022/img_2.png" alt="" class="img-shadow max-w-[50%] max-h-[70%]">
           </div>
           <div
-              class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 max-w-[50%]">
               <span class="text-[24px] ">Auto-sync via bluetooth</span>
               <span class="text-[18px]">No Pairing Required</span>
@@ -71,7 +73,7 @@
             <img src="~/assets/images/bgmPage/2022/img_3.png" alt="" class="img-shadow max-w-[50%] max-h-[70%]">
           </div>
           <div
-              class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 w-[60%]">
               <span class="text-[24px] ">Wide HCT range</span>
               <span class="text-[18px]">20-70%</span>
@@ -79,7 +81,7 @@
             <img src="~/assets/images/bgmPage/2022/img_4.png" alt="" class="img-shadow mx-auto max-w-[50%] max-h-[70%]">
           </div>
           <div
-              class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            class="flex items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-4 max-w-[70%]">
               <span class="text-[24px] ">Rechargeable battery</span>
               <span class="text-[18px]">
@@ -87,7 +89,8 @@
                 USB charger cable included.
               </span>
             </div>
-            <img src="~/assets/images/bgmPage/2022/img_5.png" alt="" class="img-shadow absolute top-0 right-12 h-[90%] max-w-[50%]">
+            <img src="~/assets/images/bgmPage/2022/img_5.png" alt=""
+              class="img-shadow absolute top-0 right-12 h-[90%] max-w-[50%]">
           </div>
         </div>
 
@@ -118,7 +121,7 @@
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-base">Measurement Range </span>
-                <span class="text-tiny">20 to 600 mg/dL  </span>
+                <span class="text-tiny">20 to 600 mg/dL </span>
               </div>
               <hr class="border-blackColor opacity-70">
               <div class="flex flex-col gap-2">
@@ -320,7 +323,8 @@
             </div>
             <div class="flex gap-6 max-w-[50%]">
               <img src="~/assets/images/bgmPage/2022/img_8.png" alt="" class="w-1/2 self-center max-w-[400px]">
-              <img src="~/assets/images/bgmPage/2022/img_9.png" alt="" class="w-1/2 self-center img-shadow max-w-[400px]">
+              <img src="~/assets/images/bgmPage/2022/img_9.png" alt=""
+                class="w-1/2 self-center img-shadow max-w-[400px]">
             </div>
 
           </div>
@@ -387,7 +391,8 @@
                   </li>
                 </ul>
               </div>
-              <img src="~/assets/images/bgmPage/2022/img_12.png" alt="" class="mx-auto self-center max-w-[30%] max-h-[200px]">
+              <img src="~/assets/images/bgmPage/2022/img_12.png" alt=""
+                class="mx-auto self-center max-w-[30%] max-h-[200px]">
             </div>
             <div class="lg:col-span-2 border border-blackColor rounded-[20px] flex items-center gap-5 p-6">
               <div class="flex flex-col flex-1">
@@ -401,9 +406,11 @@
                   </li>
                 </ul>
               </div>
-              <img src="~/assets/images/bgmPage/2022/img_13.png" alt="" class="mx-auto self-center max-w-[30%] max-h-[200px]">
+              <img src="~/assets/images/bgmPage/2022/img_13.png" alt=""
+                class="mx-auto self-center max-w-[30%] max-h-[200px]">
             </div>
-            <div class="lg:col-span-full border border-blackColor rounded-[20px] flex flex-col items-start lg:flex-row lg:items-center p-6">
+            <div
+              class="lg:col-span-full border border-blackColor rounded-[20px] flex flex-col items-start lg:flex-row lg:items-center p-6">
               <div class="flex flex-col lg:w-1/2">
                 <span class="text-sm">
                   2-in-1 Button & Lancet Ejector:
@@ -416,7 +423,7 @@
                 </ul>
               </div>
               <img src="~/assets/images/bgmPage/2022/img_14.png" alt="" class="mx-auto self-center">
-          </div>
+            </div>
           </div>
           <div class="w-[150px] hidden lg:flex items-center justify-center">
             <img src="~/assets/images/bgmPage/2022/img_7.png" alt="" class="w-[100px]">
@@ -432,9 +439,9 @@
         </h5>
         <div class="flex flex-col-reverse gap-5 lg:flex-row items-center text-white">
           <div class="flex flex-col scale-90 lg:max-w-[75%] origin-left">
-          <span class="text-[22px] xl:text-[36px] lg:mt-12">
-            Take control of your health with effective blood glucose management.
-          </span>
+            <span class="text-[22px] xl:text-[36px] lg:mt-12">
+              Take control of your health with effective blood glucose management.
+            </span>
             <h6 class="text-[30px] xl:text-[50px] mt-12">
               SHARE YOUR HEALTH DATA WITH YOUR DOCTOR
             </h6>
@@ -445,7 +452,8 @@
               your healthcare professionals
             </p>
           </div>
-          <img src="~/assets/images/qrcode.png" alt="qrCode" class="lg:absolute lg:mt-0 mt-12 w-[25vw] max-w-[300px] right-12 2xl:right-0">
+          <img src="~/assets/images/qrcode.png" alt="qrCode"
+            class="lg:absolute lg:mt-0 mt-12 w-[25vw] max-w-[300px] right-12 2xl:right-0">
         </div>
       </div>
     </div>

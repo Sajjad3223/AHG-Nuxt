@@ -16,7 +16,7 @@
                 measurement. With support for two users and an additional Guest Mode, each can maintain their own
                 measurement records, storing up to 199 memories individually.
               </p>
-              <p>
+              <p class="leading-tight">
                 Featuring a large 67 x 68 mm display with oversized digits, our blood pressure monitor ensures easy
                 readability of displayed values. Stay informed about your health with clarity and precision using AHG
                 300.
@@ -37,8 +37,8 @@
           Measurements
         </h3>
         <div class="grid grid-cols-1 font-medium  md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
-          <div class="flex items-center justify-center w-full rounded-xl bg-white text-blackColor py-2 gap-8">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 74.94" width="70px">
+          <div class="flex items-center justify-center w-full rounded-xl bg-white text-blackColor !py-1 gap-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 74.94" width="60px">
               <polyline stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="currentColor"
                 stroke-width="2px" points="9.38 61.63 22.77 61.63 28.85 45.5 35.51 73.94 39 60.46 60.62 60.41" />
               <path stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2px" stroke-miterlimit="10"
@@ -65,7 +65,7 @@
             <span class="text-[16px]">Diastolic blood pressure</span>
           </div>
           <div class="flex items-center justify-center w-full rounded-xl bg-white text-blackColor py-2 gap-8">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 73.74" width="70px">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 73.74" width="60px">
               <path fill="currentColor" stroke-width="0"
                 d="M48.58,60.75l-.89.85-12.57,12.13s-.02-.02-.02-.02l-12.61-12.07-1.03-.99c-3.5-3.34-3.61-8.88-.28-12.37,3.34-3.49,8.87-3.61,12.37-.27l1.54,1.47,1.36-1.32c3.47-3.36,9.01-3.26,12.36.22,3.36,3.47,3.25,9.01-.22,12.36Z" />
               <polyline stroke-linecap="round" fill="none" stroke="currentColor" stroke-width="2px"
@@ -111,7 +111,7 @@
 
         <div class="grid lg:grid-cols-2 gap-5">
           <div v-for="item in items"
-            class="flex flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+            class="flex overflow-hidden flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
             <div class="flex flex-col w-full">
               <span class="text-[22px] font-bold">{{ item.title }}</span>
               <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 md:gap-0 w-full">
@@ -122,7 +122,12 @@
                 </ul>
               </div>
             </div>
-            <img :src="item.image" style="scale: 1.2;" :alt="item.title" class="img-shadow mr-2 w-[22%] h-[90%]">
+            <img :src="item.image" :style="{ scale: item.title != 'Date & Time Display' ? 1.2 : 1.1 }" :alt="item.title"
+              class="img-shadow mr-2 absolute right-5 h-[70%] mb-1" :class="[{ 'bottom-[5px]': item.title == 'One-button Operation' },
+              { ' !right-0': item.title == 'One-button Operation' || item.title == '2 User Mode + guest Mode' }
+                , { 'bottom-[5px] ': item.title == 'Dual Power Supply' && item.image.endsWith('Asset7.png') },
+              { '!mr-0': item.title == 'Date & Time Display' }
+              ]">
           </div>
 
         </div>
@@ -137,7 +142,8 @@
               anyone can use our monitor with ease, making AHG a trusted choice for comprehensive blood pressure
               management.
             </p>
-            <img src="/images/bpmPage/bpmDevice.png" alt="device" class="w-[29%] max-w-[450px] mx-auto">
+            <img src="/images/bpmPage/AHG-300-05.png" alt="device" style="scale: 1.2;"
+              class="w-[29%] max-w-[450px] mx-auto">
           </div>
         </div>
 
@@ -190,9 +196,9 @@
                 <p class="mt-2">Pulse rate: ±5%</p>
               </div>
               <hr class="border-black ">
-              <div >
+              <div>
                 <p class="text-[21px] font-bold">Power Source </p>
-                <p >4*AAA batteries or d.c. 5V power supply line </p>
+                <p>4*AAA batteries or d.c. 5V power supply line </p>
               </div>
             </div>
           </div>
@@ -200,7 +206,7 @@
         <img src="/images/bpmPage/specification.png" alt="specifications" class="w-[25%] max-w-[450px] img-shadow">
       </div>
     </div>
-    
+
     <AHGPackaging is-bpm />
     <AHGSupport color="black" manual-button />
 
@@ -339,13 +345,6 @@ AI for enhanced measurement accuracy.`
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-size: cover;
-}
-
-@media only screen and (max-width:1024px) {
-
-  .bpm-banner>div:first-child {
-    padding-top:
-  }
 }
 
 .details li {
