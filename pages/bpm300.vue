@@ -123,7 +123,7 @@
               </div>
             </div>
             <img :src="item.image" :style="{ scale: item.title != 'Date & Time Display' ? 1.2 : 1 }" :alt="item.title"
-              class="img-shadow mr-2 absolute right-5 h-[70%] mb-1" :class="[{ 'bottom-[5px]': item.title == 'One-button Operation' },
+              class="img-shadow p-image mr-2 absolute right-5 h-[70%] mb-1" :class="[{ 'bottom-[5px]': item.title == 'One-button Operation' },
               { ' !right-0': item.title == 'One-button Operation' || item.title == '2 User Mode + guest Mode' }
                 , { 'bottom-[5px] ': item.title == 'Dual Power Supply' && item.image.endsWith('Asset7.png') },
               { '!mr-0': item.title == 'Date & Time Display' }
@@ -143,7 +143,7 @@
               management.
             </p>
             <img src="/images/bpmPage/AHG-300-05.png" alt="device" style="scale: 1.2;"
-              class="w-[29%] max-w-[450px] mx-auto">
+              class="w-[29%] max-w-[450px] mx-auto hidden md:block">
           </div>
         </div>
 
@@ -151,7 +151,7 @@
     </div>
     <div class="bg-white py-[100px] relative">
       <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 justify-between">
-        <div class="flex flex-col space-y-10 flex-1">
+        <div class="flex flex-col space-y-10 flex-1 w-full">
           <h6 class="text-base font-bold">
             Meter Specifications
           </h6>
@@ -185,7 +185,7 @@
             <div class="flex flex-col flex-wrap gap-3">
               <div>
                 <p class="text-[21px] font-bold">Measuring Range </p>
-                <p style="white-space: pre;">Blood pressure value: SYS: 57~255 mmHg (7.6~33.4 kPa)</p>
+                <p class="pre" style="white-space: pre;">Blood pressure value: SYS: 57~255 mmHg (7.6~33.4 kPa)</p>
                 <p>DIA: 25~195 mmHg (3.33~26 kPa)</p>
                 <p>Pulse rate: 40-199 bpm</p>
               </div>
@@ -203,7 +203,7 @@
             </div>
           </div>
         </div>
-        <img src="/images/bpmPage/specification.png" alt="specifications" class="w-[25%] max-w-[450px] img-shadow">
+        <img src="/images/bpmPage/specification.png" alt="specifications" class="w-[50%] md:w-[25%] max-w-[450px] img-shadow">
       </div>
     </div>
 
@@ -360,9 +360,17 @@ AI for enhanced measurement accuracy.`
   content: " ";
   background: black;
   border-radius: 50%;
-
 }
-
+@media screen and (max-width:768px) {
+  .p-image{
+    display: block;
+    position: static ;
+    scale: 1 !important;
+  }
+  .pre{
+    white-space: wrap !important;
+  }
+}
 @media only screen and (max-width:768px) {
   .bpm-banner {
     background-size: 250vw;

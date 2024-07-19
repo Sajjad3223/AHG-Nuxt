@@ -5,7 +5,19 @@
 .bodyTextSize {
     @apply md:text-[20px] text-[15px]
 }
-
+.customLi li{
+    position: relative;
+}
+.customLi li::after {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    content: " ";
+    background: black;
+    border-radius: 50%;
+  }
 @media screen and (min-width:1024px) {
     .container {
         padding-left: 5rem;
