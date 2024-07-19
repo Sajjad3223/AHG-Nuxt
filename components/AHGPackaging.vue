@@ -1,12 +1,12 @@
 <template>
   <div :class="['packaging', `packaging-${color}`]">
     <div class="container mx-auto flex items-center gap-5">
-      <div class="flex flex-col lg:w-[50%] w-[55%] space-y-12">
+      <div class="flex flex-col lg:w-[60%] w-[55%] space-y-12">
         <h2 class="titr font-semibold z-10 leading-[1.2]" style="text-shadow: 2px 2px 5px #92A1A8">
           Luxury <br>
           packaging
         </h2>
-        <p class="sub z-10 !mt-5 w-full leading-7">
+        <p class="text-[25px] md:text-[30px] z-10 !mt-5 w-full leading-8">
           American Health Gate's exclusive packing, setting<br />
           a new standard a unique blend of luxury and quality.
         </p>
@@ -18,8 +18,10 @@
           International Warranty
         </span>
       </div>
-      <img src="../assets/images/affordable-packaging2.png" alt="Affordable Packaging" class="max-w-[40vw] max-h-[80%] "
-        v-else>
+      <div class="absolute right-0 top-1/2 -translate-y-1/2" v-else>
+        <img src="../assets/images/affordable-packaging2.png" alt="Affordable Packaging" class="w-[85%]"
+          >
+      </div>
     </div>
   </div>
 </template>
