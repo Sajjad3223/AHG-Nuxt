@@ -105,28 +105,7 @@
       </div>
     </div>
 
-    <div class="w-full bg-blackColor py-[30px]  md:py-[80px] flex items-center justify-center relative">
-      <div class="flex flex-col-reverse gap-5 lg:flex-row items-center container mx-auto mt-12 lg:mt-0  text-white">
-        <div class="flex flex-col  origin-center md:origin-left w-[85%]">
-          <h5 class="title font-bold">
-            AHG-2022 Diabetes Management App
-          </h5>
-          <p class="text-title !font-normal mt-2">
-            Take control of your health with effective blood glucose management.
-          </p>
-          <h6 class="text-[20px] md:text-[40px] mt-12">
-            SHARE YOUR HEALTH DATA WITH YOUR DOCTOR
-          </h6>
-          <p class="!text-[20px] mt-5 w-[85%]">
-            Track and analyze your glucose levels to optimize diabetes
-            management. Our app empowers you to elevate your check-up
-            experience by easily sharing a comprehensive health journal with
-            your healthcare professionals
-          </p>
-        </div>
-        <img src="~/assets/images/qrcode.png" alt="qrCode" class="w-[15%] ">
-      </div>
-    </div>
+    <TheAHG2022/>
 
     <!-- Download Manual -->
     <div class="w-full bg-white flex items-center justify-center">

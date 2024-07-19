@@ -287,7 +287,7 @@
                 Test Strips Specifications
               </span>
               <ul class="list-disc ml-5">
-                <li class="text-tiny">
+                <li class="text-xs">
                   Carbon silver structure electrode design
                 </li>
                 <li class="text-tiny">

@@ -59,7 +59,7 @@
             class="flex h-[180px] items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="  max-w-[50%]">
               <p class="text-[24px] font-bold">Auto coding</p>
-              <p class="text-[20px] font-medium">Easy and accurate</p>
+              <p class="text-[18px] ">Easy and accurate</p>
             </div>
             <img src="~/assets/images/bgmPage/2022/img_2.png" alt="Auto coding" class="img-shadow !h-[60%]">
           </div>
@@ -67,7 +67,7 @@
             class="flex  h-[180px] items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="max-w-[50%]">
               <p class="text-[24px] font-bold">Auto-sync via bluetooth</p>
-              <p class="text-[20px] font-medium">No Pairing Required</p>
+              <p class="text-[18px] ">No Pairing Required</p>
             </div>
             <img src="~/assets/images/bgmPage/2022/img_3.png" alt="Auto-sync via bluetooth" class="img-shadow">
           </div>
@@ -75,7 +75,7 @@
             class="flex  h-[180px] items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class=" w-[60%]">
               <p class="text-[24px] font-bold ">Wide HCT range</p>
-              <p class="text-[20px] font-medium">20-70%</p>
+              <p class="text-[18px] ">20-70%</p>
             </div>
             <img src="~/assets/images/bgmPage/2022/img_4.png" alt="" class="img-shadow">
           </div>
@@ -105,63 +105,63 @@
             <div class="flex flex-col flex-wrap gap-3">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Sample </span>
-                <span class="text-[20px] font-medium">Fresh capillary whole blood</span>
+                <span class="text-[17px]">Fresh capillary whole blood</span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Enzyme </span>
-                <span class="text-[20px] font-medium">GOD/Glucose Oxidase</span>
+                <span class="text-[17px]">GOD/Glucose Oxidase</span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Test Time </span>
-                <span class="text-[20px] font-medium">5 seconds </span>
+                <span class="text-[17px]">5 seconds </span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Measurement Range </span>
-                <span class="text-[20px] font-medium">20 to 600 mg/dL </span>
+                <span class="text-[17px]">20 to 600 mg/dL </span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Automatic Shutoff </span>
-                <span class="text-[20px] font-medium">2 minutes after the last action </span>
+                <span class="text-[17px]">2 minutes after the last action </span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Operating Relative humidity </span>
-                <span class="text-[20px] font-medium">10-90% (non-condensing)</span>
+                <span class="text-[17px]">10-90% (non-condensing)</span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Operating Temperature </span>
-                <span class="text-[20px] font-medium">41-113°F / 5-45°C</span>
+                <span class="text-[17px]">41-113°F / 5-45°C</span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Data Port </span>
-                <span class="text-[20px] font-medium">Micro USB</span>
+                <span class="text-[17px]">Micro USB</span>
               </div>
             </div>
             <div class="flex flex-col flex-wrap gap-3">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Test Measured </span>
-                <span class="text-[20px] font-medium">Glucose in fingertip capillary whole blood</span>
+                <span class="text-[17px]">Glucose in fingertip capillary whole blood</span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Sample Volume</span>
-                <span class="text-[20px] font-medium">0.8 μL</span>
+                <span class="text-[17px]">0.8 μL</span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Memory</span>
-                <span class="text-[20px] font-medium">Up to 500 records with date and time</span>
+                <span class="text-[17px]">Up to 500 records with date and time</span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Battery Type</span>
-                <span class="text-[20px] font-medium">
+                <span class="text-[17px]">
                   Rechargeable, non-serviceable,250mAh,
                   3.7 Volt DC nominal, Lithium polymer
                   battery (5V input charge voltage)
@@ -170,17 +170,17 @@
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Display Size</span>
-                <span class="text-[20px] font-medium">32mm x 32mm</span>
+                <span class="text-[17px]">32mm x 32mm</span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Dimensions</span>
-                <span class="text-[20px] font-medium">83mm x 52mm x 18.7mm</span>
+                <span class="text-[17px]">83mm x 52mm x 18.7mm</span>
               </div>
               <hr class="border-black opacity-70">
               <div class="flex flex-col gap-2">
                 <span class="text-[20px] md:text-[26px] font-bold">Weight</span>
-                <span class="text-[20px] font-medium">Approximately 53g</span>
+                <span class="text-[17px]">Approximately 53g</span>
               </div>
             </div>
           </div>
@@ -288,36 +288,36 @@
           </div>
 
           <div class="flex flex-col-reverse lg:flex-row gap-5">
-            <div class=" flex-1 flex flex-col space-y-8">
-              <span class="text-lg font-bold">
+            <div class="min-w-fit flex-1 flex flex-col space-y-8">
+              <span class="text-[35px] font-bold">
                 Test Strips Specifications
               </span>
               <ul class="list-disc ml-5 !mt-5 font-medium">
-                <li class="text-tiny">
+                <li class="text-[17px]">
                   Carbon silver structure electrode design
                 </li>
-                <li class="text-tiny">
+                <li class="text-[17px]">
                   8 electrodes technology
                 </li>
-                <li class="text-tiny">
+                <li class="text-[17px]">
                   Enzyme: GOD/Glucose Oxidase
                 </li>
-                <li class="text-tiny">
+                <li class="text-[17px]">
                   Highly accurate & precise results
                 </li>
-                <li class="text-tiny">
+                <li class="text-[17px]">
                   Eliminates temperature interference
                 </li>
-                <li class="text-tiny">
+                <li class="text-[17px]">
                   For self-testing and in-vitro diagnostic use only
                 </li>
-                <li class="text-tiny">
+                <li class="text-[17px]">
                   Storage Temperature: 2°C to 30°C / 36°F to 86°F
                 </li>
-                <li class="text-tiny">
+                <li class="text-[17px]">
                   Humidity: 10-90%
                 </li>
-                <li class="text-tiny">
+                <li class="text-[17px]">
                   Open shelf life: 6 months
                 </li>
               </ul>
@@ -350,7 +350,7 @@
                   Forward Spring Technology:
                 </p>
                 <ul class="list-disc ml-5">
-                  <li class="text-[18px]">
+                  <li class="text-[17px]">
                     Minimizes pain and vibration during use.
                   </li>
                 </ul>
@@ -361,7 +361,7 @@
                   Independent Lancet Holder
                 </p>
                 <ul class="list-disc ml-5">
-                  <li class="text-[18px]">
+                  <li class="text-[17px]">
                     Ensures precise, painless lancet insertion.
                   </li>
                 </ul>
@@ -373,7 +373,7 @@
                   Ready for use or not:
                 </p>
                 <ul class="list-disc ml-5">
-                  <li class="text-[18px]">
+                  <li class="text-[17px]">
                     warning lancet stored or not
                   </li>
                 </ul>
@@ -386,7 +386,7 @@
                   Elastic Rail System:
                 </p>
                 <ul class="customLi">
-                  <li class="text-[18px]">
+                  <li class="text-[17px]">
                        Promotes smoother,<br />
                     less painful lancet penetration.
                   </li>
@@ -401,7 +401,7 @@
                   11 Depth Settings:
                 </p>
                 <ul class="customLi">
-                  <li class="text-[18px]">
+                  <li class="text-[17px]">
                        Customizable settings for user
                     comfort and needs.
                   </li>
@@ -417,7 +417,7 @@
                   2-in-1 Button & Lancet Ejector:
                 </p>
                 <ul class="customLi">
-                  <li class="text-[18px]">
+                  <li class="text-[17px]">
                        Streamlined design for easy cleaning, with a safety feature
                     preventing lancet ejection without proper cap twisting.
                   </li>
@@ -432,33 +432,8 @@
         </div>
       </div>
     </div>
-
-    <div class="w-full bg-blackColor py-[100px] flex flex-col justify-center">
-      <div class="container mx-auto relative">
-        <h5 class="text-xl text-white">
-          AHG-2022 Diabetes Management App
-        </h5>
-        <div class="flex flex-col-reverse gap-5 lg:flex-row items-center text-white">
-          <div class="flex flex-col scale-90 lg:max-w-[75%] origin-left">
-            <span class="text-[22px] xl:text-[36px] lg:mt-12">
-              Take control of your health with effective blood glucose management.
-            </span>
-            <h6 class="text-[30px] xl:text-[50px] mt-12">
-              SHARE YOUR HEALTH DATA WITH YOUR DOCTOR
-            </h6>
-            <p class="text-[15px] xl:text-[24px] text-justify mt-5">
-              Track and analyze your glucose levels to optimize diabetes
-              management. Our app empowers you to elevate your check-up
-              experience by easily sharing a comprehensive health journal with
-              your healthcare professionals
-            </p>
-          </div>
-          <img src="~/assets/images/qrcode.png" alt="qrCode"
-            class="lg:absolute lg:mt-0 mt-12 w-[25vw] max-w-[300px] right-12 2xl:right-0">
-        </div>
-      </div>
-    </div>
-
+    <TheAHG2022 second-title="SHARE WITH YOUR DOCTOR" />
+    
     <AHGPackaging />
 
     <AHGSupport manual-button color="black" />
