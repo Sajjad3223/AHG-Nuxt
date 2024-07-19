@@ -122,7 +122,7 @@
                 </ul>
               </div>
             </div>
-            <img :src="item.image" :style="{ scale: item.title != 'Date & Time Display' ? 1.2 : 1.1 }" :alt="item.title"
+            <img :src="item.image" :style="{ scale: item.title != 'Date & Time Display' ? 1.2 : 1 }" :alt="item.title"
               class="img-shadow mr-2 absolute right-5 h-[70%] mb-1" :class="[{ 'bottom-[5px]': item.title == 'One-button Operation' },
               { ' !right-0': item.title == 'One-button Operation' || item.title == '2 User Mode + guest Mode' }
                 , { 'bottom-[5px] ': item.title == 'Dual Power Supply' && item.image.endsWith('Asset7.png') },
