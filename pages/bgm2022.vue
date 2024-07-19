@@ -77,7 +77,7 @@
               <p class="text-[24px] font-bold ">Wide HCT range</p>
               <p class="text-[18px] ">20-70%</p>
             </div>
-            <img src="~/assets/images/bgmPage/2022/img_4.png" alt="" class="img-shadow">
+            <img src="~/assets/images/bgmPage/2022/AHG-2022 Red-02.png" alt="" class="img-shadow">
           </div>
           <div
             class="flex  h-[180px] items-center justify-between w-full rounded-[20px] px-5 relative bg-lightColor drop-shadow-lg text-blackColor">
