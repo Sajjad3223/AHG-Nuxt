@@ -54,49 +54,49 @@
             expectations.
           </p>
         </div>
-        <div class="grid md:grid-cols-2 gap-5">
+        <div class="grid md:grid-cols-2 gap-3">
           <div
             class="flex items-center justify-between gap-12 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-1 flex-1">
               <p class="text-[24px] font-bold">Simple</p>
-              <p class="text-[18px]">
-                No coding, no connection required, making
+              <p class="text-[17.5px]">
+                No coding, no connection required, making <br/>
                 the testing process quicker and easier
               </p>
             </div>
-            <img src="~/assets/images/bgmPage/2285/img_1.png" alt="">
+            <img src="~/assets/images/bgmPage/2285/img_1.png" class="w-[100px] h-[110px]" alt="">
           </div>
           <div
-            class="flex items-center justify-between gap-12 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
-            <div class="flex flex-col space-y-4  flex-1">
+            class="flex items-center justify-between gap-5 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            <div class="flex flex-col space-y-1  flex-1">
               <p class="text-[24px] font-bold">Test strip ejector</p>
-              <p class="text-[18px]">
+              <p class="text-[17.5px]">
                 Strip ejector helps in maintaining hygiene and reducing
                 contamination risks by avoid to touch used strips
               </p>
             </div>
-            <img src="~/assets/images/bgmPage/2285/img_2.png" alt="">
+            <img src="~/assets/images/bgmPage/2285/img_2.png" class="w-[100px] h-[110px]" alt="">
           </div>
           <div
             class="flex items-center justify-between gap-12 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
-            <div class="flex flex-col space-y flex-1">
+            <div class="flex flex-col space-y-1 flex-1">
               <p class="text-[24px] font-bold">Wide HCT range</p>
-              <p class="text-[18px]">
+              <p class="text-[17.5px]">
                 20-70%, Suitable for everyone
               </p>
             </div>
-            <img src="~/assets/images/bgmPage/2285/img_3.png" alt="">
+            <img src="~/assets/images/bgmPage/2285/img_3.png" class="w-[100px] h-[110px]" alt="">
           </div>
           <div
             class="flex items-center justify-between gap-12 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
-            <div class="flex flex-col space-y-4  flex-1">
+            <div class="flex flex-col space-y-1  flex-1">
               <p class="text-[24px] font-bold">Large Memorie</p>
-              <p class="text-[18px]">
+              <p class="text-[17.5px]">
                 Large memorie for the comprehensive data
                 tracking and analysis
               </p>
             </div>
-            <img src="~/assets/images/bgmPage/2285/img_4.png" alt="">
+            <img src="~/assets/images/bgmPage/2285/img_4.png" class="w-[100px] h-[110px]" alt="">
           </div>
         </div>
 
