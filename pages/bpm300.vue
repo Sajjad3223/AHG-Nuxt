@@ -203,7 +203,7 @@
             </div>
           </div>
         </div>
-        <img src="/images/bpmPage/specification.png" alt="specifications" class="w-[50%] md:w-[25%] max-w-[450px] img-shadow">
+        <img src="/assets/images/ahg-300.png" alt="specifications" class="w-[50%] md:w-[25%] max-w-[450px] img-shadow">
       </div>
     </div>
 

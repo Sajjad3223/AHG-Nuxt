@@ -151,7 +151,7 @@
             </div>
             <hr class="hidden lg:block border-blackColor my-5">
           </li>
-          <li class="p-8 flex flex-col w-full rounded-[40px] bg-lightColor ">
+          <li class="p-8 flex flex-col w-full rounded-[40px] bg-lightColor img-shadow">
             <h6 class="text-lg">Blood Glucose Monitor: AHG-2285</h6>
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
