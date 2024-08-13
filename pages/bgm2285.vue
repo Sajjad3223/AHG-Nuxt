@@ -348,7 +348,8 @@
 
         <div class="flex items-center gap-4">
           <div class="flex-1 mt-16 grid grid-cols-1 lg:grid-cols-6 gap-1">
-            <div class="lg:col-span-4 border border-black rounded-[20px] flex flex-col justify-center p-6">
+            <div class="lg:col-span-4 border border-black rounded-[20px] flex 
+            flex-col justify-center p-6">
               <div class="flex flex-col">
                 <p class="text-[20px] font-bold">
                   Forward Spring Technology:
@@ -359,7 +360,8 @@
                   </li>
                 </ul>
               </div>
-              <img src="~/assets/images/bgmPage/2022/img_10.png" alt="" class="mx-auto self-center">
+              <img src="~/assets/images/bgmPage/2022/img_10.png" alt="" 
+              class="mx-auto w-[65%] h-[135px] self-center">
               <div class="flex flex-col self-end">
                 <p class="text-[20px] font-bold">
                   Independent Lancet Holder
@@ -397,7 +399,7 @@
                 </ul>
               </div>
               <img src="~/assets/images/bgmPage/2022/img_12.png" alt=""
-                class="mx-auto self-center max-w-[35%] max-h-[200px]">
+                class="mx-auto self-center max-w-[37%] max-h-[200px]">
             </div>
             <div class="lg:col-span-3 border border-black rounded-[20px] flex items-center gap-5 p-6">
               <div class="flex flex-col flex-1">
@@ -421,13 +423,13 @@
                   2-in-1 Button & Lancet Ejector:
                 </p>
                 <ul class="customLi">
-                  <li class="text-[17px]">
+                  <li class="text-[18px]">
                        Streamlined design for easy cleaning, with a safety feature
                     preventing lancet ejection without proper cap twisting.
                   </li>
                 </ul>
               </div>
-              <img src="~/assets/images/bgmPage/2022/img_14.png" alt="" class="mx-auto  self-center">
+              <img src="~/assets/images/bgmPage/2022/img_14.png" alt="" class="mr-6 w-[44%]  self-center">
             </div>
           </div>
           <div class="w-[150px] hidden lg:flex items-center justify-center">
