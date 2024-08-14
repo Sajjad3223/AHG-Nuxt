@@ -27,10 +27,8 @@
               </p>
             </div>
           </div>
-          <div class="flex items-end justify-center gap-2 w-2/5 relative lg:absolute -right-12 bottom-8 mt-10 lg:m-0">
-            <img src="~/assets/images/bgmPage/2022/img.png" class="img-shadow max-h-[140px] lg:max-h-[190px]" />
-            <img src="~/assets/images/bgmPage/2285/AHG-2285/2285-1.png" class="img-shadow max-h-[240px] lg:max-h-[340px]" />
-            <img src="~/assets/images/bgmPage/2022/img_7.png" class="img-shadow max-h-[270px] lg:max-h-[370px]" />
+          <div class="flex items-end justify-center gap-2 w-2/5 relative lg:absolute -right-12 -bottom-6  lg:m-0">
+            <img src="~/assets/images/bgmPage/2285/main.png" class="max-h-[420px] lg:max-h-[420px] hidden md:block" />
           </div>
         </div>
         <AHGButton color="white"  width="200px" is-show-more>

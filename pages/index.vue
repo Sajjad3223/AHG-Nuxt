@@ -102,11 +102,11 @@
               </div>
             </div>
             <div class="flex flex-col-reverse xl:flex-row items-center relative xl:gap-5 flex-1">
-              <AHGButton color="white" is-show-more class="w-1/2 show-more xl:-translate-y-8">
+              <AHGButton color="white" is-show-more class="w-1/2 show-more min-w-fit xl:-translate-y-8">
                 <span>Discover all Body Scales</span>
               </AHGButton>
               <div class="max-w-[284px] max-h-[250px] my-auto">
-                <img src="~/assets/images/Body-Scale2.png" class="w-full scale-75 xl:scale-90 " alt="Body Scale" />
+                <img src="~/assets/images/Body-Scale2.png" class="w-full scale-75 xl:scale-110 " alt="Body Scale" />
               </div>
             </div>
           </div>
@@ -126,9 +126,9 @@
               <AHGButton color="white" is-show-more class="w-1/2 show-more xl:-translate-y-8">
                 <span>Discover all Thermometers</span>
               </AHGButton>
-              <div class="w-[367x] max-h-[245px] mx-auto my-auto">
+              <div class="max-h-[245px] mx-auto my-auto">
                 <img src="~/assets/images/Thermometer.png"
-                  class="w-[367x] h-[350px] -rotate-45 -translate-y-12 scale-75 xl:scale-90" alt="Body Scale" />
+                  class=" h-[350px] -rotate-45 -translate-y-14 -right-2 relative scale-[.7] " alt="Body Scale" />
               </div>
             </div>
           </div>
