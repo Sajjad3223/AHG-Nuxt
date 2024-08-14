@@ -10,7 +10,7 @@
           class="md:!w-[200px] flex-grow text-center">
           Contact us
         </BaseAHGButton>
-        <BaseAHGButton :color="color == 'black' ? 'white' : 'black'" px="2.5rem" v-if="manualButton"
+        <BaseAHGButton to="/support" :color="color == 'black' ? 'white' : 'black'" px="2.5rem" v-if="manualButton"
           class="md:!w-[200px] flex-grow text-center">
           Manuals
         </BaseAHGButton>

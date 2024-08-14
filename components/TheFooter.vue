@@ -16,7 +16,7 @@
             </div>
             <hr>
             <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
-              <NuxtLink to="/" >AHG Products</NuxtLink>
+              <NuxtLink to="/landing" >AHG Products</NuxtLink>
               <NuxtLink to="/" >BGM Monitors</NuxtLink>
               <NuxtLink to="/" >BPM Monitors</NuxtLink>
               <NuxtLink to="/" >Thermometers</NuxtLink>
@@ -29,7 +29,7 @@
             </div>
             <hr>
             <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
-              <NuxtLink to="/" >About Us</NuxtLink>
+              <NuxtLink to="/about-us" >About Us</NuxtLink>
               <NuxtLink to="/" >Careers</NuxtLink>
               <NuxtLink to="/" >Press</NuxtLink>
             </div>
@@ -40,7 +40,7 @@
             </div>
             <hr>
             <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
-              <NuxtLink to="/" >Customer Support</NuxtLink>
+              <NuxtLink to="/support" >Customer Support</NuxtLink>
             </div>
           </div>
         </div>

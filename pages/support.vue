@@ -64,17 +64,12 @@
           You can access our product catalogues by downloading them below.
         </p>
         <div class="flex items-stretch flex-wrap justify-between gap-5 mt-16 relative">
-          <!-- <button class="absolute hidden md:block -left-6 2xl:-left-12 -translate-x-full top-1/2 -translate-y-1/2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 107" width="50px" class="text-blackColor">
-              <polyline stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round"
-                stroke-width="7px" points="53.5 3.5 3.5 56.5 53.5 103.5" />
-            </svg>
-          </button> -->
           <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
             <h4 class="text-title">Blood Glucose Monitor</h4>
             <h5 class="text-title font-bold ">AHG-2022</h5>
             <img src="~/assets/images/ahg-2022.png" alt="ahg 2022" class="my-6 h-[250px] mx-auto">
-            <AHGButton color="black" is-show-more class="ml-auto mt-auto">
+            <AHGButton target="_blank" to="/files/landing/AHG-2022-Catalogue.pdf" color="black" is-show-more
+              class="ml-auto mt-auto">
               Download
             </AHGButton>
           </div>
@@ -82,7 +77,8 @@
             <h4 class="text-title">Blood Glucose Monitor</h4>
             <h5 class="text-title font-bold">AHG-2285</h5>
             <img src="~/assets/images/ahg-2285.png" alt="ahg 2285" class="my-6 h-[250px] mx-auto">
-            <AHGButton color="black" is-show-more class="ml-auto mt-auto">
+            <AHGButton target="_blank" to="/files/landing/AHG-2285-Catalogue.pdf" color="black" is-show-more
+              class="ml-auto mt-auto">
               Download
             </AHGButton>
           </div>
@@ -90,7 +86,8 @@
             <h4 class="text-title text-nowrap">Blood Pressure Monitor</h4>
             <h5 class="text-title font-bold">AHG-300</h5>
             <img src="~/assets/images/ahg-300.png" alt="ahg 300" class="mx-auto my-6 h-[250px] w-fit">
-            <AHGButton color="black" is-show-more class="ml-auto">
+            <AHGButton target="_blank" to="/files/landing/AHG-300-Catalogue.pdf" color="black" is-show-more
+              class="ml-auto">
               Download
             </AHGButton>
           </div>
@@ -105,7 +102,7 @@
       </div>
     </div>
 
-    <TheAHG2022/>
+    <TheAHG2022 />
 
     <!-- Download Manual -->
     <div class="w-full bg-white flex items-center justify-center">
@@ -268,7 +265,8 @@ import AHGButton from "~/components/base/AHGButton.vue";
   font-weight: 500;
   @apply text-[17px] transition-all hover:opacity-70
 }
-.button-links .bg-white{
+
+.button-links .bg-white {
   box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.08);
 }
 </style>
