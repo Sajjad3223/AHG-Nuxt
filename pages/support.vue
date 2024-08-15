@@ -120,30 +120,13 @@
             <div class="grid grid-cols-3 gap-4">
               <span class="col-span-full lg:col-span-1 text-sm self-center">Instruction Manual</span>
               <div class="col-span-full lg:col-span-2 grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4">
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
-              </div>
-            </div>
-            <hr class="hidden lg:block border-blackColor my-5">
-          </li>
-          <li class="p-8 flex flex-col w-full rounded-[40px] bg-lightColor img-shadow">
-            <h6 class="text-lg">Blood Glucose Monitor: AHG-2022</h6>
-            <hr class="border-blackColor my-5">
-            <div class="grid grid-cols-3 gap-4">
-              <span class="col-span-full lg:col-span-1 text-sm self-center">Instruction Manual</span>
-              <div class="col-span-full lg:col-span-2 grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4">
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
+                <a target="_blank" href="/files/support/AHG-2022-Instruction-Manual.pdf" class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</a>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
               </div>
             </div>
             <hr class="hidden lg:block border-blackColor my-5">
@@ -154,13 +137,13 @@
             <div class="grid grid-cols-3 gap-4">
               <span class="col-span-full lg:col-span-1 text-sm self-center">Instruction Manual</span>
               <div class="col-span-full lg:col-span-2 grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4">
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
+                <a target="_blank" href="/files/support/AHG-2285-Instruction-Manual.pdf" class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</a>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
               </div>
             </div>
             <hr class="hidden lg:block border-blackColor my-5">
@@ -171,47 +154,48 @@
             <div class="grid grid-cols-3 gap-4">
               <span class="col-span-full lg:col-span-1 text-sm self-center">Instruction Manual</span>
               <div class="col-span-full lg:col-span-2 grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4">
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
+                <a target="_blank" href="/files/support/AHG-300-Instruction-Manual.pdf" 
+                class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</a>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
               </div>
             </div>
             <hr class="hidden lg:block border-blackColor my-5">
           </li>
           <li class="p-8 flex flex-col w-full rounded-[40px] bg-lightColor img-shadow">
-            <h6 class="text-lg">AHG- Blood Glucose Test Strip</h6>
+            <h6 class="text-lg">AHG-Blood Glucose Test Strip</h6>
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
               <span class="col-span-full lg:col-span-1 text-sm self-center">Instruction Manual</span>
               <div class="col-span-full lg:col-span-2 grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4">
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
+                <a target="_blank" href="/files/support/AHG-BGM-Test-Strip-Instruction-Manual.pdf" class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</a>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
               </div>
             </div>
             <hr class="hidden lg:block border-blackColor my-5">
           </li>
           <li class="p-8 flex flex-col w-full rounded-[40px] bg-lightColor img-shadow">
-            <h6 class="text-lg">AHG- Lancing Device and Lancet</h6>
+            <h6 class="text-lg">AHG-Lancing Device and Lancet</h6>
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
               <span class="col-span-full lg:col-span-1 text-sm self-center">Instruction Manual</span>
               <div class="col-span-full lg:col-span-2 grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4">
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
-                <button class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
+                <a target="_blank" href="/files/support/AHG-Lancing-Device-and-Lancet-Instruction-Manual.pdf" class="bg-white w-full text-xs rounded-lg text-center py-4">[EN] English</a>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AE/AR] ARABIC</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[FR] FRANCE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[PT]PORTUGUESE</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[ES/SP]SPANISH</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[KA] GEORGIAN</button>
+                <button disabled class="bg-white w-full text-xs rounded-lg text-center py-4">[AZ] AZERI</button>
               </div>
             </div>
             <hr class="hidden lg:block border-blackColor my-5">
@@ -261,7 +245,7 @@ import AHGButton from "~/components/base/AHGButton.vue";
   filter: drop-shadow(6px 5px 5px rgba(0, 0, 0, 0.3));
 }
 
-.col-span-full button {
+.col-span-full button,a {
   font-weight: 500;
   @apply text-[17px] transition-all hover:opacity-70
 }
