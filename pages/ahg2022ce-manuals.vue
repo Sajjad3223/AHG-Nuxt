@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <PDF src="/files/qr-code/AHG-2022-CE-Instruction-Manual.pdf" />
+  <div class="h-[85svh]">
+    <PDF src="/files/qr-code/AHG-2022-CE-Instruction-Manual.pdf" pdfWidth="100%" />
   </div>
 </template>
 
