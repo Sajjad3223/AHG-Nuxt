@@ -8,6 +8,13 @@
 .customLi li{
     position: relative;
 }
+button{
+    &:disabled{
+        opacity: .4;
+        pointer-events: none;
+        @apply bg-gray-300;
+    }
+}
 .customLi li::after {
     width: 6px;
     height: 6px;

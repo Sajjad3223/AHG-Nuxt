@@ -20,7 +20,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink>
+          <NuxtLink to="/distributor">
             SERVICE
           </NuxtLink>
         </li>
@@ -30,7 +30,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink>
+          <NuxtLink to="/contact-us">
             GET IN TOUCH
           </NuxtLink>
         </li>

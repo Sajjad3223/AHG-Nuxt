@@ -65,7 +65,7 @@
               </BaseAHGButton>
             </div>
             <div class="lg:hidden">
-              <BaseAHGButton to="/bpm300" class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%" py="0.5rem"
+              <BaseAHGButton to="/bgm2285" class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%" py="0.5rem"
                 text-size="0.8rem">
                 <span>Learn More</span>
               </BaseAHGButton>

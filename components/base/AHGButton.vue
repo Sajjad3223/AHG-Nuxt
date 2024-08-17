@@ -42,7 +42,7 @@ const emits = defineEmits(['click']);
 
 <style scoped>
 .btn {
-  @apply text-xs md:text-lg rounded-[8px] flex items-center gap-4 justify-center px-4 py-2 transition-all hover:opacity-75;
+  @apply text-xs font-medium md:text-lg rounded-[8px] flex items-center gap-4 justify-center px-4 py-2 transition-all hover:opacity-75;
 }
 
 .btn-black {
