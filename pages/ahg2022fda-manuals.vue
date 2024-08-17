@@ -14,10 +14,10 @@
       </div>
       <ul class="ml-3 mt-4">
         <li class="cursor-pointer mb-2" @click="page = 4">1. Understanding Your Testing Tools</li>
-        <li class="cursor-pointer  mb-2" @click="page = 8">2. Setting Up Your System</li>
-        <li class="cursor-pointer  mb-2" @click="page = 12">3. Taking a Test </li>
+        <li class="cursor-pointer  mb-2" @click="page = 9">2. Setting Up Your System</li>
+        <li class="cursor-pointer  mb-2" @click="page = 13">3. Taking a Test </li>
         <li class="cursor-pointer  mb-2" @click="page = 23">4. Maintenance and Troubleshooting</li>
-        <li class="cursor-pointer  mb-2" @click="page = 29">5. Technical Information</li>
+        <li class="cursor-pointer  mb-2" @click="page = 30">5. Technical Information</li>
       </ul>
     </div>
     <div @click="showSideBar = !showSideBar" class="fixed rounded-md bg-white top-4 left-4 z-[1001]" v-if="isMobile && showSideBar == false">
