@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
-  ssr: false,
+  ssr: true,
   postcss: {
     plugins: {
       tailwindcss: {},

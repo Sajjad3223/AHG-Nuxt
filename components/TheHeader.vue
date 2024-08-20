@@ -3,7 +3,8 @@
     <div class="flex items-center container  py-6">
       <!--  LOGO   -->
       <AHGLogo width="10vw" color="white" />
-      <ul class="hidden ml-auto uppercase md:flex items-center gap-5 text-xs lg:text-[16px] xl:gap-[6vw] 2xl:gap-16 text-white">
+      <ul
+        class="hidden ml-auto uppercase md:flex items-center gap-5 text-xs lg:text-[16px] xl:gap-[6vw] 2xl:gap-16 text-white">
         <li>
           <NuxtLink to="/">
             Home
@@ -41,13 +42,16 @@
         <span class="w-full h-px bg-white rounded-full"></span>
       </button>
       <Transition name="fade-slide">
-        <div class="fixed w-full h-full pointer-events-auto inset-0 bg-blackColor px-8 py-12 flex flex-col z-30 space-y-12" v-if="showNavigationBar">
+        <div
+          class="fixed w-full h-full pointer-events-auto inset-0 bg-blackColor px-8 py-12 flex flex-col z-30 space-y-12"
+          v-if="showNavigationBar">
           <button class="w-8 grid place-items-center md:hidden ml-auto" @click="showNavigationBar = false">
             <span class="w-full h-px bg-white rounded-full rotate-45"></span>
             <span class="w-full h-px bg-white rounded-full -rotate-45"></span>
           </button>
-          <AHGLogo color="white" class="self-center"/>
-          <ul class="mx-auto w-full flex-1 uppercase flex flex-col items-center divide-y divide-white/50 gap-4 text-xl text-white">
+          <AHGLogo color="white" class="self-center" />
+          <ul
+            class="mx-auto w-full flex-1 uppercase flex flex-col items-center divide-y divide-white/50 gap-4 text-xl text-white">
             <li class="w-full text-center flex">
               <NuxtLink class="w-full py-4 rounded-xl">
                 Home
@@ -91,16 +95,23 @@ const showNavigationBar = ref(false);
 
 </script>
 
-<style>
+<style lang="scss" scoped>
+nav {
+  a {
+    &.router-link-exact-active {
+      color: rgb(0, 145, 255);
+    }
+  }
+}
+
 .fade-slide-enter-active,
-.fade-slide-leave-active{
+.fade-slide-leave-active {
   transition: all 0.3s ease;
 }
 
 .fade-slide-enter-from,
-.fade-slide-leave-to{
+.fade-slide-leave-to {
   opacity: 0;
-  transform:translateY(-100px);
+  transform: translateY(-100px);
 }
 </style>
-

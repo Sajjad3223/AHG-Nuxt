@@ -1,19 +1,21 @@
 <template>
-  <div>
+  <div v-if="data?.data && pending == false">
+    <Head>
+      <Title>About us</Title>
+    </Head>
     <div class="relative w-full grid place-items-center md:h-[90vh] h-[40vh]">
       <div class="bg-black/50 block md:hidden absolute top-0 w-full h-full -z-[1]"></div>
-      <img src="/images/about-banner.jpg"
+      <img :src="getAboutImage(data.data.imageName)"
         class="absolute object-cover  -z-[2] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" />
       <div class="flex flex-col container z-20">
         <h2
-          class="text-[30px] xl:text-[54px] 2xl:text-[70px] text-white md:text-black leading-[1] md:max-w-[65%] font-bold"
+          class="text-[30px] xl:text-[54px] 2xl:text-[70px] text-white md:text-black leading-[1] md:max-w-[65%] font-bold "
           style="text-shadow: 3px 3px 7px rgba(0,0,0,0.25)">
-          American Health Gate
+          {{ data.data.title }}
         </h2>
         <p class="text-[15px]  text-white md:text-black 2xl:text-[29px] mt-4 sm:max-w-[64%] leading-tight"
           style="text-shadow: 5px 5px 7px rgba(0,0,0,0.25)">
-          welcomes to our health community, where a timeless commitment
-          to quality living worldwide comes to life.
+          {{ data.data.shortDescription }}
         </p>
       </div>
     </div>
@@ -51,24 +53,9 @@
             </g>
           </g>
         </svg>
-        <div>
-          <p class="wapper-text text-justify  leading-tight lg:mt-10 !text-[22px]">
-            Welcome to American Health Gate (AHG), your gateway to a seamless and reliable healthcare experience. As a
-            leading medical and homecare supply company, AHG is dedicated to enhancing the performance of the healthcare
-            sector by providing cutting-edge devices, exceptional services, reliable support, and innovative solutions.
-          </p>
-          <p class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
-            At AHG, we prioritize customer satisfaction and reliability, establishing ourselves among the industry's
-            elite
-            medical and home healthcare supply companies. Our tireless efforts focus on understanding your unique needs
-            and offering innovative solutions.<br />
-            When you choose AHG as your partner, rest assured you will receive optimal care and support at every stage.
-          </p>
-          <p class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
-            We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free
-            bridge
-            between you and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service
-            centers, warehouses, and after-sales services, AHG ensures a seamless experience.
+        <div class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
+          <p class="wapper-text text-justify  leading-tight lg:mt-10 !text-[22px]" style="white-space: pre-wrap;">
+            {{ data.data.description }}
           </p>
         </div>
       </div>
@@ -80,21 +67,12 @@
           <div
             class="bg-lightColor rounded-[35px] flex-1 p-5  mx-auto  py-[40px] md:py-[70px]  flex flex-col items-center justify-center lg:px-[100px]"
             style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
-            <p class="text-[30px] md:text-[42px] leading-tight text-center font-light">
-              To support the healthcare sector <br>
-              and enhance overall well-being and prosperity
+            <p class="text-[30px] md:text-[42px] leading-tight text-center font-light whitespace-pre-wrap">
+              {{ data.data.ourMissioTitle.trim() }}
             </p>
             <div class="bg-blackColor h-px w-full my-5"></div>
-            <p class="text-[18px]  text-center px-2">
-              We are committed to providing reliable services that guarantee satisfaction for brands, suppliers, and
-              customers alike.
-              Customer focus is our guiding principle, making us a leading name in the industry. AHG continuously
-              strives to improve
-              service quality, maintain punctuality, and deliver innovative products. From pre-sale support to
-              after-sales services for
-              our B2B clients, AHG conducts business with professionalism, efficiency, and integrity. Our client-based
-              strategy
-              focuses on enhancing quality standards and achieving mutual growth through innovation and partnership.
+            <p class="text-[18px]  text-center px-2" style="white-space: pre-wrap;">
+              {{ data.data.ourMissioDescription }}
             </p>
           </div>
         </div>
@@ -104,22 +82,12 @@
           <div
             class="bg-lightColor rounded-[35px] flex-1 p-5  mx-auto  py-[40px] md:py-[70px]  flex flex-col items-center justify-center lg:px-[30px]"
             style="box-shadow: 7px 7px 5px rgba(0,0,0,0.2)">
-            <p class="text-[30px] md:text-[42px] leading-tight text-center font-light">
-              Working towards a hassle-free ecosystem, <br>
-              we are committed to a shared objective of advancing <br>
-              the quality of life through cutting-edge technology.
+            <p class="text-[30px] md:text-[42px] leading-tight text-center font-light whitespace-pre-wrap">
+              {{ data.data.ourVisionTitle.trim() }}
             </p>
             <div class="bg-blackColor h-px w-[89%] my-5"></div>
             <div class="text-[18px]  text-center  w-[90%]" style="white-space: pre-wrap;">
-              We understand the challenges faced in the healthcare industry, and our goal is to create a hassle-free
-              bridge between you
-                       
-              and your customers, fostering brand loyalty effortlessly. With an impeccable chain of service centers,
-              warehouses,
-                    
-                    
-              and after-sales services, AHG ensures a seamless experience. Join us on the journey towards a healthier
-              world.
+              {{ data.data.ourVisionDescription }}
             </div>
           </div>
         </div>
@@ -128,8 +96,27 @@
 
     <AHGDistribution />
   </div>
+  <div v-else class="flex justify-center items-center my-5">
+    <BaseLoading />
+  </div>
 </template>
+<script setup lang="ts">
+import { getAboutPageData } from '~/services/home.service';
+import { getAboutImage } from '~/utilities/ImageDirectories';
 
+const nuxtApp = useNuxtApp();
+const { data, pending } = await useAsyncData("about", () => getAboutPageData(), {
+  getCachedData(key) {
+    const data = nuxtApp.payload?.data[key]
+    if (!data) {
+      return;
+    }
+    return data;
+  },
+  deep: false
+});
+
+</script>
 <style scoped>
 .wapper-text {
   font-size: clamp(10px, 1.45vw, 25px);
