@@ -159,7 +159,7 @@ import { getLandingPageData } from '~/services/pages.service';
 import { getHomePageImage, getLandingPageImage } from '~/utilities/ImageDirectories';
 
 const nuxtApp = useNuxtApp();
-const { data, pending } = await useAsyncData("home-page", () => getLandingPageData(), {
+const { data, pending } = await useAsyncData("landing", () => getLandingPageData(), {
   getCachedData(key) {
     const data = nuxtApp.payload?.data[key]
     if (!data) {
