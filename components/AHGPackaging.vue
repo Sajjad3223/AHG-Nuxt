@@ -2,24 +2,22 @@
   <div :class="['packaging', `packaging-${color}`]">
     <div class="container mx-auto flex items-center gap-5">
       <div class="flex flex-col w-full lg:w-[60%]  space-y-12">
-        <h2 class="titr font-semibold z-10 leading-[1.2]" style="text-shadow: 2px 2px 5px #92A1A8">
-          Luxury <br>
-          packaging
+        <h2 class="titr font-semibold z-10 leading-[1.2] whitespace-pre-wrap" style="text-shadow: 2px 2px 5px #92A1A8">
+          {{ title }}
         </h2>
-        <p class="text-[20px] md:text-[30px] z-10 !mt-5 w-full leading-8">
-          American Health Gate's exclusive packing, setting<br class="hidden md:block" />
-          a new standard a unique blend of luxury and quality.
+        <p class="text-[20px] md:text-[30px] z-10 !mt-5 w-full leading-8 whitespace-pre-wrap">
+          {{ description }}
         </p>
       </div>
       <div class="absolute hidden md:block right-0 top-1/2 -translate-y-1/2" v-if="!isBpm">
         <img src="../assets/images/affordable-packaging.png" alt="Affordable Packaging" class="max-w-[50vw]">
         <span class="absolute -top-1 md:top-[8%] right-4 md:right-[12vw] leading-4 md:leading-8">
-          <b>Lifetime</b> <br>
-          International Warranty
+          <b>{{ shortDescription.split('\r\n')[0] ?? shortDescription }}</b> <br>
+          {{ shortDescription.split('\r\n')[1] ?? '' }}
         </span>
       </div>
       <div class="absolute hidden md:block  right-0 top-1/2 -translate-y-1/2" v-else>
-        <img src="../assets/images/affordable-packaging2.png" alt="Affordable Packaging" class="w-[85%] max-w-[50vw]">
+        <img :src="image" loading="lazy" alt="Affordable Packaging" class="w-[85%] max-w-[50vw]">
       </div>
     </div>
   </div>
@@ -29,9 +27,17 @@
 const props = withDefaults(defineProps<{
   color?: 'white' | 'light',
   isBpm?: boolean,
+  title?: string,
+  description?: string,
+  shortDescription?: string,
+  image?: string
 }>(), {
   color: 'light',
-  isBpm: false
+  isBpm: false,
+  title: 'Luxury\r\n\r\npackaging',
+  description: "American Health Gate's exclusive packing, setting\r\n\r\na new standard a unique blend of luxury and quality.",
+  shortDescription: 'Lifetime\r\n\r\nInternational Warranty',
+  image: '../assets/images/affordable-packaging2.png'
 })
 </script>
 

@@ -10,3 +10,7 @@ export const getAboutImage = (imageName: string) => {
 export const getDistrbuterImage = (imageName: string) => {
   return `${ImageDomain}/images/Banners/${imageName}`;
 };
+
+export const getHomePageImage = (imageName: string) => {
+  return `${ImageDomain}/images/HomePage/${imageName}`;
+};

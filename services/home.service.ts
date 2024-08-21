@@ -1,7 +1,12 @@
 import type { AboutPageData } from "~/models/Entities/AboutPageData";
 import type { ContactUsPageData } from "~/models/Entities/ContactUs";
+import type { HomePageData } from "~/models/Entities/HomePageData";
 import type { MessageType } from "~/models/MessageType";
 import { FetchApi } from "~/utilities/CustomApiFetch";
+
+export const getHomePageData = () => {
+  return FetchApi<HomePageData>("/Home");
+};
 
 export const getContactUsData = () => {
   return FetchApi<ContactUsPageData>("/Home/GetContactUsData");

@@ -1,35 +1,41 @@
 <template>
-  <div>
+  <div v-if="data?.data && pending == false">
+
+    <Head>
+      <Title>{{ utilStore.siteSettings?.siteTitle }}</Title>
+    </Head>
     <div class="relative w-full grid place-items-center">
       <div class="relative flex justify-center lg:items-center w-full h-[60vh] lg:h-[90vh] pt-8">
-        <img src="/images/homeBanner-2.jpg"
-          class="absolute object-cover  -z-[1] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" />
+        <img :src="getHomePageImage(data.data.imageName)"
+          class="absolute object-cover  -z-[1] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" alt="bg" />
 
         <div class="container mx-auto">
-          <p class="text-3xl font-semibold  text-white leading-[1] lg:max-w-[70%]"
+          <p class="text-3xl font-semibold  text-white leading-[1] lg:max-w-[70%] whitespace-pre-wrap"
             style="text-shadow: 4px 1px 4px rgb(0 0 0 / 30%)">
-            Seizing <br>
-            the future<br>
-            of <span class="text-blackColor">Healthcare</span>
+            {{ data.data.title.split('\r\n')[0] }} <br>
+            <template v-if="data.data.title.split('\r\n')[1]">{{ data.data.title.split('\r\n')[1]
+              }}<br></template>
+            <label v-if="data.data.title.split('\r\n')[2]">
+              {{ data.data.title.split('\r\n')[2].split(' ')[0] }} <span class="text-blackColor">{{
+                data.data.title.split('\r\n')[2].split(' ')[1] }}</span>
+            </label>
+
           </p>
-          <p class="text-[25px] md:text-[34px] mt-7 max-w-[90%] md:max-w-[70%]">
-            Crafting beloved technology at AHG, where better
-            health seamlessly integrates into daily living.
+          <p class="text-[25px] md:text-[34px] mt-7 max-w-[90%] md:max-w-[70%] whitespace-pre-line">
+            {{ data.data.shortDescription }}
           </p>
         </div>
       </div>
     </div>
     <div class="bg-blackColor w-full text-white">
       <div class="container mx-auto py-[8vw] flex flex-col ">
-        <p class="text-[27px] font-normal w-[98%]">
-          American Health Gate is at the forefront of healthcare technology, offering advanced devices
-          such as Digital Blood Glucose Monitors, Digital Blood Pressure Monitor, Digital Thermometer
-          and Digital Body Scale.
+        <p class="text-[27px] font-normal w-[98%] whitespace-pre-wrap">
+          {{ data.data.description }}
         </p>
-        <p class="mt-5 text-[26px]">Redefining healthcare innovation for improved outcomes and a modern patient
-          experience. </p>
+        <!-- <p class="mt-5 text-[26px]">Redefining healthcare innovation for improved outcomes and a modern patient
+          experience. </p> -->
         <h2 class="mb-8 mt-12 text-xl font-bold">
-          Our Healthcare Products Range
+          {{ data.data.productsSectionTitle }}
         </h2>
         <div class="border mt-5 border-white rounded-[30px]
            p-8 lg:p-12 flex flex-col-reverse gap-5 md:flex-row items-center justify-between relative">
@@ -83,9 +89,8 @@
               alt="Blood Pressure" />
           </div>
         </div>
-        <h3 class="text-lg text-center my-[70px]">
-          Experience AHG's devices – they're not just tools; <br>
-          they're seamlessly integrated into your lifestyle.
+        <h3 class="text-lg text-center my-[70px] whitespace-pre-wrap">
+          {{ data.data.productsSectionDescription }}
         </h3>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 xl:gap-7">
           <div class="border border-white h-full
@@ -136,9 +141,16 @@
       </div>
     </div>
 
-    <AHGPackaging />
-    <AHGSupport />
-    <AHGDistribution />
+    <AHGPackaging :title="data.data.bannerTitle" :description="data.data.bannerDescription"
+      :short-description="data.data.bannerShortDescription" :image="getHomePageImage(data.data.bannerImageName)" />
+    <AHGSupport :title="data.data.supportBannerTitle" :description="data.data.supportBannerShortDescription"
+      :button-link="data.data.supportBannerFirstButtonLink" :button-text="data.data.supportBannerFirstButtonTitle" />
+    <AHGDistribution :title="data.data.distributionBannerTitle"
+      :description="data.data.distributionBannerShortDescription" :button-link="data.data.distributionBannerButtonLink"
+      :button-text="data.data.distributionBannerButtonTitle" />
+  </div>
+  <div v-else class="flex justify-center items-center my-5">
+    <BaseLoading />
   </div>
 </template>
 
@@ -146,6 +158,24 @@
 
 import AHGButton from "~/components/base/AHGButton.vue";
 import AHGPackaging from "~/components/AHGPackaging.vue";
+import { getHomePageData } from "~/services/home.service";
+import type { HomePageData } from "~/models/Entities/HomePageData";
+import type { ApiResponse } from "~/models/apiResponse";
+import { getHomePageImage } from "~/utilities/ImageDirectories";
+const utilStore = useUtilStore();
+
+const nuxtApp = useNuxtApp();
+const { data, pending } = await useAsyncData("home-page", () => getHomePageData(), {
+  getCachedData(key) {
+    const data = nuxtApp.payload?.data[key]
+    if (!data) {
+      return;
+    }
+    return data as ApiResponse<HomePageData>;
+  },
+  deep: false
+});
+
 </script>
 
 <style scoped>
