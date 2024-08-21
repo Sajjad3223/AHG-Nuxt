@@ -10,7 +10,14 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
   app: {
+    head: {
+      link: [
+        { rel: "shortcut icon", href: "/favicon.png" },
+        { rel: "icon", href: "/favicon.png" },
+      ],
+    },
     pageTransition: {
       name: "page",
       mode: "out-in",
