@@ -10,9 +10,9 @@
           class="md:!w-[200px] flex-grow text-center">
           {{ buttonText }}
         </BaseAHGButton>
-        <BaseAHGButton to="/support" :color="color == 'black' ? 'white' : 'black'" px="2.5rem" v-if="manualButton"
-          class="md:!w-[200px] flex-grow text-center">
-          Manuals
+        <BaseAHGButton :to="manualLink ?? '/support'" :color="color == 'black' ? 'white' : 'black'" px="2.5rem"
+          v-if="manualButton" class="md:!w-[200px] flex-grow text-center">
+          {{ manualText ?? 'Manuals' }}
         </BaseAHGButton>
       </div>
     </div>
@@ -21,12 +21,14 @@
 
 <script lang="ts" setup>
 withDefaults(defineProps<{
-  color: 'white' | 'black',
+  color?: 'white' | 'black',
   manualButton?: boolean,
   title?: string,
   description?: string,
   buttonText?: string,
-  buttonLink?: string
+  buttonLink?: string,
+  manualText?: string,
+  manualLink?: string,
 }>(), {
   color: "white",
   manualButton: false,

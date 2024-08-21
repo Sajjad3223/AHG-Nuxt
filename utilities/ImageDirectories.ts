@@ -14,3 +14,9 @@ export const getDistrbuterImage = (imageName: string) => {
 export const getHomePageImage = (imageName: string) => {
   return `${ImageDomain}/images/HomePage/${imageName}`;
 };
+export const getLandingPageImage = (imageName: string) => {
+  return `${ImageDomain}/images/LandingPage/${imageName}`;
+};
+export const getSiteSettingsImage = (imageName: string) => {
+  return `${ImageDomain}/images/SiteSettings/${imageName}`;
+};

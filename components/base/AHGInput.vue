@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = withDefaults(defineProps<{
   label: string,
-  color: 'white' | 'black',
+  color?: 'white' | 'black',
   name: string,
   modelValue: string,
   multiLine?: boolean,

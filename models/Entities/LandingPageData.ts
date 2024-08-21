@@ -4,16 +4,15 @@ export interface LandingPageData {
   secondTitle: string;
   shortDescription: string;
   chooseTitle: string;
-  chooses: [
-    {
-      title: string;
-    }
-  ];
+  chooses: {
+    title: string;
+  }[];
   productBannerTitle: string;
   productBannerShortDescription: string;
   thirdBannerTitle: string;
   thirdBannerIamgeName: string;
   thirdBannerShortDescription: string;
+  thirdBannerDescription:string;
   fourthBannerTitle: string;
   fourthBannerIamgeName: string;
   fourthBannerShortDescription: string;
