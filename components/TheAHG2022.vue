@@ -15,7 +15,7 @@
           {{ description }}
         </p>
       </div>
-      <img src="~/assets/images/qrcode.png" alt="qrCode" class="w-[40%] md:w-[15%] mt-0 md:mt-[80px] ">
+      <img src="~/assets/images/qrcode.png" alt="qrCode" class="w-[40%] md:w-[15%] scale-125 mt-0 md:mt-[80px] ">
     </div>
   </div>
 </template>

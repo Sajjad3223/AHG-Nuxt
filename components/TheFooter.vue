@@ -23,7 +23,7 @@
             <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
               <NuxtLink to="/landing">AHG Products</NuxtLink>
               <NuxtLink to="/bgm2022">BGM Monitors</NuxtLink>
-              <NuxtLink to="/bom300">BPM Monitors</NuxtLink>
+              <NuxtLink to="/bpm300">BPM Monitors</NuxtLink>
               <NuxtLink to="#">Thermometers</NuxtLink>
               <NuxtLink to="#">Body Scales</NuxtLink>
             </div>
