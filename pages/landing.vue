@@ -6,19 +6,19 @@
     </Head>
     <div class="flex flex-col">
       <div class="w-full bg-blackColor flex items-center pt-5
-       md:pt-0 md:items-center justify-center h-[90vh]  pb-0 text-white">
+       md:pt-0 md:items-center justify-center h-[70svh] md:h-[90vh]  pb-0 text-white">
         <div class="flex flex-col gap-5 lg:gap-0 container mx-auto relative">
           <span class="text-small">{{ data.data?.secondTitle }}</span>
           <h1 class="text-[30px] md:text-[52px] font-bold lg:my-5 leading-tight text-left md:text-justify lg:max-w-[70%]
-            whitespace-pre-wrap" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
+            md:whitespace-pre-wrap" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
             {{ data.data.title }}
           </h1>
-          <span
-            class="text-[24px] text-justify leading-tight  lg:max-w-[60%] xl:max-w-[50%]  min-[1618px]:!max-w-[50%] min-[1618px]:text-[27px]">
+          <span class="text-[22px] text-justify leading-tight  lg:max-w-[60%] xl:max-w-[50%]  
+            min-[1618px]:!max-w-[50%] min-[1618px]:text-[27px]">
             {{ data.data?.shortDescription }}
           </span>
           <img :src="getLandingPageImage(data.data.imageName)" alt="Landing Banner"
-            class="landing-banner lg:absolute  img-shadow w-[60vw] md:w-[35vw] self-center max-w-[600px]" />
+            class="landing-banner lg:absolute  img-shadow w-[50vw] md:w-[35vw] self-center max-w-[600px]" />
         </div>
       </div>
       <div class="bg-lightColor py-[100px] w-full flex items-center justify-center">

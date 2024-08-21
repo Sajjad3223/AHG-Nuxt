@@ -16,16 +16,16 @@
             <div class="flex items-center gap-3">
               <!-- <img :src="getSiteSettingsImage(utilStore.siteSettings?.ahgLogoName ?? '')" alt="ahg-logo"
                 class="text-blackColor w-[60px]" /> -->
-                <AHGLogo width="60px" color="black" />
+              <AHGLogo width="60px" color="black" />
               <span class="text-xs font-bold lg:text-[24px]">Healthcare</span>
             </div>
             <hr>
             <div class="flex !mt-3 flex-col space-y-2 text-[14px] lg:text-base">
               <NuxtLink to="/landing">AHG Products</NuxtLink>
-              <NuxtLink to="/">BGM Monitors</NuxtLink>
-              <NuxtLink to="/">BPM Monitors</NuxtLink>
-              <NuxtLink to="/">Thermometers</NuxtLink>
-              <NuxtLink to="/">Body Scales</NuxtLink>
+              <NuxtLink to="/bgm2022">BGM Monitors</NuxtLink>
+              <NuxtLink to="/bom300">BPM Monitors</NuxtLink>
+              <NuxtLink to="#">Thermometers</NuxtLink>
+              <NuxtLink to="#">Body Scales</NuxtLink>
             </div>
           </div>
           <div class="flex max-w-[210px] lg:w-1/4 md:justify-self-center flex-col space-y-4">
@@ -63,36 +63,29 @@
       <hr class="my-5">
       <div class="container mx-auto flex flex-col lg:flex-row gap-5 items-center justify-between">
         <span class="text-small">
-        {{ utilStore.siteSettings?.footerText }}
+          {{ utilStore.siteSettings?.copyrightText }}
         </span>
         <div class="flex items-center flex-wrap gap-4">
-          <div class="w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.52 44.41" class="w-[35px]">
-              <path fill="currentColor"
-                d="M39.11,0H4.41C1.98,0,0,1.98,0,4.41v35.58c0,2.44,1.98,4.41,4.41,4.41h34.69c2.44,0,4.41-1.98,4.41-4.41V4.41c0-2.44-1.98-4.41-4.41-4.41ZM21.76,14.57c4.35,0,7.87,3.52,7.87,7.87s-3.52,7.87-7.87,7.87-7.87-3.52-7.87-7.87,3.52-7.87,7.87-7.87ZM39.29,34.73c-.02.75-.05,2.59-.92,3.72-1.2,1.56-3.69,1.38-3.96,1.36l-12.6.02h-.1l-12.6-.02c-.27.02-2.76.21-3.96-1.36-.87-1.13-.91-2.97-.92-3.72,0-.15,0-.27,0-.35l-.05-16.82h6.23c-.18.49-2.31,6.67,1.63,11.94.47.63,4.19,4.73,9.72,4.88,5.53-.15,9.25-4.25,9.72-4.88,3.94-5.27,1.8-11.45,1.63-11.94h6.23l-.05,16.82c0,.08,0,.21,0,.35ZM40.01,12.23c0,.28-.23.52-.52.52h-6.47c-.28,0-.52-.23-.52-.52v-6.47c0-.28.23-.52.52-.52h6.47c.28,0,.52.23.52.52v6.47Z" />
-            </svg>
-          </div>
-          <div class="relative w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
-            <strong class="absolute text-[50px] font-['Product Sans'] text-white">in</strong>
-          </div>
-          <div class="w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 35.57" class="w-[35px]">
-              <path fill="currentColor"
-                d="M44,4.13c-1.09,1.72-2.49,3.22-4.14,4.4-.11.08-.23.16-.34.24.03.49.04.98.04,1.48,0,.7-.03,1.4-.08,2.08-1.06,13.01-11.95,23.23-25.23,23.23-5.28,0-10.19-1.62-14.25-4.39,1.05.22,2.15.34,3.27.34,3.93,0,7.53-1.44,10.3-3.81-3.85-.21-7.09-2.71-8.37-6.16.57.11,1.15.16,1.74.16.8,0,1.57-.1,2.31-.28-1.81-.45-3.41-1.42-4.64-2.74-1.53-1.64-2.48-3.83-2.54-6.23,1.13.62,2.4,1.01,3.75,1.13.08,0,.16.01.24.02-.06-.04-.12-.09-.17-.13-1.49-1.15-2.62-2.73-3.22-4.56-.3-.93-.47-1.92-.47-2.95,0-.72.08-1.42.23-2.09.19-.85.5-1.66.9-2.41.42.53.87,1.05,1.34,1.55.47.5.95.98,1.46,1.44,1.97,1.79,4.23,3.28,6.7,4.38.54.24,1.08.46,1.63.66h0c.57.21,1.14.39,1.73.56.67.19,1.35.36,2.05.49.53.11,1.07.19,1.62.26.06,0,.12.02.18.02.31.04.62.07.93.1.02,0,.05,0,.07,0-.07-.47-.11-.95-.11-1.43,0-.41.03-.82.08-1.22.36-2.81,1.96-5.24,4.22-6.73.28-.18.57-.35.87-.51.11-.05.21-.11.32-.16,1.21-.56,2.57-.88,4-.88,2.63,0,5.01,1.07,6.73,2.8.41-.07.82-.16,1.21-.26,1.59-.41,3.09-1.06,4.45-1.92-.31.89-.74,1.73-1.29,2.48h0c-.66.91-1.48,1.71-2.42,2.33-.03.02-.05.03-.08.05-.03.02-.06.04-.1.06.04,0,.08,0,.12-.01.02,0,.05,0,.07,0,1.73-.2,3.37-.68,4.88-1.4Z" />
-            </svg>
-          </div>
-          <div class="w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.78 43.85" class="w-[20px]">
-              <path fill="currentColor"
-                d="M15.23,9.68v5.82l7.56-.05-.72,8.62-6.84.05v19.73H6.48v-19.78H0v-8.57h6.4v-6.57C6.4,4.09,10.32.17,15.15,0h7.6v7.21h-4.95c-1.18.06-2.58.94-2.58,2.47Z" />
-            </svg>
-          </div>
-          <div class="w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.4 31.85" class="w-[35px]">
-              <path fill="currentColor"
-                d="M35.14,0H8.26C3.7,0,0,3.7,0,8.26v15.33c0,4.56,3.7,8.26,8.26,8.26h26.88c4.56,0,8.26-3.7,8.26-8.26v-15.33c0-4.56-3.7-8.26-8.26-8.26ZM17.2,22.66v-13.48l12.05,6.74-12.05,6.74Z" />
-            </svg>
-          </div>
+          <a v-if="utilStore.siteSettings?.instagramLogoName" :href="utilStore.siteSettings?.instagramLink"
+            class="w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
+            <img :src="getSiteSettingsImage(utilStore.siteSettings?.instagramLogoName)" alt="instagram" />
+          </a>
+          <a v-if="utilStore.siteSettings?.linkdinLogoName" :href="utilStore.siteSettings?.linkdinLink"
+            class="w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
+            <img :src="getSiteSettingsImage(utilStore.siteSettings?.linkdinLogoName)" alt="instagram" />
+          </a>
+          <a v-if="utilStore.siteSettings?.twitterLogoName" :href="utilStore.siteSettings?.twitterLink"
+            class="w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
+            <img :src="getSiteSettingsImage(utilStore.siteSettings?.twitterLogoName)" alt="instagram" />
+          </a>
+          <a v-if="utilStore.siteSettings?.facebookLogoName" :href="utilStore.siteSettings?.facebookLink"
+            class="w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
+            <img :src="getSiteSettingsImage(utilStore.siteSettings?.facebookLogoName)" alt="instagram" />
+          </a>
+          <a v-if="utilStore.siteSettings?.youTubeLogoName" :href="utilStore.siteSettings?.youTubeLink"
+            class="w-[60px] h-[60px] grid place-items-center rounded-[20px] bg-blackColor text-white">
+            <img :src="getSiteSettingsImage(utilStore.siteSettings?.youTubeLogoName)" alt="instagram" />
+          </a>
         </div>
       </div>
     </footer>

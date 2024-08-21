@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import type { SiteSettings } from "~/models/homeDataDto";
+import type { SiteSettings } from "~/models/Entities/SiteSettings";
 import { FetchApi } from "~/utilities/CustomApiFetch";
 
 export const useUtilStore = defineStore("utils", () => {

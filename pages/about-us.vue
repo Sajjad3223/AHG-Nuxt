@@ -6,7 +6,7 @@
     <div class="relative w-full grid place-items-center md:h-[90vh] h-[40vh]">
       <div class="bg-black/50 block md:hidden absolute top-0 w-full h-full -z-[1]"></div>
       <img :src="getAboutImage(data.data.imageName)"
-        class="absolute object-cover  -z-[2] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" />
+        class="absolute object-cover  -z-[2] bottom-0 right-0 w-full h-full " />
       <div class="flex flex-col container z-20">
         <h2
           class="text-[30px] xl:text-[54px] 2xl:text-[70px] text-white md:text-black leading-[1] md:max-w-[65%] font-bold "

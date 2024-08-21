@@ -14,8 +14,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: "shortcut icon", href: "/favicon.png" },
-        { rel: "icon", href: "/favicon.png" },
+        { rel: "shortcut icon", href: "/Logomark.png" },
+        { rel: "icon", href: "/Logomark.png" },
       ],
     },
     pageTransition: {

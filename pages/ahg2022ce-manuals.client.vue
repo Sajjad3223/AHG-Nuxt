@@ -1,9 +1,9 @@
 <template>
   <div class="flex">
-    <div v-if=showSideBar class="bg fixed bg-black/50 top-0 z-10 left-0 w-full h-full" @click="showSideBar = false"></div>
-    <div class="p-3 sidebar z-30 bg-white h-full "
-    :class="{'shadow-lg':isMobile}"
-    :style="{'display':isMobile && showSideBar==false?'none':'block'}">
+    <div v-if=showSideBar class="bg fixed bg-black/50 top-0 z-10 left-0 w-full h-full" @click="showSideBar = false">
+    </div>
+    <div class="p-3 sidebar z-30 bg-white h-full " :class="{ 'shadow-lg': isMobile }"
+      :style="{ 'display': isMobile && showSideBar == false ? 'none' : 'block' }">
       <div class="flex gap-2 items-center">
         <svg v-if="isMobile" @click="showSideBar = !showSideBar" width="37" height="36" viewBox="0 0 37 36" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -20,18 +20,19 @@
         <li class="cursor-pointer  mb-2" @click="page = 29">5. Technical Information</li>
       </ul>
     </div>
-    <div @click="showSideBar = !showSideBar" class="fixed rounded-md bg-white top-4 left-4 z-[1001]" v-if="isMobile && showSideBar == false">
+    <div @click="showSideBar = !showSideBar" class="fixed rounded-md bg-white top-4 left-4 z-[1001]"
+      v-if="isMobile && showSideBar == false">
       <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M7.7085 26.9857H29.2918M7.7085 9.01428H29.2918M7.7085 18H29.2918" stroke="black" stroke-width="1.5"
           stroke-linecap="round"></path>
       </svg>
     </div>
     <div class="flex-grow">
-      <PDF :showPageTooltip="false" src="/files/qr-code/AHG-2022-CE-Instruction-Manual.pdf" :page="page" :pdf-width="isMobile ? '100%' : '768'"
-        :row-gap="isMobile ? 4 : 8" @on-page-change="handlePageChange" />
+      <PDF :showPageTooltip="false" src="/files/qr-code/AHG-2022-CE-Instruction-Manual.pdf" :page="page"
+        :pdf-width="isMobile ? '100%' : '768'" :row-gap="isMobile ? 4 : 8" @on-page-change="handlePageChange" />
 
       <div class="tool-bar z-[2] bg-white  !w-[80px]">
-        <input  class="w-full" type="number" v-model="page" />
+        <input class="w-full" type="number" v-model="page" />
       </div>
     </div>
   </div>
@@ -40,7 +41,7 @@
 <script lang="ts" setup>
 import PDF from "pdf-vue3";
 definePageMeta({
-  layout: 'empty'
+  layout: 'empty',
 });
 
 
@@ -49,7 +50,6 @@ const isMobile = ref(false);
 const page = ref(1);
 
 const handlePageChange = (newPage: number) => {
-  console.log(`new page: ${newPage}`);
   page.value = newPage;
 };
 

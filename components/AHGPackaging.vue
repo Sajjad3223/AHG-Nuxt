@@ -37,7 +37,7 @@ const props = withDefaults(defineProps<{
   title: 'Luxury\r\npackaging',
   description: "American Health Gate's exclusive packing, setting\r\na new standard a unique blend of luxury and quality.",
   shortDescription: 'Lifetime\r\nInternational Warranty',
-  image: '../assets/images/affordable-packaging2.png'
+  image: '/images/affordable-packaging2.png'
 })
 </script>
 
