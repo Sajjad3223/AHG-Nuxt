@@ -16,8 +16,8 @@
           {{ shortDescription.split('\r\n')[1] ?? '' }}
         </span>
       </div>
-      <div class="absolute hidden md:block  right-0 top-1/2 -translate-y-1/2" v-else>
-        <img :src="image" loading="lazy" alt="Affordable Packaging" class="w-[85%] max-w-[50vw]">
+      <div class="absolute hidden md:block  right-[5%] top-1/2 -translate-y-1/2" v-else>
+        <img :src="image" loading="lazy" alt="Affordable Packaging" class="w-[500px] max-w-[50vw]">
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@ const props = withDefaults(defineProps<{
   title: 'Luxury\r\npackaging',
   description: "American Health Gate's exclusive packing, setting\r\na new standard a unique blend of luxury and quality.",
   shortDescription: 'Lifetime\r\nInternational Warranty',
-  image: '/images/affordable-packaging2.png'
+  image: '/images/affordable-packaging2.png?v=2'
 })
 </script>
 

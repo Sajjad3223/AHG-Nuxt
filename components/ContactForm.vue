@@ -2,13 +2,13 @@
   <form @submit.prevent="submitData" class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
     <BaseAHGInput required name="Name" v-model="Name" label="Name" />
     <BaseAHGInput required name="CellPhone" v-model="CellPhone" label="Cell Phone" />
-    <BaseAHGInput required name="Company" v-model="Company" label="Company" />
-    <BaseAHGInput required name="WorkPhone" v-model="WorkPhone" label="Work Phone" />
+    <BaseAHGInput name="Company" v-model="Company" label="Company" />
+    <BaseAHGInput name="WorkPhone" v-model="WorkPhone" label="Work Phone" />
     <BaseAHGInput required name="Email" v-model="Email" label="Email" />
-    <BaseAHGInput required name="Country" v-model="Country" label="Country" />
-    <BaseAHGInput required name="WorkAddress" v-model="WorkAddress" label="Work Address" />
-    <BaseAHGInput required name="City" v-model="City" label="City" />
-    <BaseAHGInput required name="Message" v-model="Message" label="Message" class="col-span-full" multi-line />
+    <BaseAHGInput name="Country" v-model="Country" label="Country" />
+    <BaseAHGInput name="WorkAddress" v-model="WorkAddress" label="Work Address" />
+    <BaseAHGInput name="City" v-model="City" label="City" />
+    <BaseAHGInput name="Message" v-model="Message" label="Message" class="col-span-full" multi-line />
     <BaseAHGButton type="submit" color="white" width="200px" class="col-span-full !py-4 !text-[20px] mx-auto">
       Submit
     </BaseAHGButton>
