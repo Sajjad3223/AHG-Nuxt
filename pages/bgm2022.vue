@@ -481,7 +481,7 @@ import AHGPackaging from "~/components/AHGPackaging.vue";
   @apply right-10 max-w-[50%]
 }
 
-hr {
-  border-color: rgba(0, 0, 0, 0.1);
+hr,.border-b {
+  border-color: rgba(0, 0, 0, 0.1) !important;
 }
 </style>

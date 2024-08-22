@@ -361,16 +361,19 @@ AI for enhanced measurement accuracy.`
   background: black;
   border-radius: 50%;
 }
+
 @media screen and (max-width:768px) {
-  .p-image{
+  .p-image {
     display: block;
-    position: static ;
+    position: static;
     scale: 1 !important;
   }
-  .pre{
+
+  .pre {
     white-space: wrap !important;
   }
 }
+
 @media only screen and (max-width:768px) {
   .bpm-banner {
     background-size: 250vw;
@@ -380,7 +383,8 @@ AI for enhanced measurement accuracy.`
     padding-top: clamp(0px, 100vh, 450px);
   }
 }
-  hr {
-    border-color: rgba(0, 0, 0, 0.1);
-  }
+
+hr {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
 </style>
