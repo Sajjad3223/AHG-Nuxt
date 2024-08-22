@@ -32,7 +32,7 @@
             <img src="~/assets/images/bgmPage/2022/main.png" class="max-h-[420px] lg:max-h-[420px] hidden md:block" />
           </div>
         </div>
-        <AHGButton color="white" class="font-medium" width="200px" is-show-more>
+        <AHGButton to="/distributor" color="white" class="font-medium" width="200px" is-show-more>
           Join Us
         </AHGButton>
       </div>
@@ -451,7 +451,7 @@ import AHGPackaging from "~/components/AHGPackaging.vue";
 
 <style scoped lang="scss">
 .img-shadow {
-  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+  /* filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); */
 }
 
 

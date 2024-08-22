@@ -24,7 +24,7 @@
             </div>
             <img src="~/assets/images/Blood-Pressure.png" alt="Blood Pressure" class="w-1/2 md:w-[28%] md:h-full">
           </div>
-          <AHGButton color="white" class="text-black font-medium" px="3rem" is-show-more>
+          <AHGButton to="/distributor" color="white" class="text-black font-medium" px="3rem" is-show-more>
             Join Us
           </AHGButton>
         </div>

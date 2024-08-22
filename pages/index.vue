@@ -97,7 +97,7 @@
              xl:max-h-[550px] rounded-[30px] flex flex-col items-stretch justify-between relative p-8
               lg:px-8 xl:py-12">
             <div class="flex flex-col">
-              <h4 class="text-lg">
+              <h4 class="text-[22px] md:text-[42px]">
                 DIGITAL BODY SCALES
               </h4>
               <div class="my-5 lg:mt-10 lg:mb-0 text-tiny max-w-[90%] font-light">
@@ -118,7 +118,7 @@
           <div class="border border-white h-full xl:max-h-[550px] rounded-[30px] 
             flex flex-col items-stretch justify-between relative p-8 lg:px-8 xl:py-12">
             <div class="flex flex-col">
-              <h4 class="text-lg">
+              <h4 class="text-[22px] md:text-[42px]">
                 DIGITAL THERMOMETERS
               </h4>
               <p class="my-5 lg:mt-10 lg:mb-0 text-tiny max-w-[90%] font-light">

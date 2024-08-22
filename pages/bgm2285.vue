@@ -31,7 +31,7 @@
             <img src="~/assets/images/bgmPage/2285/main.png" class="max-h-[420px] lg:max-h-[420px] hidden md:block" />
           </div>
         </div>
-        <AHGButton color="white"  width="200px" is-show-more>
+        <AHGButton to="/distributor" color="white" width="200px" is-show-more>
           Join Us
         </AHGButton>
       </div>
@@ -58,7 +58,7 @@
             <div class="flex flex-col space-y-1 flex-1">
               <p class="text-[24px] font-bold">Simple</p>
               <p class="text-[17.5px]">
-                No coding, no connection required, making <br/>
+                No coding, no connection required, making <br />
                 the testing process quicker and easier
               </p>
             </div>
@@ -147,7 +147,7 @@
                 <span class="text-[20px] md:text-[26px] font-bold">Operating Relative humidity </span>
                 <span class="text-[17px]">R.H. ≤ 10-90%</span>
               </div>
-             
+
             </div>
             <div class="flex flex-col flex-wrap gap-3">
               <div class="flex flex-col gap-2">
@@ -189,7 +189,8 @@
             </div>
           </div>
         </div>
-        <img src="~/assets/images/bgmPage/2285/img_5.png" alt="specifications" class="w-1/5 scale-110 max-w-[450px] img-shadow">
+        <img src="~/assets/images/bgmPage/2285/img_5.png" alt="specifications"
+          class="w-1/5 scale-110 max-w-[450px] img-shadow">
       </div>
     </div>
 
@@ -197,7 +198,8 @@
       <div class="container mx-auto flex flex-col justify-between">
         <div class="flex flex-col space-y-10 flex-1">
           <h6 class="text-[23.5px] ">
-            The technological leadership of the AHG-2022 lies in its test strip – a carbon silver structure with 8-electrode
+            The technological leadership of the AHG-2022 lies in its test strip – a carbon silver structure with
+            8-electrode
             on a single layer for enhancing the accuracy and reliability of the blood glucose readings
           </h6>
 
@@ -248,7 +250,7 @@
               </div>
               <div class="flex flex-col border-b border-black  py-5">
                 <p class="text-[20px] font-bold">
-                  Eliminate Temperature Interference: 
+                  Eliminate Temperature Interference:
                 </p>
                 <ul class="list-disc ml-5 !mt-2">
                   <li class="text-[17px]">
@@ -324,9 +326,9 @@
                 </li>
               </ul>
             </div>
-            <div class="md:flex gap-6 max-w-[45%] mr-[3rem] hidden" >
+            <div class="md:flex gap-6 max-w-[45%] mr-[3rem] hidden">
               <img src="~/assets/images/bgmPage/2022/img_8.png" alt="" class=" mr- self-center max-w-[400px]">
-              <img src="~/assets/images/bgmPage/2285/img_6.png"  alt=""
+              <img src="~/assets/images/bgmPage/2285/img_6.png" alt=""
                 class="w-[35%] self-center relative -right-5 -top-[180px]  img-shadow max-w-[400px]">
             </div>
 
@@ -358,8 +360,7 @@
                   </li>
                 </ul>
               </div>
-              <img src="~/assets/images/bgmPage/2022/img_10.png" alt="" 
-              class="mx-auto w-[65%] h-[135px] self-center">
+              <img src="~/assets/images/bgmPage/2022/img_10.png" alt="" class="mx-auto w-[65%] h-[135px] self-center">
               <div class="flex flex-col self-end">
                 <p class="text-[20px] font-bold">
                   Independent Lancet Holder
@@ -454,8 +455,8 @@ import AHGLogo from "~/components/AHGLogo.vue";
 import AHGPackaging from "~/components/AHGPackaging.vue";
 </script>
 
-<style scoped>
+<style scoped >
 .img-shadow {
-  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+  /* filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); */
 }
 </style>
