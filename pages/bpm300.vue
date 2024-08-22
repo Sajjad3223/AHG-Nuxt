@@ -335,7 +335,7 @@ AI for enhanced measurement accuracy.`
 ]
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .img-shadow {
   /* filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); */
 }
@@ -378,6 +378,11 @@ AI for enhanced measurement accuracy.`
 
   .bpm-banner>div:first-child {
     padding-top: clamp(0px, 100vh, 450px);
+  }
+}
+.grid {
+  hr {
+    border-color: rgba(0, 0, 0, 0.1);
   }
 }
 </style>

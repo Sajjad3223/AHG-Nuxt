@@ -9,7 +9,7 @@
           </div>
           <div class="flex max-w-[210px] lg:w-1/4 flex-col space-y-4" v-for="item in utilStore.footerLinks">
             <div class="flex items-center gap-3">
-              <AHGLogo width="60px" v-if="item.title == 'Healthcare'" />
+              <AHGLogo color="currentColor" width="60px" v-if="item.title == 'Healthcare'" />
               <span class="text-xs font-bold lg:text-[24px]">{{ item.title }}</span>
             </div>
             <hr>

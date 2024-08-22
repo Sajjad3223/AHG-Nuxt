@@ -29,7 +29,8 @@
             </div>
           </div>
           <div class="flex items-end justify-center gap-2 w-2/5 relative lg:absolute -right-12 -bottom-6  lg:m-0">
-            <img src="~/assets/images/bgmPage/2022/main.png?v=2" class="max-h-[420px] lg:max-h-[420px] hidden md:block" />
+            <img src="~/assets/images/bgmPage/2022/main.png?v=2"
+              class="max-h-[420px] lg:max-h-[420px] hidden md:block" />
           </div>
         </div>
         <AHGButton to="/distributor" color="white" class="font-medium" width="200px" is-show-more>
@@ -478,5 +479,11 @@ import AHGPackaging from "~/components/AHGPackaging.vue";
   height: 85%;
   transform: translate(0, 0);
   @apply right-10 max-w-[50%]
+}
+
+.grid {
+  hr {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
 }
 </style>

@@ -28,7 +28,8 @@
             </div>
           </div>
           <div class="flex items-end justify-center gap-2 w-2/5 relative lg:absolute -right-12 -bottom-6  lg:m-0">
-            <img src="~/assets/images/bgmPage/2285/main.png?v=2" class="max-h-[420px] lg:max-h-[420px] hidden md:block" />
+            <img src="~/assets/images/bgmPage/2285/main.png?v=2"
+              class="max-h-[420px] lg:max-h-[420px] hidden md:block" />
           </div>
         </div>
         <AHGButton to="/distributor" color="white" width="200px" is-show-more>
@@ -455,8 +456,14 @@ import AHGLogo from "~/components/AHGLogo.vue";
 import AHGPackaging from "~/components/AHGPackaging.vue";
 </script>
 
-<style scoped >
+<style scoped lang="scss">
 .img-shadow {
   /* filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); */
+}
+
+.grid {
+  hr {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
 }
 </style>
