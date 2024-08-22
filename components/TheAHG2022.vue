@@ -15,7 +15,7 @@
           {{ description }}
         </p>
       </div>
-      <img src="~/assets/images/qrcode.png" alt="qrCode" class="w-[40%] md:w-[15%] scale-125 mt-0 md:mt-[80px] ">
+      <img :src="qrCode" alt="qrCode" class="w-[40%] md:w-[15%] scale-125 mt-0 md:mt-[80px] ">
     </div>
   </div>
 </template>
@@ -36,6 +36,9 @@ defineProps({
           management.Our app empowers you to elevate your check- up
           experience by easily sharing a comprehensive health journal with
           your healthcare professionals`
+  },
+  qrCode:{
+    default:'/images/qrcode.png'
   }
 })
 </script>

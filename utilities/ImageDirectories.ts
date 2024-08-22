@@ -17,6 +17,9 @@ export const getHomePageImage = (imageName: string) => {
 export const getLandingPageImage = (imageName: string) => {
   return `${ImageDomain}/images/LandingPage/${imageName}`;
 };
+export const getSupportPageImage = (imageName: string) => {
+  return `${ImageDomain}/images/SupportPage/${imageName}`;
+};
 export const getSiteSettingsImage = (imageName: string) => {
   return `${ImageDomain}/images/SiteSettings/${imageName}`;
 };
