@@ -13,9 +13,9 @@ withDefaults(defineProps<{
 
 <template>
   <div style="padding: .5px 0;">
-    <img v-if=utilStore.siteSettings?.ahgLogoName :src="getSiteSettingsImage(utilStore.siteSettings?.ahgLogoName ?? '')"
-      alt="ahg-logo" :style="{ 'color': color, 'width': width }" />
-    <svg v-else xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 38" :width="width">
+    <!-- <img v-if=utilStore.siteSettings?.ahgLogoName :src="getSiteSettingsImage(utilStore.siteSettings?.ahgLogoName ?? '')"
+      alt="ahg-logo" :style="{ 'color': color, 'width': width }" /> -->
+    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 38" :width="width">
       <path stroke-width="0" :fill="color" d="M40,0h-8L0,38h10l22-26h8V0Z" />
       <path stroke-width="0" :fill="color" d="M19.18,30l6.82-8h6v-8h8v8h8v8h-8v8h-8v-8h-12.82Z" />
       <path stroke-width="0" :fill="color" d="M80,16V0h8v38h-8v-16h-16v16h-8V0h8v16h16Z" />

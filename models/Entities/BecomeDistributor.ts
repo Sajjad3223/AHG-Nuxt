@@ -3,4 +3,5 @@ export interface BecomeDistributorPageData {
   imageName: string;
   shortDescription: string;
   description: string;
+  subDescription: string;
 }
