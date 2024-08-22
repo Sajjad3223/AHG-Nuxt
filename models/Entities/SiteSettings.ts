@@ -20,3 +20,7 @@ export interface SiteSettings {
   facebookLogoName: string;
   youTubeLogoName: string;
 }
+export interface FooterItem {
+  title: string;
+  links: { displayTitle: string; url: string }[];
+}
