@@ -380,9 +380,7 @@ AI for enhanced measurement accuracy.`
     padding-top: clamp(0px, 100vh, 450px);
   }
 }
-.grid {
   hr {
     border-color: rgba(0, 0, 0, 0.1);
   }
-}
 </style>

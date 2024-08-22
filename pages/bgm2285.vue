@@ -461,9 +461,7 @@ import AHGPackaging from "~/components/AHGPackaging.vue";
   /* filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); */
 }
 
-.grid {
   hr {
     border-color: rgba(0, 0, 0, 0.1);
   }
-}
 </style>
