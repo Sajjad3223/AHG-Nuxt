@@ -14,6 +14,15 @@ export const getDistrbuterImage = (imageName: string) => {
 export const getHomePageImage = (imageName: string) => {
   return `${ImageDomain}/images/HomePage/${imageName}`;
 };
+export const getBpmDetailImage = (imageName: string) => {
+  return `${ImageDomain}/images/BPMDetails/${imageName}`;
+};
+export const getBPMMeasurementsImage = (imageName: string) => {
+  return `${ImageDomain}/images/BPMMeasurements/${imageName}`;
+};
+export const getBpmImage = (imageName: string) => {
+  return `${ImageDomain}/images/BPMs/${imageName}`;
+};
 export const getLandingPageImage = (imageName: string) => {
   return `${ImageDomain}/images/LandingPage/${imageName}`;
 };

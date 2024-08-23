@@ -8,8 +8,7 @@
             MONITOR
           </h1>
           <div class="flex font-bold items-center text-[45px] gap-2 mt-5">
-            <AHGLogo width="7.5vw" color="white" />
-            <p> -2285</p>
+            <p>AHG-2285</p>
           </div>
           <div class="flex items-center my-10 gap-10 lg:w-[65%]">
             <div class="flex flex-col space-y-4 text-justify text-[18px] leading-tight">
@@ -199,7 +198,7 @@
       <div class="container mx-auto flex flex-col justify-between">
         <div class="flex flex-col space-y-10 flex-1">
           <h6 class="text-[23.5px] ">
-            The technological leadership of the AHG-2022 lies in its test strip – a carbon silver structure with
+            The technological leadership of the AHG-2285 lies in its test strip – a carbon silver structure with
             8-electrode
             on a single layer for enhancing the accuracy and reliability of the blood glucose readings
           </h6>

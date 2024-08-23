@@ -74,7 +74,7 @@
         </li>
         <li>
           <NuxtLink to="/distributor">
-            SERVICE
+            DISTRIBUTION
           </NuxtLink>
         </li>
         <li>
@@ -121,7 +121,7 @@
             </li>
             <li class="w-full text-center flex">
               <NuxtLink @click="showNavigationBar = false" to="/distributor" class="w-full py-4 rounded-xl">
-                SERVICE
+                Distribution
               </NuxtLink>
             </li>
             <li class="w-full text-center flex">

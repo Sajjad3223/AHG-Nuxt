@@ -8,8 +8,7 @@
             MONITOR
           </h1>
           <div class="flex font-bold items-center text-[45px] gap-2 lg:mt-5 mt-2">
-            <AHGLogo width="7rem" color="white" />
-            <p> -2022</p>
+            <p>AHG-2022</p>
           </div>
           <div class="flex items-center my-10 gap-10 lg:w-[65%]">
             <div class="flex flex-col space-y-4 text-justify text-[18px] leading-tight">
