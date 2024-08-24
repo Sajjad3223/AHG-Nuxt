@@ -32,3 +32,9 @@ export const getSupportPageImage = (imageName: string) => {
 export const getSiteSettingsImage = (imageName: string) => {
   return `${ImageDomain}/images/SiteSettings/${imageName}`;
 };
+export const getCategoryImage = (imageName: string) => {
+  return `${ImageDomain}/images/Categories/${imageName}`;
+};
+export const getProductCardImage = (imageName: string) => {
+  return `${ImageDomain}/images/ProductCards/${imageName}`;
+};

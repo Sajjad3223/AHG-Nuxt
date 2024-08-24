@@ -4,22 +4,32 @@
 
 
 
-.drop-shadow-lg{
+.drop-shadow-lg {
     filter: none !important;
 }
+
 .bodyTextSize {
     @apply md:text-[20px] text-[15px]
 }
-.customLi li{
+
+.customLi li {
     position: relative;
 }
-button{
-    &:disabled{
+
+button {
+    &:disabled {
         opacity: .4;
         pointer-events: none;
         @apply bg-gray-300;
     }
 }
+
+a[disabled='true'] {
+    opacity: .4;
+    pointer-events: none;
+    @apply bg-gray-300;
+}
+
 .customLi li::after {
     width: 6px;
     height: 6px;
@@ -29,19 +39,22 @@ button{
     content: " ";
     background: black;
     border-radius: 50%;
-  }
+}
+
 @media screen and (min-width:1024px) {
     .container {
         padding-left: 5rem;
         padding-right: 5rem;
     }
 }
+
 @media screen and (max-width:768px) {
     .container {
         padding-left: 1.5rem !important;
         padding-right: 1.5rem !important;
     }
 }
+
 @font-face {
     font-family: "Inter";
     src: url(/fonts/Inter-Thin.ttf) format("truetype");
@@ -122,9 +135,11 @@ button{
 .title {
     @apply text-[25px] md:text-[52px] font-bold
 }
-.text-title{
+
+.text-title {
     @apply text-[25px] md:text-[28px];
 }
+
 select {
     @apply border-borderColor
 }

@@ -29,25 +29,10 @@
           {{ data?.data?.categorySectionTitle }}
         </p>
         <div class="flex items-center flex-wrap gap-12 lg:gap-24 justify-center mt-20">
-          <div class="flex flex-col space-y-5">
-            <img src="~/assets/images/bloog-pressure-monitor.svg" alt="Blood Pressure Monitors"
-              class="h-[120px] lg:h-[160px]">
-            <span class="text-small">Blood Pressure Monitors</span>
-          </div>
-          <div class="flex flex-col space-y-5">
-            <img src="~/assets/images/Blood-Glucose-Monitors.svg" alt="Blood Glucose Monitors"
-              class="h-[120px] lg:h-[160px]">
-            <span class="text-small">Blood Glucose Monitors</span>
-          </div>
-          <div class="flex flex-col space-y-5">
-            <img src="~/assets/images/Digital-Body-Scales.svg" alt="Digital-Body-Scales" class="h-[120px] lg:h-[160px]">
-            <span class="text-small">Digital Body Scales</span>
-          </div>
-          <div class="flex flex-col space-y-5">
-            <img src="~/assets/images/Digital-Thermometers.svg" alt="Digital-Thermometers"
-              class="h-[120px] lg:h-[160px]">
-            <span class="text-small">Digital Thermometers</span>
-          </div>
+          <nuxt-link :to="item.link ?? '#'" class="flex flex-col space-y-5" v-for="item in categories?.data">
+            <img :src="getCategoryImage(item.imageName)" :alt="item.title" class="h-[120px] lg:h-[160px]">
+            <span class="text-small">{{ item.title }}</span>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -166,10 +151,12 @@
 
 <script setup lang="ts">
 import type { ApiResponse } from '~/models/apiResponse';
+import type { Category } from '~/models/Entities/CategoryData';
 import type { InstructionData, SupportPageData } from '~/models/Entities/SupportPageData';
 import { getInstructions, getSupportPageData } from '~/services/pages.service';
+import { getCategoryData } from '~/services/product.service';
 import { ImageDomain } from '~/utilities/api.config';
-import { getLandingPageImage, getSupportPageImage } from '~/utilities/ImageDirectories';
+import { getCategoryImage, getLandingPageImage, getSupportPageImage } from '~/utilities/ImageDirectories';
 
 const nuxtApp = useNuxtApp();
 const { data, pending } = await useAsyncData("support", () => getSupportPageData(), {
@@ -179,6 +166,16 @@ const { data, pending } = await useAsyncData("support", () => getSupportPageData
       return;
     }
     return data as ApiResponse<SupportPageData>;
+  },
+  deep: false
+});
+const { data: categories } = await useAsyncData("categories", () => getCategoryData(), {
+  getCachedData(key) {
+    const data = nuxtApp.payload?.data[key]
+    if (!data) {
+      return;
+    }
+    return data as ApiResponse<Category[]>;
   },
   deep: false
 });
