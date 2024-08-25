@@ -102,59 +102,39 @@
               {{ data.data.featureTitle }}
             </p>
             <div class="grid pl-3 md:grid-cols-2  lg:gap-x-36 xl:w-5/6">
-              <div v-for="item in data.data.features" class="flex flex-col border-b border-black  py-5">
-                <p class="text-[20px] font-bold">
-                  {{ item.title }}
-                </p>
-                <ul class="list-disc ml-5 !mt-2">
-                  <li class="text-[17px]">
-                    {{ item.description }}
-                  </li>
-                </ul>
-              </div>
+              <template v-for="item in data.data.features">
+                <div v-if="item.title != 'Test Strips Specifications'"
+                  class="flex flex-col border-b border-black  py-5">
+                  <p class="text-[20px] font-bold">
+                    {{ item.title }}
+                  </p>
+                  <ul class="list-disc ml-5 !mt-2">
+                    <li class="text-[17px]">
+                      {{ item.description }}
+                    </li>
+                  </ul>
+                </div>
+              </template>
 
             </div>
           </div>
 
-          <div class="flex flex-col-reverse lg:flex-row gap-5">
+          <div class="flex flex-col-reverse lg:flex-row gap-5"
+            v-if="data.data.features.find(f => f.title == 'Test Strips Specifications')">
             <div class="min-w-fit flex-1 flex flex-col space-y-8">
               <span class="text-[35px] font-bold">
                 Test Strips Specifications
               </span>
               <ul class="list-disc ml-5 !mt-5 font-medium">
-                <li class="text-[17px]">
-                  Carbon silver structure electrode design
-                </li>
-                <li class="text-[17px]">
-                  8 electrodes technology
-                </li>
-                <li class="text-[17px]">
-                  Enzyme: GOD/Glucose Oxidase
-                </li>
-                <li class="text-[17px]">
-                  Highly accurate & precise results
-                </li>
-                <li class="text-[17px]">
-                  Eliminates temperature interference
-                </li>
-                <li class="text-[17px]">
-                  For self-testing and in-vitro diagnostic use only
-                </li>
-                <li class="text-[17px]">
-                  Storage Temperature: 2°C to 30°C / 36°F to 86°F
-                </li>
-                <li class="text-[17px]">
-                  Humidity: 10-90%
-                </li>
-                <li class="text-[17px]">
-                  Open shelf life: 6 months
+                <li class="text-[17px]" v-for="item in data.data.features.find(f => f.title == 'Test Strips Specifications')
+                  ?.description.split('\r\n')">
+                  {{ item }}
                 </li>
               </ul>
             </div>
             <div class="flex gap-6 max-w-[50%] mr-[3rem]">
-              <img src="~/assets/images/bgmPage/2022/img_8.png" alt="" class=" mr- self-center max-w-[400px]">
-              <img src="~/assets/images/bgmPage/2022/img_9.png" alt=""
-                class="w-1/2 self-center img-shadow max-w-[400px]">
+              <img :src="getBgmImage(data.data.featureImageName)" 
+              alt="Test Strips Specifications" class=" mr- self-center max-w-[700px]">
             </div>
 
           </div>
@@ -289,7 +269,7 @@ import AHGPackaging from "~/components/AHGPackaging.vue";
 import { getBgm2022PageData } from "~/services/product.service";
 import type { Bgm2022Data } from "~/models/Entities/Bgm2022Data";
 import type { ApiResponse } from "~/models/apiResponse";
-import { getBgmDetailImage, getBgmImage, getBgmSpecificationsImage, getBpmImage } from "~/utilities/ImageDirectories";
+import { getBgmDetailImage, getBgmImage, getBpmImage } from "~/utilities/ImageDirectories";
 
 const utilStore = useUtilStore();
 const nuxtApp = useNuxtApp();
@@ -341,7 +321,7 @@ useHead({
   right: 0;
   height: 100%;
   width: 100%;
-  
+
 }
 
 hr,
