@@ -40,21 +40,25 @@
         </div>
         <template v-else>
           <div class="border mt-5 border-white rounded-[30px]
-           p-8 lg:p-12 flex flex-col-reverse gap-5 md:flex-row items-center justify-between relative"
+           p-5 lg:p-12 flex flex-col-reverse gap-5 md:flex-row items-center justify-between relative"
             v-for="item in [...productCards].splice(0, 2)">
-            <div class="flex flex-col space-y-5 lg:space-y-12">
+            <div class="flex  flex-col space-y-5 lg:space-y-12">
               <h4 class="text-lg text-nowrap">
                 {{ item.title }}
               </h4>
               <p class="md:text-[20px] text-[15px] whitespace-pre-wrap">
                 {{ item.shortDescription }}
               </p>
-              <AHGButton :disabled="!item.buttonLink || item.buttonLink == '#'" :to="item.buttonLink ?? '#'" color="white"
-                is-show-more class="show-more">
+              <AHGButton :disabled="!item.buttonLink || item.buttonLink == '#'" :to="item.buttonLink ?? '#'"
+                color="white" is-show-more class="show-more">
                 {{ item.buttonTitle }}
               </AHGButton>
             </div>
-            <img :src="getProductCardImage(item.imageName)" class="h-[20vw] max-h-[270px]  mx-auto" :alt="item.title" />
+
+            <div class=" flex-grow">
+              <img :src="getProductCardImage(item.imageName)" class="h-[20vw] max-h-[270px]  mx-auto"
+                :alt="item.title" />
+            </div>
           </div>
         </template>
         <h3 class="text-lg text-center my-[70px] whitespace-pre-wrap">
@@ -77,8 +81,8 @@
                 </div>
               </div>
               <div class="flex flex-col-reverse xl:flex-row items-center relative xl:gap-5 flex-1">
-                <AHGButton :disabled="!item.buttonLink || item.buttonLink == '#'" :to="item.buttonLink ?? '#'" color="white" is-show-more
-                  class="w-1/2 show-more min-w-fit xl:-translate-y-8">
+                <AHGButton :disabled="!item.buttonLink || item.buttonLink == '#'" :to="item.buttonLink ?? '#'"
+                  color="white" is-show-more class="w-1/2 show-more min-w-fit xl:-translate-y-8">
                   {{ item.buttonTitle }}
                 </AHGButton>
                 <div class="max-w-[284px] max-h-[250px] my-auto">

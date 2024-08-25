@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-blackColor py-[30px]  md:py-[80px] flex items-center justify-center relative">
-    <div class="flex flex-col-reverse gap-5 lg:flex-row items-center container mx-auto mt-12 lg:mt-0  text-white">
-      <div class="flex flex-col  origin-center md:origin-left  w-full md:w-[85%]">
+    <div class="flex flex-col-reverse gap-10 lg:gap-5 lg:flex-row items-center container mx-auto  lg:mt-0  text-white">
+      <div class="flex flex-col  origin-center md:origin-left  w-full lg:w-[85%]">
         <h5 class="title font-bold">
           {{ title }}
         </h5>
@@ -15,7 +15,7 @@
           {{ description }}
         </p>
       </div>
-      <img :src="qrCode" alt="qrCode" class="w-[40%] md:w-[15%] scale-125 mt-0 md:mt-[80px] ">
+      <img :src="qrCode" alt="qrCode" class="w-[40%] scale-100 md:w-[15%] md:scale-125 mt-0 lg:mt-[80px] ">
     </div>
   </div>
 </template>

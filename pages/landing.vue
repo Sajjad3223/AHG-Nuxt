@@ -9,7 +9,7 @@
        md:pt-0 md:items-center justify-center h-[70svh] md:h-[90vh]  pb-0 text-white">
         <div class="flex flex-col gap-5 lg:gap-0 container mx-auto relative">
           <span class="text-small">{{ data.data?.secondTitle }}</span>
-          <h1 class="text-[30px] md:text-[52px] font-bold lg:my-5 leading-tight text-left md:text-justify lg:max-w-[70%]
+          <h1 class="text-[30px] md:text-[52px] font-bold lg:my-5 leading-tight text-left md:  lg:max-w-[70%]
             md:whitespace-pre-wrap" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
             {{ data.data.title }}
           </h1>

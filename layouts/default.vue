@@ -17,9 +17,7 @@
 </script>
 
 <style>
-.container{
-  max-width: 1400px;
-}
+
 .text-small{
   font-size: clamp(12px,1.042vw,20px) !important;
   line-height: normal;

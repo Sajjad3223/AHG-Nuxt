@@ -10,7 +10,7 @@
             <p>AHG-2022</p>
           </div>
           <div class="flex items-center my-10 gap-10 lg:w-[65%]">
-            <div class="flex flex-col space-y-4 text-justify text-[18px] leading-tight">
+            <div class="flex flex-col space-y-4   text-[18px] leading-tight">
               <p>
                 {{ data.data.shortDescription }}
               </p>
@@ -49,8 +49,8 @@
               <p class="text-[24px] font-bold">{{ item.title }}</p>
               <p class="text-[18px] whitespace-pre-wrap">{{ item.description }}</p>
             </div>
-            <img :src="getBgmDetailImage(item.imageName)" alt="Auto coding" class="img-shadow absolute top-0 w-full 
-             !h-full right-0">
+            <img :src="getBgmDetailImage(item.imageName)" alt="Auto coding" class="img-shadow rounded-[20px] absolute top-0  
+             right-0">
           </div>
 
         </div>
@@ -332,14 +332,20 @@ useHead({
   }
 }
 
-.image-products img {
-  position: absolute;
-  height: 85%;
-  transform: translate(0, 0);
-  @apply right-10 max-w-[50%]
+.image-products {
+  overflow: hidden !important;
 }
 
-hr, .border-b {
+.image-products img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  
+}
+
+hr,
+.border-b {
   border-color: rgba(0, 0, 0, 0.1) !important;
 }
 </style>

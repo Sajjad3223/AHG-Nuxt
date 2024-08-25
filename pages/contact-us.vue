@@ -10,7 +10,7 @@
           <h1 class="text-2xl font-bold leading-[1]" style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
             {{ data.data.title }}
           </h1>
-          <p class="text-[20px] md:text-[31px] text-justify my-10 leading-tight" style="white-space: pre-wrap;">
+          <p class="text-[20px] md:text-[31px]   my-10 leading-tight" style="white-space: pre-wrap;">
             {{ data.data.description }}
           </p>
         </div>

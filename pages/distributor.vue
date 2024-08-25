@@ -5,7 +5,7 @@
       <div class="flex flex-col container mx-auto relative">
         <img :src="getDistrbuterImage(data.data.imageName)" alt="Earth"
           class="lg:absolute mt-5 lg:m-0 right-0 2xl:-right-[50px] -bottom-16 max-w-[600px] img-shadow" />
-        <h1 class="text-[40px] text-left  md:text-[98px] md:text-justify font-bold leading-[1.2]"
+        <h1 class="text-[40px] text-left  md:text-[98px] md:  font-bold leading-[1.2]"
           style="text-shadow: 7px 7px 5px rgba(0,0,0,0.5)">
           {{ data.data.title }}
         </h1>
@@ -32,7 +32,7 @@
             {{ data.data.subDescription }}
           </p>
         </div>
-        <div class="mt-12 lg:mt-28 text-[20px] md:text-[25px] leading-[32px] text-justify">
+        <div class="mt-12 lg:mt-28 text-[20px] md:text-[25px] leading-[32px]  ">
           <p class="whitespace-pre-line">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 19"
               class="w-[70px] mt-2 mr-2 text-blackColor float-left">

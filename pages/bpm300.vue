@@ -9,7 +9,7 @@
           </div>
           <span class="text-[30px] md:text-[47px]">{{ data.data.title }}</span>
           <div class="flex flex-col-reverse lg:flex-row  my-8 gap-8">
-            <div class="flex flex-col flex-1 space-y-2 md:space-y-5 text-justify text-[19px]">
+            <div class="flex flex-col flex-1 space-y-2 md:space-y-5   text-[19px]">
               <p class="leading-tight whitespace-pre-wrap">
                 {{ data.data.description }}
               </p>
@@ -69,7 +69,7 @@
         <div class="w-full flex flex-col space-y-8 mt-16 relative">
           <h4 class="text-[35px] md:text-[42px]">{{ data.data.detailSecondTitle }}</h4>
           <div class="flex flex-col-reverse md:flex-row gap-5">
-            <p class="text-justify text-[16px] leading-tight whitespace-pre-wrap">
+            <p class="  text-[16px] leading-tight whitespace-pre-wrap">
               {{ data.data.detailSecondShortDescription }}
             </p>
             <img :src="getBpmImage(data.data.detailSecondImageName)" alt="bpm device" style="scale: 1.2;"

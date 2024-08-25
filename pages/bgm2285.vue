@@ -11,7 +11,7 @@
             <p>AHG-2285</p>
           </div>
           <div class="flex items-center my-10 gap-10 lg:w-[65%]">
-            <div class="flex flex-col space-y-4 text-justify text-[18px] leading-tight">
+            <div class="flex flex-col space-y-4   text-[18px] leading-tight">
               <p>
                 Monitor your blood glucose effortlessly with the AHG-2285 – no coding needed, ensuring a quicker and
                 easier testing process. With just 0.5ul of blood, you'll receive fast results in just 5 seconds, with a

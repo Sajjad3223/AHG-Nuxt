@@ -53,8 +53,8 @@
             </g>
           </g>
         </svg>
-        <div class="wapper-text text-justify leading-tight mt-5 !text-[22px]">
-          <p class="wapper-text text-justify  leading-tight lg:mt-10 !text-[22px]" style="white-space: pre-wrap;">
+        <div class="wapper-text   leading-tight mt-5 !text-[22px]">
+          <p class="wapper-text    leading-tight lg:mt-10 !text-[22px]" style="white-space: pre-wrap;">
             {{ data.data.description }}
           </p>
         </div>
