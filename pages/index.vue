@@ -56,8 +56,7 @@
             </div>
 
             <div class=" flex-grow">
-              <img :src="getProductCardImage(item.imageName)" class="h-[20vw] max-h-[270px]  mx-auto"
-                :alt="item.title" />
+              <img :src="getProductCardImage(item.imageName)" class=" max-h-[270px]  mx-auto" :alt="item.title" />
             </div>
           </div>
         </template>
