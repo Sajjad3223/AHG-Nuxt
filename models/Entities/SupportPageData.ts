@@ -42,6 +42,9 @@ export interface Bpm300PageData {
     description: string;
     imageName: string;
   }[];
+  detailSecondTitle: string;
+  detailSecondShortDescription: string;
+  detailSecondImageName: string;
   specificationTitle: string;
   specificationShortDescription: string;
   specificationImageName: string;

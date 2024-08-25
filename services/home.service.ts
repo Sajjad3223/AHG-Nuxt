@@ -1,4 +1,5 @@
 import type { AboutPageData } from "~/models/Entities/AboutPageData";
+import type { CatalogData } from "~/models/Entities/CategoryData";
 import type { ContactUsPageData } from "~/models/Entities/ContactUs";
 import type { HomePageData } from "~/models/Entities/HomePageData";
 import type { MessageType } from "~/models/MessageType";
@@ -59,4 +60,7 @@ export const SendContactMessage = (data: {
     method: "POST",
     body: formData,
   });
+};
+export const getCataloguesData = () => {
+  return FetchApi<CatalogData[]>("/Home/GetCatalogues");
 };

@@ -45,33 +45,18 @@
           {{ data?.data?.catalogSectionShortDescription }}
         </p>
         <div class="flex items-stretch flex-wrap justify-between gap-5 mt-16 relative">
-          <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
-            <h4 class="text-title">Blood Glucose Monitor</h4>
-            <h5 class="text-title font-bold ">AHG-2022</h5>
-            <img src="~/assets/images/ahg-2022.png" alt="ahg 2022" class="my-6 h-[250px] mx-auto">
-            <BaseAHGButton target="_blank" to="/files/landing/AHG-2022-Catalogue.pdf" color="black" is-show-more
+          <div class="flex-1 bg-white flex flex-col hover:shadow-lg transition-all rounded-[40px] p-8" v-for="item in catalogues?.data">
+            <h4 class="text-title text-nowrap">{{ item.title.split("AHG")[0] }}</h4>
+            <h5 class="text-title font-bold " v-if="item.title.toLowerCase().split('ahg')[1]">AHG{{
+              item.title.toLowerCase().split("ahg")[1] }}
+            </h5>
+            <img :src="getCatalogImage(item.imageName)" :alt="item.title" class="my-6 h-[250px] mx-auto">
+            <BaseAHGButton target="_blank" :to="getCatalogFile(item.fileName)" color="black" is-show-more
               class="ml-auto mt-auto">
               Download
             </BaseAHGButton>
           </div>
-          <div class="flex-1 bg-white img-shadow rounded-[40px] p-8">
-            <h4 class="text-title">Blood Glucose Monitor</h4>
-            <h5 class="text-title font-bold">AHG-2285</h5>
-            <img src="~/assets/images/ahg-2285.png" alt="ahg 2285" class="my-6 h-[250px] mx-auto">
-            <BaseAHGButton target="_blank" to="/files/landing/AHG-2285-Catalogue.pdf" color="black" is-show-more
-              class="ml-auto mt-auto">
-              Download
-            </BaseAHGButton>
-          </div>
-          <div class="flex-1 bg-white flex flex-col img-shadow rounded-[40px] p-8">
-            <h4 class="text-title text-nowrap">Blood Pressure Monitor</h4>
-            <h5 class="text-title font-bold">AHG-300</h5>
-            <img src="~/assets/images/ahg-300.png" alt="ahg 300" class="mx-auto my-6 h-[250px] w-fit">
-            <BaseAHGButton target="_blank" to="/files/landing/AHG-300-Catalogue.pdf" color="black" is-show-more
-              class="ml-auto">
-              Download
-            </BaseAHGButton>
-          </div>
+
 
         </div>
       </div>
@@ -151,12 +136,13 @@
 
 <script setup lang="ts">
 import type { ApiResponse } from '~/models/apiResponse';
-import type { Category } from '~/models/Entities/CategoryData';
+import type { CatalogData, Category } from '~/models/Entities/CategoryData';
 import type { InstructionData, SupportPageData } from '~/models/Entities/SupportPageData';
+import { getCataloguesData } from '~/services/home.service';
 import { getInstructions, getSupportPageData } from '~/services/pages.service';
 import { getCategoryData } from '~/services/product.service';
 import { ImageDomain } from '~/utilities/api.config';
-import { getCategoryImage, getLandingPageImage, getSupportPageImage } from '~/utilities/ImageDirectories';
+import { getCatalogFile, getCatalogImage, getCategoryImage, getLandingPageImage, getSupportPageImage } from '~/utilities/ImageDirectories';
 
 const nuxtApp = useNuxtApp();
 const { data, pending } = await useAsyncData("support", () => getSupportPageData(), {
@@ -176,6 +162,16 @@ const { data: categories } = await useAsyncData("categories", () => getCategoryD
       return;
     }
     return data as ApiResponse<Category[]>;
+  },
+  deep: false
+});
+const { data: catalogues } = await useAsyncData("catalougs", () => getCataloguesData(), {
+  getCachedData(key) {
+    const data = nuxtApp.payload?.data[key]
+    if (!data) {
+      return;
+    }
+    return data as ApiResponse<CatalogData[]>;
   },
   deep: false
 });

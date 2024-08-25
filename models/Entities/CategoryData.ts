@@ -13,6 +13,6 @@ export interface ProductCard {
 }
 export interface CatalogData {
   title: string;
-  link: string | null;
+  fileName: string;
   imageName: string;
 }

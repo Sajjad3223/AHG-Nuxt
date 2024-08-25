@@ -67,17 +67,12 @@
         </div>
 
         <div class="w-full flex flex-col space-y-8 mt-16 relative">
-          <h4 class="text-[35px] md:text-[42px]">Easy-to-Read Results with AHG Blood Pressure Monitor</h4>
+          <h4 class="text-[35px] md:text-[42px]">{{ data.data.detailSecondTitle }}</h4>
           <div class="flex flex-col-reverse md:flex-row gap-5">
-            <p class="text-justify text-[16px] leading-tight">
-              AHG Blood Pressure Monitor are engineered to deliver precise and reliable measurements, displayed
-              clearly
-              on our advanced screen. With a focus on accuracy, our monitor present detailed results that are easy to
-              read and interpret, helping you keep a close watch on your health. The intuitive design ensures that
-              anyone can use our monitor with ease, making AHG a trusted choice for comprehensive blood pressure
-              management.
+            <p class="text-justify text-[16px] leading-tight whitespace-pre-wrap">
+              {{ data.data.detailSecondShortDescription }}
             </p>
-            <img src="/images/bpmPage/AHG-300-05.png" alt="device" style="scale: 1.2;"
+            <img :src="getBpmImage(data.data.detailSecondImageName)" alt="bpm device" style="scale: 1.2;"
               class="w-[29%] max-w-[450px] mx-auto hidden md:block">
           </div>
         </div>
@@ -160,7 +155,9 @@ if (data.value?.data?.details.length ?? 0 > 0) {
     })
   })
 }
-
+useHead({
+  title: 'Blood Pressure Monitor'
+})
 onMounted(() => {
   if (items.value.length == 0) {
     data.value?.data?.details.forEach(f => {
