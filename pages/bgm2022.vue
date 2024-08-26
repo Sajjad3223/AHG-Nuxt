@@ -134,7 +134,7 @@
             </div>
             <div class="flex gap-6 max-w-[50%] mr-[3rem]">
               <img :src="getBgmImage(data.data.featureImageName)" 
-              alt="Test Strips Specifications" class=" mr- self-center max-w-[700px]">
+              alt="Test Strips Specifications" class="self-center max-w-[700px] w-full">
             </div>
 
           </div>
