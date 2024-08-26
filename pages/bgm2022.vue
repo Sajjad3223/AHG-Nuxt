@@ -270,6 +270,7 @@ import { getBgm2022PageData } from "~/services/product.service";
 import type { Bgm2022Data } from "~/models/Entities/Bgm2022Data";
 import type { ApiResponse } from "~/models/apiResponse";
 import { getBgmDetailImage, getBgmImage, getBpmImage } from "~/utilities/ImageDirectories";
+import { useUtilStore } from "~/stores/util.store";
 
 const utilStore = useUtilStore();
 const nuxtApp = useNuxtApp();

@@ -32,6 +32,18 @@ export const getBgmDetailImage = (imageName: string) => {
 export const getBgmSpecificationsImage = (imageName: string) => {
   return `${ImageDomain}/images/BGMSpecifications/${imageName}`;
 };
+//2285
+export const getBgm2285Image = (imageName: string) => {
+  return `${ImageDomain}/images/BGM85s/${imageName}`;
+};
+export const getBgm2285DetailImage = (imageName: string) => {
+  return `${ImageDomain}/images/BGM85Details/${imageName}`;
+};
+export const getBgm2285SpecificationsImage = (imageName: string) => {
+  return `${ImageDomain}/images/BGM85Specifications/${imageName}`;
+};
+//
+
 
 export const getLandingPageImage = (imageName: string) => {
   return `${ImageDomain}/images/LandingPage/${imageName}`;

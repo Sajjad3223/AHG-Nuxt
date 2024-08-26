@@ -9,6 +9,9 @@ export const getBPM300PageData = () => {
 export const getBgm2022PageData = () => {
   return FetchApi<Bgm2022Data>("/Product/GetBgmData");
 };
+export const getBgm2285PageData = () => {
+  return FetchApi<Bgm2022Data>("/Product/GetBgm2285Data");
+};
 export const getCategoryData = () => {
   return FetchApi<Category[]>("/product/getCategories");
 };
