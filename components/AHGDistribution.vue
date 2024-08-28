@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full bg-blackColor lg:min-h-[500px] flex items-center justify-center py-16">
-    <div class="container md:w-[80%] min-[1920px]:w-[67.5%]  flex flex-col space-y-8">
-      <p class="text-2xl font-semibold leading-[1] text-white whitespace-pre-wrap">
+  <div class="w-full bg-blackColor lg:min-h-[500px] flex items-center justify-center py-8 md:py-16">
+    <div class="container md:w-[80%] min-[1920px]:w-[67.5%]  flex flex-col space-y-5 md:space-y-8">
+      <p class="text-2xl font-semibold leading-[1.2] md:leading-[1] text-white whitespace-pre-wrap">
         {{ title }}
       </p>
-      <span class="text-base !mb-4 font-light text-white whitespace-pre-wrap">{{ description }}</span>
-      <BaseAHGButton :to="buttonLink" color="white" is-show-more class="!text-[19px]">
+      <span class="text-lg md:text-base md:!mb-4 font-light text-white whitespace-pre-wrap">{{ description }}</span>
+      <BaseAHGButton :to="buttonLink" color="white" is-show-more class="section-size md:!text-[19px]">
         {{ buttonText }}
       </BaseAHGButton>
     </div>

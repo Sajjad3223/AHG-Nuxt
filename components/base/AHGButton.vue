@@ -40,9 +40,19 @@ const emits = defineEmits(['click']);
   </nuxt-link>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .btn {
-  @apply text-xs font-medium md:text-lg rounded-[8px] flex items-center gap-4 justify-center px-4 py-2 transition-all hover:opacity-75;
+  @apply text-sm font-medium md:text-lg rounded-[8px] flex items-center gap-3 md:gap-4 justify-center px-4 py-2 transition-all hover:opacity-75;
+
+}
+
+@media screen and (max-width:768px) {
+  .btn {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
 
 .btn-black {

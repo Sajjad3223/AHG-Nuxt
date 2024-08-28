@@ -57,6 +57,22 @@ a[disabled='true'] {
         padding-left: 1.5rem !important;
         padding-right: 1.5rem !important;
     }
+    p.text-mob,
+    .text-mob{
+        font-size: 18px !important;
+    }
+    .section-size{
+        font-size: 24px !important;
+    }
+    .section-size1,
+    h6.section-size1{
+        font-size: 26px !important;
+    }
+    h4.section-size2,
+    p.section-size2,
+    h5.section-size2{
+        font-size: 22px !important;
+    }
 }
 
 @font-face {

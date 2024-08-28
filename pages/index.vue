@@ -5,7 +5,7 @@
       <Title>{{ utilStore.siteSettings?.siteTitle }}</Title>
     </Head>
     <div class="relative w-full grid place-items-center">
-      <div class="relative flex justify-center lg:items-center w-full h-[60vh] lg:h-[90vh] pt-8">
+      <div class="relative flex justify-center lg:items-center w-full h-[50vh] lg:h-[90vh] pt-8">
         <img :src="getHomePageImage(data.data.imageName)"
           class="absolute object-cover  -z-[1] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" alt="bg" />
 
@@ -21,7 +21,7 @@
             </label>
 
           </p>
-          <p class="text-[25px] md:text-[34px] mt-7 max-w-[90%] md:max-w-[70%] whitespace-pre-line">
+          <p class="text-[20px]  md:text-[34px] mt-5 md:mt-7 max-w-[90%] md:max-w-[70%] whitespace-pre-line">
             {{ data.data.shortDescription }}
           </p>
         </div>
@@ -29,10 +29,10 @@
     </div>
     <div class="bg-blackColor w-full text-white">
       <div class="container mx-auto py-[8vw] flex flex-col ">
-        <p class="text-[27px] font-normal w-[98%] whitespace-pre-wrap">
+        <p class="text-mob md:!text-[27px] font-normal w-[98%] whitespace-pre-wrap">
           {{ data.data.description }}
         </p>
-        <h2 class="mb-8 mt-12 text-xl font-bold">
+        <h2 class="mb-2 mt-8 md:mb-8 md:mt-12 section-size md:text-xl font-bold">
           {{ data.data.productsSectionTitle }}
         </h2>
         <div class="flex justify-center w-full" v-if="loading">
@@ -43,10 +43,10 @@
            p-5 lg:p-12 flex flex-col-reverse gap-5 md:flex-row items-center justify-between relative"
             v-for="item in [...productCards].splice(0, 2)">
             <div class="flex  flex-col space-y-5 lg:space-y-12">
-              <h4 class="text-lg text-nowrap">
+              <h4 class="section-size2 text-lg text-nowrap">
                 {{ item.title }}
               </h4>
-              <p class="md:text-[20px] text-[15px] whitespace-pre-wrap">
+              <p class="md:text-[20px] text-mob whitespace-pre-wrap">
                 {{ item.shortDescription }}
               </p>
               <AHGButton :disabled="!item.buttonLink || item.buttonLink == '#'" :to="item.buttonLink ?? '#'"
@@ -60,7 +60,7 @@
             </div>
           </div>
         </template>
-        <h3 class="text-lg text-center my-[70px] whitespace-pre-wrap">
+        <h3 class="text-lg text-center my-[25px] md:my-[70px] whitespace-pre-wrap">
           {{ data.data.productsSectionDescription }}
         </h3>
         <div class="flex justify-center w-full" v-if="loading">
@@ -75,7 +75,7 @@
                 <h4 class="text-[22px] md:text-[42px]">
                   {{ item.title }}
                 </h4>
-                <div class="my-5 lg:mt-10 lg:mb-0 text-tiny max-w-[90%] font-light whitespace-pre-wrap">
+                <div class="my-5 lg:mt-10 lg:mb-0 text-mob md:text-tiny max-w-[90%] font-light whitespace-pre-wrap">
                   {{ item.shortDescription }}
                 </div>
               </div>

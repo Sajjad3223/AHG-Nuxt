@@ -2,10 +2,10 @@
   <div :class="['packaging', `packaging-${color}`]">
     <div class="container mx-auto flex items-center gap-5">
       <div class="flex flex-col w-full lg:w-[60%]  space-y-12">
-        <h2 class="titr font-semibold z-10 leading-[1.2] whitespace-pre-wrap" style="text-shadow: 2px 2px 5px #92A1A8">
+        <h2 class="titr font-semibold z-10 leading-[1.2] whitespace-pre-wrap">
           {{ title }}
         </h2>
-        <p class="text-[20px] md:text-[30px] z-10 !mt-5 w-full leading-8 whitespace-pre-wrap">
+        <p class="text-mob md:text-[30px] z-10 !mt-5 w-full md:leading-8 whitespace-pre-wrap">
           {{ description }}
         </p>
       </div>

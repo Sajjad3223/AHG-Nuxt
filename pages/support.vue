@@ -4,34 +4,33 @@
     <Head>
       <Title>Support</Title>
     </Head>
-    <div class="relative w-full flex items-end py-5 md:p-0 md:items-center h-[60vh] lg:h-[90vh]"
+    <div class="relative head w-full flex items-end py-5 md:p-0 md:items-center h-[60vh] lg:h-[90vh]"
       :style="{ 'background': `url(${getSupportPageImage(data.data.imageName)})` }"
       style="background-size: cover;background-position: 80% 50%">
       <div class="container mx-auto relative flex flex-col justify-center">
-        <p class="text-3xl font-bold text-black leading-[1] md:max-w-[50%]"
-          style="text-shadow: 2px 2px 5px rgba(255,255,255,0.4)">
+        <p class="text-3xl font-bold text-black leading-[1] md:max-w-[50%]">
           {{ data?.data?.title }}
         </p>
-        <p class="text-[32px] mt-8 whitespace-pre-wrap">
+        <p class="text-[32px] section-size2 mt-8 whitespace-pre-wrap">
           {{ data?.data?.shortDescription.split('\r\n')[0].trim() }}
         </p>
-        <p class="text-[24px] mt-4 md:max-w-[50%] whitespace-pre-line">
+        <p class="text-[24px] text-mob mt-4 md:max-w-[50%] whitespace-pre-line">
           {{ data?.data?.shortDescription.replace(data?.data?.shortDescription.split('\r\n')[0], '').trim() }}
         </p>
       </div>
     </div>
     <div class="bg-blackColor w-full text-white">
-      <div class="container mx-auto py-[80px] flex flex-col items-stretch">
-        <p class="text-[20px] md:text-[25px]">
+      <div class="container mx-auto py-[30px] md:py-[80px] flex flex-col items-stretch">
+        <p class="text-mob md:text-[25px]">
           {{ data?.data?.categorySectionShortDescription }}
         </p>
-        <p class="mt-5  text-base font-bold">
+        <p class="mt-5  text-mob text-base font-bold">
           {{ data?.data?.categorySectionTitle }}
         </p>
-        <div class="flex items-center flex-wrap gap-12 lg:gap-24 justify-center mt-20">
+        <div class="flex items-center flex-wrap gap-10 lg:gap-24 justify-center mt-10 md:mt-20">
           <nuxt-link :to="item.link ?? '#'" class="flex flex-col space-y-5" v-for="item in categories?.data">
             <img :src="getCategoryImage(item.imageName)" :alt="item.title" class="h-[120px] lg:h-[160px]">
-            <span class="text-small">{{ item.title }}</span>
+            <span class="md:text-small text-mob">{{ item.title }}</span>
           </nuxt-link>
         </div>
       </div>
@@ -45,7 +44,8 @@
           {{ data?.data?.catalogSectionShortDescription }}
         </p>
         <div class="flex items-stretch flex-wrap justify-between gap-5 mt-16 relative">
-          <div class="flex-1 bg-white flex flex-col hover:shadow-lg transition-all rounded-[40px] p-8" v-for="item in catalogues?.data">
+          <div class="flex-1 bg-white flex flex-col hover:shadow-lg transition-all rounded-[40px] p-8"
+            v-for="item in catalogues?.data">
             <h4 class="text-title text-nowrap">{{ item.title.split("AHG")[0] }}</h4>
             <h5 class="text-title font-bold " v-if="item.title.toLowerCase().split('ahg')[1]">AHG{{
               item.title.toLowerCase().split("ahg")[1] }}
@@ -189,9 +189,35 @@ onMounted(async () => {
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .img-shadow {
-  filter: drop-shadow(6px 5px 5px rgba(0, 0, 0, 0.3));
+  /* filter: drop-shadow(6px 5px 5px rgba(0, 0, 0, 0.3)); */
+
+}
+
+@media screen and (max-width:768px) {
+  .head {
+    height: fit-content !important;
+    @apply py-10;
+
+    .container {
+      z-index: 3;
+    }
+
+    p {
+      color: white;
+    }
+
+    &:after {
+      content: " ";
+      background: rgba(0, 0, 0, 0.699);
+      z-index: 2;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+  }
 }
 
 .col-span-full button,
