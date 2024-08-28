@@ -3,10 +3,10 @@
     <div class="relative w-full grid place-items-center py-[150px] bg-blackColor text-white">
       <div class="flex flex-col container mx-auto">
         <div class="relative flex flex-col justify-center">
-          <h1 class="text-[35px] md:text-[105px] font-bold leading-[1.1]">
+          <h1 class=" md:text-[105px] font-bold leading-[1.1]">
             {{ data?.data?.title }}
           </h1>
-          <div class="flex font-bold items-center text-[45px] gap-2 mt-5">
+          <div class="flex font-bold ahg items-center text-[45px] gap-2 mt-5">
             <p>AHG-2285</p>
           </div>
           <div class="flex items-center my-10 gap-10 lg:w-[65%]">
@@ -21,7 +21,7 @@
           </div>
           <div class="flex items-end justify-center gap-2 w-2/5 relative lg:absolute -right-12 -bottom-6  lg:m-0">
             <img :src="getBgm2285Image(data.data.imageName)" :alt="data.data.title"
-              class="max-h-[420px] lg:max-h-[420px] hidden md:block" />
+              class="max-h-[420px]  b-banner lg:max-h-[420px] hidden md:block" />
           </div>
         </div>
         <AHGButton :to="data.data.buttonLink" color="white" class="font-medium" width="200px" is-show-more>
@@ -293,6 +293,22 @@ useHead({
 <style scoped lang="scss">
 .img-shadow {
   /* filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); */
+}
+
+@media screen and (max-width:1020px) {
+  img.b-banner {
+    display: none !important;
+  }
+
+  h1 {
+    font-size: 50px !important;
+  }
+
+  div.ahg {
+    p {
+      font-size: 30px !important;
+    }
+  }
 }
 
 hr,

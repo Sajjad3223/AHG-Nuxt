@@ -3,10 +3,10 @@
     <div class="relative w-full grid place-items-center py-12 lg:py-[150px] bg-blackColor text-white">
       <div class="flex flex-col container mx-auto">
         <div class="relative flex flex-col justify-center">
-          <h1 class="text-[35px] md:text-[105px] font-bold leading-[1.1]">
+          <h1 class="text-[105px] font-bold leading-[1.1]">
             {{ data?.data?.title }}
           </h1>
-          <div class="flex font-bold items-center text-[45px] gap-2 lg:mt-5 mt-2">
+          <div class="flex font-bold items-center ahg md:text-[45px] gap-2 lg:mt-5 mt-2">
             <p>AHG-2022</p>
           </div>
           <div class="flex items-center my-10 gap-10 lg:w-[65%]">
@@ -21,12 +21,19 @@
           </div>
           <div class="flex items-end justify-center gap-2 w-2/5 relative lg:absolute -right-12 -bottom-6  lg:m-0">
             <img :src="getBgmImage(data.data.imageName)" :alt="data.data.title"
-              class="max-h-[420px] lg:max-h-[420px] hidden md:block" />
+              class="max-h-[320px] b-banner lg:max-h-[420px] hidden md:block" />
           </div>
         </div>
-        <AHGButton :to="data.data.buttonLink" color="white" class="font-medium" width="200px" is-show-more>
-          {{ data.data.buttonTitle }}
-        </AHGButton>
+        <div class="flex gap-2 w-full flex-wrap">
+          <AHGButton :to="data.data.buttonLink" color="white" class="flex-grow md:grow-0 font-medium" width="200px"
+            is-show-more>
+            {{ data.data.buttonTitle }}
+          </AHGButton>
+          <AHGButton to="/bgm2285" color="white" class="font-medium flex-grow md:grow-0 min-w-fit" width="200px"
+            is-show-more>
+            Discover AHG-2285 Blood Glucose Monitor
+          </AHGButton>
+        </div>
       </div>
     </div>
 
@@ -133,8 +140,8 @@
               </ul>
             </div>
             <div class="flex gap-6 max-w-[50%] mr-[3rem]">
-              <img :src="getBgmImage(data.data.featureImageName)" 
-              alt="Test Strips Specifications" class="self-center max-w-[700px] w-full">
+              <img :src="getBgmImage(data.data.featureImageName)" alt="Test Strips Specifications"
+                class="self-center max-w-[700px] w-full">
             </div>
 
           </div>
@@ -294,6 +301,20 @@ useHead({
   /* filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); */
 }
 
+@media screen and (max-width:1020px) {
+  img.b-banner {
+    display: none !important;
+  }
+
+  h1 {
+    font-size: 50px !important;
+  }
+  div.ahg{
+    p{
+      font-size: 30px !important;
+    }
+  }
+}
 
 @media screen and (max-width:768px) {
   .image-products {
