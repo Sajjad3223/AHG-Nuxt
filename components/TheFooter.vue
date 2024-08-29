@@ -63,24 +63,24 @@ import GoogleTranslateSelect from '@google-translate-select/vue3';
 const handleGoogleTranslateSelect = (language: any) => {
   console.log(language)
 }
-const langs = [{
-  code: 'en',
-  name: 'English',
-  cname: '英语',
-  ename: 'English',
-}, {
-  code: 'fr',
-  name: 'Français',
-  cname: '法语',
-  ename: 'French',
-}];
-
 // const langs = [{
 //   code: 'en',
 //   name: 'English',
 //   cname: '英语',
 //   ename: 'English',
+// }, {
+//   code: 'fr',
+//   name: 'Français',
+//   cname: '法语',
+//   ename: 'French',
 // }];
+
+const langs = [{
+  code: 'en',
+  name: 'English',
+  cname: '英语',
+  ename: 'English',
+}];
 const utilStore = useUtilStore();
 </script>
 <style scoped>
