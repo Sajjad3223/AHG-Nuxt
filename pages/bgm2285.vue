@@ -31,7 +31,7 @@
     </div>
 
     <div class="bg-white w-full">
-      <div class="container mx-auto py-[80px] flex flex-col items-stretch">
+      <div class="container mx-auto py-[10px] md:py-[80px] flex flex-col items-stretch">
         <div class=" my-14">
           <div class="flex items-center gap-1">
             <span class="text-[45px] font-bold">AHG-2285</span>
@@ -90,7 +90,7 @@
       </div>
     </div>
 
-    <div class="bg-lightColor md:pt-[80px] pt-[30px] relative">
+    <div class="bg-lightColor md:pt-[80px] py-[30px] relative">
       <div class="container mx-auto flex flex-col justify-between">
         <div class="flex flex-col space-y-10 flex-1">
           <h6 class="text-[23.5px] ">
@@ -146,14 +146,14 @@
 
     <div class="bg-white py-[50px] md:py-[100px] relative">
       <div class="container mx-auto flex flex-col justify-between">
-        <h2 class="text-[50px] font-bold">
+        <h2 class="text-[50px] section-size1 font-bold">
           {{ data.data.informationTitle }}
         </h2>
-        <span class="text-[23.8px] mt-2">
+        <span class="text-[23.8px] text-mob mt-2">
           {{ data.data.informationShortDescription }}
         </span>
         <div class="flex items-center gap-4">
-          <div class="flex-1 mt-16 grid grid-cols-1 lg:grid-cols-6 gap-1">
+          <div class="flex-1 mt-8 md:mt-16 grid grid-cols-1 lg:grid-cols-6 gap-1">
             <div class="lg:col-span-4 border border-black rounded-[20px] flex 
             flex-col justify-center p-6">
               <div class="flex flex-col">

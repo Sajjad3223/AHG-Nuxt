@@ -5,7 +5,7 @@
         {{ title }}
       </p>
       <span class="text-lg md:text-base md:!mb-4 font-light text-white whitespace-pre-wrap">{{ description }}</span>
-      <BaseAHGButton :to="buttonLink" color="white" is-show-more class="section-size md:!text-[19px]">
+      <BaseAHGButton :to="buttonLink" color="white" is-show-more class=" md:!text-[19px]">
         {{ buttonText }}
       </BaseAHGButton>
     </div>
