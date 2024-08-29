@@ -247,7 +247,7 @@
     <!-- <TheAHG2022 second-title="SHARE WITH YOUR DOCTOR" /> -->
 
     <AHGPackaging :title="data.data.secondBannerTitle" :description="data.data.secondBannerDescription"
-      :image="getBpmImage(data.data.secondBannerImageName)"
+      :image="getBgm2285Image(data.data.secondBannerImageName)"
       :short-description="data.data.secondBannerShortDescription" />
 
     <AHGSupport color="black" manual-button :title="data.data.supportBannerTitle"

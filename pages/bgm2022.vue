@@ -172,7 +172,8 @@
                   </li>
                 </ul>
               </div>
-              <img src="~/assets/images/bgmPage/2022/img_10.png" alt="" class="mx-auto h-auto w-full md:w-[65%] md:h-[135px] self-center">
+              <img src="~/assets/images/bgmPage/2022/img_10.png" alt=""
+                class="mx-auto h-auto w-full md:w-[65%] md:h-[135px] self-center">
               <div class="flex flex-col self-end">
                 <p class="text-[20px] font-bold">
                   Independent Lancet Holder
@@ -254,7 +255,7 @@
       :qr-code="getBgmImage(data?.data?.appBannerQRImageName ?? '')" />
 
     <AHGPackaging :title="data.data.secondBannerTitle" :description="data.data.secondBannerDescription"
-      :image="getBpmImage(data.data.secondBannerImageName)"
+      :image="getBgmImage(data.data.secondBannerImageName)"
       :short-description="data.data.secondBannerShortDescription" />
 
     <AHGSupport color="black" manual-button :title="data.data.supportBannerTitle"
@@ -309,8 +310,9 @@ useHead({
   h1 {
     font-size: 50px !important;
   }
-  div.ahg{
-    p{
+
+  div.ahg {
+    p {
       font-size: 30px !important;
     }
   }
