@@ -172,7 +172,7 @@
                   </li>
                 </ul>
               </div>
-              <img src="~/assets/images/bgmPage/2022/img_10.png" alt="" class="mx-auto w-[65%] h-[135px] self-center">
+              <img src="~/assets/images/bgmPage/2022/img_10.png" alt="" class="mx-auto h-auto w-full md:w-[65%] md:h-[135px] self-center">
               <div class="flex flex-col self-end">
                 <p class="text-[20px] font-bold">
                   Independent Lancet Holder

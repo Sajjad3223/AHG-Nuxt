@@ -8,7 +8,7 @@
       :style="{ 'background': `url(${getSupportPageImage(data.data.imageName)})` }"
       style="background-size: cover;background-position: 80% 50%">
       <div class="container mx-auto relative flex flex-col justify-center">
-        <p class="text-[38px] md:text-3xl font-bold text-black leading-[1] md:max-w-[50%]">
+        <p class="text-[38px] md:text-[128px] font-bold text-black leading-[1] md:max-w-[50%]">
           {{ data?.data?.title }}
         </p>
         <p class="text-[32px] section-size2  mt-3 md:mt-8 whitespace-pre-wrap">

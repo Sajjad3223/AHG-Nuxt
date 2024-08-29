@@ -9,14 +9,14 @@
           {{ description }}
         </p>
       </div>
-      <div class="absolute hidden lg:block right-0 top-1/2 -translate-y-1/2" v-if="!isBpm">
+      <div class="absolute  block right-0 top-1/2 -translate-y-1/2" v-if="!isBpm">
         <img src="../assets/images/affordable-packaging.png" alt="Affordable Packaging" class="max-w-[50vw]">
-        <span class="absolute -top-1 md:top-[8%] right-4 md:right-[12vw] leading-4 md:leading-8">
+        <span class="absolute hidden -top-1 md:top-[8%] right-4 md:right-[12vw] leading-4 md:leading-8">
           <b>{{ shortDescription.split('\r\n')[0] ?? shortDescription }}</b> <br>
           {{ shortDescription.split('\r\n')[1] ?? '' }}
         </span>
       </div>
-      <div class="absolute hidden lg:block  right-[5%] top-1/2 -translate-y-1/2" v-else>
+      <div class="absolute  block  right-[5%] top-1/2 -translate-y-1/2" v-else>
         <img :src="image" loading="lazy" alt="Affordable Packaging" class="w-[500px] max-w-[50vw]">
       </div>
     </div>
@@ -41,7 +41,7 @@ const props = withDefaults(defineProps<{
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .packaging {
   @apply py-[8vw] relative;
 }
@@ -64,5 +64,15 @@ p.sub {
 
 span {
   @apply text-[12px] sm:text-[18px] md:text-[20px] lg:text-[28px];
+}
+
+@media screen and (max-width:768px) {
+  .absolute {
+    position: unset !important;
+    transform: unset !important;
+  }
+  .container.flex{
+    flex-direction: column-reverse;
+  }
 }
 </style>

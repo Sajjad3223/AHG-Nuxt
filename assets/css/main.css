@@ -156,6 +156,10 @@ a[disabled='true'] {
     font-style: normal;
 }
 
+.google-translate-select-flag__en {
+    background-image: url('/images/us.png') !important;
+}
+
 @layer base {
     * {
         @apply font-inter;
@@ -164,7 +168,7 @@ a[disabled='true'] {
     html {
         scroll-behavior: smooth;
         overflow-wrap: break-word;
-        
+
     }
 
     .text-tiny {
