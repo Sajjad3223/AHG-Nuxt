@@ -10,7 +10,7 @@
           class="absolute object-cover  -z-[1] bottom-0 right-0 w-full h-full lg:h-auto lg:-bottom-5" alt="bg" />
 
         <div class="container content mx-auto">
-          <p class="text-3xl font-semibold  text-white leading-[1] lg:max-w-[70%] md:whitespace-pre-wrap"
+          <p class="text-3xl  font-semibold  text-white leading-[1] lg:max-w-[70%] md:whitespace-pre-wrap"
             style="text-shadow: 4px 1px 4px rgb(0 0 0 / 30%)">
             {{ data.data.title.split('\r\n')[0] }} <br >
             <template v-if="data.data.title.split('\r\n')[1]">{{ data.data.title.split('\r\n')[1]
@@ -21,7 +21,7 @@
             </label>
 
           </p>
-          <p class="text-[20px]  md:text-[34px] mt-5 md:mt-7 max-w-full md:max-w-[70%] md:whitespace-pre-line">
+          <p class="text-mob  md:text-[34px] mt-5 md:mt-7 max-w-full md:max-w-[70%] md:whitespace-pre-line">
             {{ data.data.shortDescription }}
           </p>
         </div>

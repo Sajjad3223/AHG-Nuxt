@@ -2,16 +2,16 @@
   <div class="w-full bg-blackColor py-[30px]  md:py-[80px] flex items-center justify-center relative">
     <div class="flex flex-col-reverse gap-10 lg:gap-5 lg:flex-row items-center container mx-auto  lg:mt-0  text-white">
       <div class="flex flex-col  origin-center md:origin-left  w-full lg:w-[85%]">
-        <h5 class="title font-bold">
+        <h5 class="section-size2 title font-bold">
           {{ title }}
         </h5>
-        <p class="text-title !font-normal mt-2">
+        <p class="text-mob md:!font-normal mt-2">
           {{ subTitle }}
         </p>
-        <h6 class="text-[20px] md:text-[40px] mt-12">
+        <h6 class="text-mob md:text-[40px] mt-3 md:mt-12">
           {{ secondTitle }}
         </h6>
-        <p class="!text-[19px] mt-5 md:w-[60%] w-full">
+        <p class="!text-[19px] text-mob mt-3 md:mt-5 md:w-[60%] w-full">
           {{ description }}
         </p>
       </div>

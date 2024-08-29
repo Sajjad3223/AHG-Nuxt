@@ -4,7 +4,8 @@
       <p class="text-2xl font-semibold leading-[1.2] md:leading-[1] text-white whitespace-pre-wrap">
         {{ title }}
       </p>
-      <span class="text-lg md:text-base md:!mb-4 font-light text-white whitespace-pre-wrap">{{ description }}</span>
+      <span class="text-mob text-base md:!mb-4 font-light text-white whitespace-pre-wrap">{{ description
+        }}</span>
       <BaseAHGButton :to="buttonLink" color="white" is-show-more class=" md:!text-[19px]">
         {{ buttonText }}
       </BaseAHGButton>
