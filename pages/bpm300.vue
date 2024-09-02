@@ -206,7 +206,7 @@ onMounted(() => {
 @media screen and (max-width:768px) {
   .p-image {
     display: block;
-    position: static;
+    position: unset;
     scale: 1 !important;
   }
 
