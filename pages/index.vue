@@ -12,9 +12,9 @@
         <div class="container content mx-auto">
           <p class="text-3xl  font-semibold  text-white leading-[1] lg:max-w-[70%] md:whitespace-pre-wrap"
             style="text-shadow: 4px 1px 4px rgb(0 0 0 / 30%)">
-            {{ data.data.title.split('\r\n')[0] }} <br >
+            {{ data.data.title.split('\r\n')[0] }} <br>
             <template v-if="data.data.title.split('\r\n')[1]">{{ data.data.title.split('\r\n')[1]
-              }}<br ></template>
+              }}<br></template>
             <label v-if="data.data.title.split('\r\n')[2]">
               {{ data.data.title.split('\r\n')[2].split(' ')[0] }} <span class="text-blackColor">{{
                 data.data.title.split('\r\n')[2].split(' ')[1] }}</span>
@@ -46,7 +46,7 @@
               <h4 class="section-size2 text-lg text-nowrap uppercase">
                 {{ item.title }}
               </h4>
-              <p class="md:text-[20px] text-mob whitespace-pre-wrap">
+              <p class="md:text-[20px] text-mob md:whitespace-pre-wrap">
                 {{ item.shortDescription }}
               </p>
               <AHGButton :disabled="!item.buttonLink || item.buttonLink == '#'" :to="item.buttonLink ?? '#'"
@@ -56,11 +56,12 @@
             </div>
 
             <div class=" flex-grow">
-              <img :src="getProductCardImage(item.imageName)" class=" max-h-[270px]  mx-auto" :alt="item.title" />
+              <img :src="getProductCardImage(item.imageName)" class=" max-h-[270px] product-img  mx-auto"
+                :alt="item.title" />
             </div>
           </div>
         </template>
-        <h3 class="text-lg text-center my-[25px] md:my-[70px] whitespace-pre-wrap">
+        <h3 class="text-lg text-center my-[25px] md:my-[70px] md:whitespace-pre-wrap">
           {{ data.data.productsSectionDescription }}
         </h3>
         <div class="flex justify-center w-full" v-if="loading">
@@ -69,13 +70,13 @@
         <template v-else>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 xl:gap-7">
             <div class="border border-white h-full
-             xl:max-h-[550px] rounded-[30px] flex flex-col items-stretch justify-between relative p-8
+             xl:max-h-[550px] rounded-[30px] flex flex-col items-stretch justify-between relative p-5
               lg:px-8 xl:py-12" v-for="item in [...utilStore.products].splice(2, 4)">
               <div class="flex flex-col">
                 <h4 class="text-[22px] md:text-[42px] uppercase">
                   {{ item.title }}
                 </h4>
-                <div class="my-5 lg:mt-10 lg:mb-0 text-mob md:text-tiny max-w-[90%] font-light whitespace-pre-wrap">
+                <div class="my-5 lg:mt-10 lg:mb-0 text-mob md:text-tiny max-w-[90%] font-light md:whitespace-pre-wrap">
                   {{ item.shortDescription }}
                 </div>
               </div>
@@ -85,7 +86,7 @@
                   {{ item.buttonTitle }}
                 </AHGButton>
                 <div class="max-w-[284px] max-h-[250px] my-auto">
-                  <img :src="getProductCardImage(item.imageName)" class="w-full scale-75 xl:scale-110 "
+                  <img :src="getProductCardImage(item.imageName)" class="w-full  scale-75 xl:scale-110 "
                     :alt="item.title" />
                 </div>
               </div>
@@ -149,6 +150,10 @@ onMounted(async () => {
   .show-more {
     width: 100% !important;
     justify-content: space-between;
+  }
+
+  .product-img {
+    width: 70% !important;
   }
 
   .head {

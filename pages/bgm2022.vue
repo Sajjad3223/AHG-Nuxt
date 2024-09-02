@@ -1,15 +1,17 @@
 <template>
   <div v-if="data?.data && pending == false">
-    <div class="relative w-full grid place-items-center py-12 lg:py-[150px] bg-blackColor text-white">
+    <div class="relative w-full grid place-items-center py-8 lg:py-[150px] bg-blackColor text-white">
       <div class="flex flex-col container mx-auto">
         <div class="relative flex flex-col justify-center">
+          <img loading="lazy" :src="getBgmImage(data.data.imageName)" :alt="data.data.title"
+            class="mx-auto w-[70%] mb-5 block md:hidden" />
           <h1 class="text-[105px] font-bold leading-[1.1]">
             {{ data?.data?.title }}
           </h1>
           <div class="flex font-bold items-center ahg md:text-[45px] gap-2 lg:mt-5 mt-2">
             <p>AHG-2022</p>
           </div>
-          <div class="flex items-center my-10 gap-10 lg:w-[65%]">
+          <div class="flex items-center my-5 md:my-10 gap-10 lg:w-[65%]">
             <div class="flex flex-col space-y-4   text-[18px] leading-tight">
               <p>
                 {{ data.data.shortDescription }}
@@ -39,12 +41,12 @@
 
     <div class="bg-white w-full">
       <div class="container mx-auto  flex flex-col items-stretch">
-        <div class=" my-14">
+        <div class="my-8 md:my-14">
           <div class="flex items-center gap-1">
-            <span class="text-[45px] font-bold">AHG-2022</span>
+            <span class="section-size1 text-[45px] font-bold">AHG-2022</span>
           </div>
-          <p class="text-[36px] mb-3">{{ data.data.detailTitle }}</p>
-          <p class="text-[19.5px]">
+          <p class="section-size text-[36px] md:mb-3 mb-2">{{ data.data.detailTitle }}</p>
+          <p class="text-mob text-[19.5px]">
             {{ data.data.detailShortDescription }}
           </p>
         </div>
@@ -53,8 +55,9 @@
           <div v-for="item in data.data.details" class="flex h-[180px] items-center justify-between w-full rounded-[20px] px-5 relative
              bg-lightColor drop-shadow-lg text-blackColor">
             <div class=" z-10 max-w-[70%]">
-              <p class="text-[24px] font-bold">{{ item.title }}</p>
-              <p class="text-[18px] whitespace-pre-wrap">{{ item.description }}</p>
+              <p class="section-size2 text-[24px] font-bold">{{ item.title }}</p>
+              <p class="text-mob
+               text-[18px] whitespace-pre-wrap">{{ item.description }}</p>
             </div>
             <img :src="getBgmDetailImage(item.imageName)" alt="Auto coding" class="img-shadow rounded-[20px] absolute top-0  
              right-0">
@@ -67,7 +70,7 @@
     <div class="bg-white py-[50px] md:py-[100px] relative">
       <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 justify-between">
         <div class="flex flex-col space-y-10 flex-1">
-          <h6 class="text-lg font-bold">
+          <h6 class="section-size1 text-lg font-bold">
             {{ data.data.specificationTitle }}
           </h6>
           <div class="grid grid-cols-2 gap-4 lg:gap-10 w-full">
@@ -93,19 +96,19 @@
           </div>
         </div>
         <img :src="getBgmImage(data.data.specificationImageName)" alt="specifications"
-          class="w-1/5 scale-110 max-w-[450px] ">
+          class="w-1/4 md:w-1/5 scale-110 max-w-[450px] ">
       </div>
     </div>
 
-    <div class="bg-lightColor md:py-[80px] py-[50px] relative">
+    <div class="bg-lightColor md:py-[80px] py-[20px] relative">
       <div class="container mx-auto flex flex-col justify-between">
-        <div class="flex flex-col space-y-10 flex-1">
-          <h6 class="text-[23.5px] ">
+        <div class="flex flex-col space-y-5 md:space-y-10 flex-1">
+          <h6 class="text-mob text-[23.5px] ">
             {{ data.data.featureShortDescription }}
           </h6>
 
-          <div class="mt-8 ">
-            <p class="text-[29px] font-bold">
+          <div class="">
+            <p class="section-size text-[29px] font-bold">
               {{ data.data.featureTitle }}
             </p>
             <div class="grid pl-3 md:grid-cols-2  lg:gap-x-36 xl:w-5/6">
@@ -116,7 +119,7 @@
                     {{ item.title }}
                   </p>
                   <ul class="list-disc ml-5 !mt-2">
-                    <li class="text-[17px]">
+                    <li class="text-mob text-[17px]">
                       {{ item.description }}
                     </li>
                   </ul>
@@ -129,7 +132,7 @@
           <div class="flex flex-col-reverse lg:flex-row gap-5"
             v-if="data.data.features.find(f => f.title == 'Test Strips Specifications')">
             <div class="min-w-fit flex-1 flex flex-col space-y-8">
-              <span class="text-[35px] font-bold">
+              <span class="section-size text-[35px] font-bold">
                 Test Strips Specifications
               </span>
               <ul class="list-disc ml-5 !mt-5 font-medium">
@@ -139,7 +142,7 @@
                 </li>
               </ul>
             </div>
-            <div class="flex gap-6 max-w-[50%] mr-[3rem]">
+            <div class="flex gap-6 mx-auto max-w-[90%] md:max-w-[50%] md:mr-[3rem]">
               <img :src="getBgmImage(data.data.featureImageName)" alt="Test Strips Specifications"
                 class="self-center max-w-[700px] w-full">
             </div>
@@ -149,17 +152,17 @@
       </div>
     </div>
 
-    <div class="bg-white py-[100px] relative">
+    <div class="bg-white py-[30px] md:py-[100px] relative">
       <div class="container mx-auto flex flex-col justify-between">
-        <h2 class="text-[50px] font-bold">
+        <h2 class="section-size text-[50px] font-bold">
           {{ data.data.informationTitle }}
         </h2>
-        <span class="text-[23.8px] mt-2">
+        <span class="text-mob text-[23.8px] mt-2">
           {{ data.data.informationShortDescription }}
         </span>
 
         <div class="flex items-center gap-4">
-          <div class="flex-1 mt-16 grid grid-cols-1 lg:grid-cols-6 gap-1">
+          <div class="flex-1 mt-8 md:mt-16 grid grid-cols-1 lg:grid-cols-6 gap-1">
             <div class="lg:col-span-4 border border-black rounded-[20px] flex 
             flex-col justify-center p-6">
               <div class="flex flex-col">
@@ -167,7 +170,7 @@
                   Forward Spring Technology:
                 </p>
                 <ul class="list-disc ml-5">
-                  <li class="text-[17px]">
+                  <li class="text-mob text-[17px]">
                     Minimizes pain and vibration during use.
                   </li>
                 </ul>
@@ -179,7 +182,7 @@
                   Independent Lancet Holder
                 </p>
                 <ul class="list-disc ml-5">
-                  <li class="text-[17px]">
+                  <li class="text-mob text-[17px]">
                     Ensures precise, painless lancet insertion.
                   </li>
                 </ul>
@@ -191,7 +194,7 @@
                   Ready for use or not:
                 </p>
                 <ul class="list-disc ml-5">
-                  <li class="text-[17px]">
+                  <li class="text-mob text-[17px]">
                     warning lancet stored or not
                   </li>
                 </ul>
@@ -204,7 +207,7 @@
                   Elastic Rail System:
                 </p>
                 <ul class="customLi">
-                  <li class="text-[17px]">
+                  <li class="text-mob text-[17px]">
                        Promotes smoother,<br />
                     less painful lancet penetration.
                   </li>
@@ -219,7 +222,7 @@
                   11 Depth Settings:
                 </p>
                 <ul class="customLi">
-                  <li class="text-[17px]">
+                  <li class="text-mob text-[17px]">
                        Customizable settings for user
                     comfort and needs.
                   </li>
@@ -235,7 +238,7 @@
                   2-in-1 Button & Lancet Ejector:
                 </p>
                 <ul class="customLi">
-                  <li class="text-[18px]">
+                  <li class="text-mob text-[18px]">
                        Streamlined design for easy cleaning, with a safety feature
                     preventing lancet ejection without proper cap twisting.
                   </li>
@@ -308,7 +311,7 @@ useHead({
   }
 
   h1 {
-    font-size: 50px !important;
+    font-size: 40px !important;
   }
 
   div.ahg {

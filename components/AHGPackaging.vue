@@ -5,7 +5,7 @@
         <h2 class="titr font-semibold z-10 leading-[1.2] whitespace-pre-wrap">
           {{ title }}
         </h2>
-        <p class="text-mob md:text-[30px] z-10 !mt-5 w-full md:leading-8 whitespace-pre-wrap">
+        <p class="text-mob md:text-[30px] z-10 !mt-5 w-full md:leading-8 md:whitespace-pre-wrap">
           {{ description }}
         </p>
       </div>
