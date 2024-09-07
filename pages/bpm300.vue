@@ -202,6 +202,7 @@ onMounted(() => {
     display: block;
     position: static;
     scale: 1 !important;
+    max-height: 88px;
   }
 
   .pre {
