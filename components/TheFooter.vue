@@ -17,15 +17,11 @@
             </div>
           </div>
         </div>
-        <div class="col-span-full ml-auto relative flex items-center">
-          <select name="" id="" class="pl-6 pr-24 py-3 appearance-none cursor-pointer rounded-lg border text-left">
-            <option>English</option>
-          </select>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.88 21.73"
-            class="w-2 pointer-events-none text-borderColor rotate-90 absolute right-5">
-            <polyline stroke-miterlimit="10" fill="none" stroke="currentColor" stroke-width="1.5"
-              points=".35 .36 11.16 10.97 .35 21.37" />
-          </svg>
+        <div class="col-span-full w-full md:!w-[300px] mt-2 ml-auto relative flex items-center">
+          <GoogleTranslateSelect class="w-full" :languages="langs" default-language-code="en"
+            default-page-language-code="en" :fetch-browser-language="false" trigger="click"
+            @select="handleGoogleTranslateSelect" />
+
         </div>
       </div>
       <hr class="my-5">
@@ -62,7 +58,29 @@
 
 <script setup lang="ts">
 import { getSiteSettingsImage } from '~/utilities/ImageDirectories';
+//@ts-ignore
+import GoogleTranslateSelect from '@google-translate-select/vue3';
+const handleGoogleTranslateSelect = (language: any) => {
+  console.log(language)
+}
+// const langs = [{
+//   code: 'en',
+//   name: 'English',
+//   cname: '英语',
+//   ename: 'English',
+// }, {
+//   code: 'fr',
+//   name: 'Français',
+//   cname: '法语',
+//   ename: 'French',
+// }];
 
+const langs = [{
+  code: 'en',
+  name: 'English',
+  cname: '英语',
+  ename: 'English',
+}];
 const utilStore = useUtilStore();
 </script>
 <style scoped>

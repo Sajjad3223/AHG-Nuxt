@@ -44,78 +44,26 @@
             {{ data.data.productBannerShortDescription }}
           </span>
           <div class="mt-8 lg:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-3  w-full mx-auto">
-            <div class="bg-lightColor rounded-[30px] px-5 py-10  flex flex-col  gap-4">
+            <div v-for="item in utilStore.products"
+              class="bg-lightColor rounded-[30px] px-5 py-10  flex flex-col  gap-4">
               <AHGLogo color="blackColor" width="96px" height="28px" />
-              <span class="text-[22px]">Blood Pressure Monitors</span>
-              <img src="~/assets/images/Blood-Pressure.png" alt="Blood Pressure"
-                class="w-2/3 h-[250px] lg:w-full object-contain img-shadow">
+              <span class="text-[22px]">{{ item.title }}</span>
+              <img :src="getProductCardImage(item.cardImage)" alt="Blood Pressure"
+                class="w-2/3 h-[250px] lg:w-full object-contain ">
               <div class="hidden lg:block">
-                <BaseAHGButton to="/bpm300" class="text-tiny ml-auto mt-4" color="black" is-show-more
+                <BaseAHGButton :disabled="item.buttonLink == '#'" :to="item.buttonLink" class="text-tiny ml-auto mt-4" color="black" is-show-more
                   width="max-content" px="1rem" py="0.5rem" text-size="1.5rem">
                   <span>Learn More</span>
                 </BaseAHGButton>
               </div>
               <div class="lg:hidden">
-                <BaseAHGButton to="/bpm300" class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%"
-                  py="0.5rem" text-size="0.8rem">
+                <BaseAHGButton :disabled="item.buttonLink == '#'" :to="item.buttonLink" class="text-tiny ml-auto mt-4"
+                  color="black" is-show-more width="100%" py="0.5rem" text-size="0.8rem">
                   <span>Learn More</span>
                 </BaseAHGButton>
               </div>
             </div>
-            <div class="bg-lightColor rounded-[30px] px-5 py-10 flex flex-col  gap-4">
-              <AHGLogo color="blackColor" width="96px" height="28px" />
-              <span class="text-[22px]">Blood Glucose Monitors</span>
-              <img src="~/assets/images/Blood-Glucose.png" alt="Blood Glucose"
-                class="w-2/3 h-[250px] lg:w-full object-contain img-shadow">
-              <div class="hidden lg:block">
-                <BaseAHGButton to="/bgm2022" class="text-tiny ml-auto mt-4" color="black" is-show-more
-                  width="max-content" px="1rem" py="0.5rem" text-size="1.5rem">
-                  <span>Learn More</span>
-                </BaseAHGButton>
-              </div>
-              <div class="lg:hidden">
-                <BaseAHGButton to="/bgm2022" class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%"
-                  py="0.5rem" text-size="0.8rem">
-                  <span>Learn More</span>
-                </BaseAHGButton>
-              </div>
-            </div>
-            <div class="bg-lightColor rounded-[30px] px-5 py-10 flex flex-col  gap-4">
-              <AHGLogo color="blackColor" width="96px" height="28px" />
-              <span class="text-[22px]">Digital Body Scales</span>
-              <img src="~/assets/images/Body-Scale.png" alt="Body Scale"
-                class="w-2/3 lg:w-full h-[250px] object-contain img-shadow">
-              <div class="hidden lg:block">
-                <BaseAHGButton disabled class="text-tiny ml-auto mt-4" color="black" is-show-more width="max-content"
-                  px="1rem" py="0.5rem" text-size="1.5rem">
-                  <span>Learn More</span>
-                </BaseAHGButton>
-              </div>
-              <div class="lg:hidden">
-                <BaseAHGButton disabled class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%"
-                  py="0.5rem" text-size="0.8rem">
-                  <span>Learn More</span>
-                </BaseAHGButton>
-              </div>
-            </div>
-            <div class="bg-lightColor rounded-[30px] px-5 py-10 flex flex-col  gap-4">
-              <AHGLogo color="blackColor" width="96px" height="28px" />
-              <span class="text-[22px]">Digital Thermometer</span>
-              <img src="~/assets/images/Thermometer.png" alt="Thermometer"
-                class=" lg:w-full  h-[250px] object-contain img-shadow">
-              <div class="hidden lg:block">
-                <BaseAHGButton disabled class="text-tiny ml-auto mt-4" color="black" is-show-more width="max-content"
-                  px="1rem" py="0.5rem" text-size="1.5rem">
-                  <span>Learn More</span>
-                </BaseAHGButton>
-              </div>
-              <div class="lg:hidden">
-                <BaseAHGButton disabled class="text-tiny ml-auto mt-4" color="black" is-show-more width="100%"
-                  py="0.5rem" text-size="0.8rem">
-                  <span>Learn More</span>
-                </BaseAHGButton>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
@@ -156,8 +104,11 @@
 import type { ApiResponse } from '~/models/apiResponse';
 import type { LandingPageData } from '~/models/Entities/LandingPageData';
 import { getLandingPageData } from '~/services/pages.service';
-import { getHomePageImage, getLandingPageImage } from '~/utilities/ImageDirectories';
+import { getProductCardsData } from '~/services/product.service';
+import { getHomePageImage, getLandingPageImage, getProductCardImage } from '~/utilities/ImageDirectories';
 
+const utilStore = useUtilStore();
+const loading = ref(false);
 const nuxtApp = useNuxtApp();
 const { data, pending } = await useAsyncData("landing", () => getLandingPageData(), {
   getCachedData(key) {
@@ -168,6 +119,17 @@ const { data, pending } = await useAsyncData("landing", () => getLandingPageData
     return data as ApiResponse<LandingPageData>;
   },
   deep: false
+});
+
+onMounted(async () => {
+  if (utilStore.products.length == 0) {
+    loading.value = true;
+    var res = await getProductCardsData();
+    if (res.isSuccess) {
+      utilStore.products = res.data ?? [];
+    }
+    loading.value = false;
+  }
 });
 </script>
 <style scoped>

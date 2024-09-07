@@ -1,9 +1,9 @@
 <template>
   <div v-if="data?.data && pending == false">
-    <div class="relative w-full grid place-items-center md:h-[90vh] bpm-banner"
+    <div class="relative w-full grid place-items-center md:min-h-[90vh] bpm-banner"
       :style="{ 'background-image': `url(${getBpmImage(data.data.backgroundImageName)})` }">
       <div class="container mx-auto relative flex flex-col justify-center pt-[5vh]  pb-12 ">
-        <div class="bg-blackColor rounded-[25px] p-8 md:py-12 md:px-16 md:w-[65%] text-white">
+        <div class="bg-blackColor rounded-[25px] p-8 md:py-12 md:px-16 md:w-[74%] text-white">
           <div class="flex items-center gap-2 text-[28px] md:text-[45px] font-bold">
             <span>AHG-300</span>
           </div>
@@ -49,8 +49,8 @@
         </div>
 
         <div class="grid lg:grid-cols-2 gap-5">
-          <div v-for="item in items"
-            class="flex overflow-hidden flex-col-reverse md:flex-row gap-5 items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
+          <div v-for="item in items" :key="item.title" class="flex detail-item overflow-hidden flex-col-reverse md:flex-row md:gap-5
+             items-center justify-between w-full rounded-[20px] p-5 relative bg-white text-blackColor">
             <div class="flex flex-col z-10 w-full md:w-[70%]">
               <span class="text-[22px] font-bold">{{ item.title }}</span>
               <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 md:gap-0 w-full">
@@ -61,7 +61,7 @@
                 </ul>
               </div>
             </div>
-            <img :src="item.image" :alt="item.title" class="img-shadow !hidden md:!block p-image right-0 absolute z-1 h-full">
+            <img :src="item.image" :alt="item.title" class="img-shadow block p-image right-0 absolute z-1 h-full">
           </div>
 
         </div>
@@ -90,7 +90,7 @@
               <template v-for="(item, index)  in [...data.data.specifications.slice(0, 5)]" :key="index">
                 <div>
                   <p class=" text-[21px] font-bold">{{ item.title }}</p>
-                  <p class="whitespace-pre-wrap text-mob" >{{ item.description }}</p>
+                  <p class="whitespace-pre-wrap text-mob">{{ item.description }}</p>
                 </div>
                 <hr v-if="index != 4" />
               </template>
@@ -176,6 +176,12 @@ onMounted(() => {
   /* filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); */
 }
 
+@media screen and (max-width:768px) {
+  .detail-item {
+    padding-top: 0 !important;
+  }
+}
+
 .bpm-banner {
   background-repeat: no-repeat;
   background-position: 100% 0;
@@ -200,7 +206,7 @@ onMounted(() => {
 @media screen and (max-width:768px) {
   .p-image {
     display: block;
-    position: static;
+    position: unset;
     scale: 1 !important;
     max-height: 88px;
   }

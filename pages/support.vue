@@ -8,13 +8,13 @@
       :style="{ 'background': `url(${getSupportPageImage(data.data.imageName)})` }"
       style="background-size: cover;background-position: 80% 50%">
       <div class="container mx-auto relative flex flex-col justify-center">
-        <p class="text-3xl font-bold text-black leading-[1] md:max-w-[50%]">
+        <p class="text-[38px] md:text-[128px] font-bold text-black leading-[1] md:max-w-[50%]">
           {{ data?.data?.title }}
         </p>
-        <p class="text-[32px] section-size2 mt-8 whitespace-pre-wrap">
+        <p class="text-[32px] section-size2  mt-3 md:mt-8 whitespace-pre-wrap">
           {{ data?.data?.shortDescription.split('\r\n')[0].trim() }}
         </p>
-        <p class="text-[24px] text-mob mt-4 md:max-w-[50%] whitespace-pre-line">
+        <p class="text-[24px] text-mob mt-1 md:mt-4 md:max-w-[50%] md:whitespace-pre-line">
           {{ data?.data?.shortDescription.replace(data?.data?.shortDescription.split('\r\n')[0], '').trim() }}
         </p>
       </div>
@@ -40,10 +40,10 @@
         <h2 class="font-bold text-[30px] md:text-[70px]">
           {{ data?.data?.catalogSectionTitle }}
         </h2>
-        <p class="text-base ">
+        <p class="text-base text-mob text-center ">
           {{ data?.data?.catalogSectionShortDescription }}
         </p>
-        <div class="flex items-stretch flex-wrap justify-between gap-5 mt-16 relative">
+        <div class="flex items-stretch flex-wrap justify-between gap-5 mt-6 md:mt-16 relative">
           <div class="flex-1 bg-white flex flex-col hover:shadow-lg transition-all rounded-[40px] p-8"
             v-for="item in catalogues?.data">
             <h4 class="text-title text-nowrap">{{ item.title.split("AHG")[0] }}</h4>
@@ -68,16 +68,16 @@
 
     <!-- Download Manual -->
     <div class="w-full bg-white flex items-center justify-center">
-      <div class="container flex py-[100px] flex-col items-center mx-auto">
+      <div class="container flex py-[50px] md:py-[100px] flex-col items-center mx-auto">
         <h2 class="text-2xl font-bold">
           {{ data?.data?.instructionSectionTitle }}
         </h2>
-        <p class="text-base mt-12">
+        <p class="text-base text-mob mt-5 md:mt-12 text-center">
           {{ data?.data?.instructionSectionShortDescription }}
         </p>
-        <ul class="mt-20 w-full button-links flex flex-col space-y-5 relative">
+        <ul class="mt-6 md:mt-20 w-full button-links flex flex-col space-y-5 relative">
           <li v-for="item in items" :key="item.title" class="p-8 flex flex-col w-full rounded-[40px] bg-lightColor">
-            <h6 class="text-lg">{{ item.title }}</h6>
+            <h6 class="text-lg section-size2">{{ item.title }}</h6>
             <hr class="border-blackColor my-5">
             <div class="grid grid-cols-3 gap-4">
               <span class="col-span-full lg:col-span-1 text-sm self-center">Instruction Manual</span>

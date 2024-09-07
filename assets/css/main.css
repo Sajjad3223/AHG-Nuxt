@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 
+.google-translate-select-dropdown {
+    @apply min-w-[240px] py-3 w-full !justify-between cursor-pointer rounded-lg border text-left;
+}
+
+.google-translate-select-dropdown__menu {
+    width: 100%;
+}
+
+.google-translate-select-dropdown__menu {
+    bottom: 100%;
+    top: unset !important;
+}
 
 .drop-shadow-lg {
     filter: none !important;
@@ -54,23 +66,29 @@ a[disabled='true'] {
 
 @media screen and (max-width:768px) {
     .container {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
+
     p.text-mob,
-    .text-mob{
-        font-size: 18px !important;
+    span.text-mob,
+    .text-mob {
+        font-size: 16px !important;
     }
-    .section-size{
-        font-size: 24px !important;
+
+    .section-size {
+        font-size: 23px !important;
     }
+
     .section-size1,
-    h6.section-size1{
+    h6.section-size1 {
         font-size: 26px !important;
     }
+
     h4.section-size2,
+    h6.section-size2,
     p.section-size2,
-    h5.section-size2{
+    h5.section-size2 {
         font-size: 22px !important;
     }
 }
@@ -138,6 +156,10 @@ a[disabled='true'] {
     font-style: normal;
 }
 
+.google-translate-select-flag__en {
+    background-image: url('/images/us.png') !important;
+}
+
 @layer base {
     * {
         @apply font-inter;
@@ -145,6 +167,8 @@ a[disabled='true'] {
 
     html {
         scroll-behavior: smooth;
+        overflow-wrap: break-word;
+
     }
 
     .text-tiny {

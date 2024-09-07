@@ -8,6 +8,7 @@ export interface ProductCard {
   title: string;
   shortDescription: string;
   imageName: string;
+  cardImage: string;
   buttonTitle: string;
   buttonLink: string;
 }

@@ -1,8 +1,11 @@
 <template>
-  <nav class="bg-blackColor w-full overflow-visible flex items-center justify-center">
+  <nav
+    class="bg-blackColor z-50 border-b border-b-gray-800 sticky top-0 w-full overflow-visible flex items-center justify-center">
     <div class="flex items-center container  py-6">
       <!--  LOGO   -->
-      <AHGLogo width="10vw" color="white" />
+      <nuxt-link to="/">
+        <AHGLogo width="10vw" color="white" />
+      </nuxt-link>
       <ul
         class="hidden ml-auto uppercase md:flex items-center gap-5 text-xs lg:text-[16px] xl:gap-[6vw] 2xl:gap-16 text-white">
         <li>
@@ -23,9 +26,6 @@
             <Transition name="layout" mode="out-in">
               <ul v-if="isOpenProductMenu"
                 class="absolute top-6 text-left z-10 min-w-[225px] bg-black/90 shadow-sm rounded p-3">
-                <!-- AHG-2022
-                  
-                AHG-2285 -->
                 <li>
                   <button @click="isOpenBgmMenu = true" class="flex gap-2 w-full justify-between items-center"
                     to="/bgm2022">Blood Glucose Monitor
@@ -102,35 +102,79 @@
             <span class="w-full h-px bg-white rounded-full -rotate-45"></span>
           </button>
           <AHGLogo color="white" class="self-center" />
-          <ul
-            class="mx-auto w-full flex-1 uppercase flex flex-col items-center divide-y divide-white/50 gap-4 text-xl text-white">
-            <li class="w-full text-center flex">
-              <NuxtLink to="/" class="w-full py-4 rounded-xl">
+          <ul class=" w-full flex-1 uppercase flex flex-col  divide-y divide-white/40 gap-4 text-lg text-white">
+            <li class="w-full  flex">
+              <NuxtLink to="/" class="w-full pt-4 rounded-xl">
                 Home
               </NuxtLink>
             </li>
-            <li class="w-full text-center flex">
-              <NuxtLink @click="showNavigationBar = false" to="/landing" class="w-full py-4 rounded-xl">
+            <li class="w-full  ">
+              <button v-click-outside="() => isOpenProductMenu = false"
+                @click="isOpenMobileProductMenu = !isOpenMobileProductMenu"
+                class="w-full flex  items-center pt-4 gap-4  rounded-xl">
                 PRODUCTS
-              </NuxtLink>
+                <svg :class="isOpenMobileProductMenu ? 'rotate-90' : '-rotate-90'" width="15" height="15"
+                  viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-eeadef4d="">
+                  <path
+                    d="M4.97172 8.65283C5.15999 8.65283 5.32735 8.59007 5.45287 8.46456C5.72482 8.21352 5.72482 7.77421 5.45287 7.52317L2.58688 4.63627L5.45287 1.77028C5.72482 1.51924 5.72482 1.07993 5.45287 0.828896C5.20183 0.556941 4.76252 0.556941 4.51148 0.828896L1.16435 4.17603C0.89239 4.42707 0.89239 4.86638 1.16435 5.11742L4.51148 8.46456C4.637 8.59007 4.80436 8.65283 4.97172 8.65283Z"
+                    fill="#fff"></path>
+                </svg>
+              </button>
+              <div class="flex mt-2 flex-col gap-2">
+                <Transition name="layout" mode="out-in">
+                  <ul v-if="isOpenMobileProductMenu" class="text-left w-full   rounded p-3">
+                    <li>
+                      <button @click="isOpenBgmMenu = !isOpenBgmMenu"
+                        class="flex gap-2 w-full justify-between items-center" to="/bgm2022">Blood Glucose Monitor
+                        <svg class="rotate-180" width="12" height="12" viewBox="0 0 6 9" fill="none"
+                          xmlns="http://www.w3.org/2000/svg" data-v-eeadef4d="">
+                          <path
+                            d="M4.97172 8.65283C5.15999 8.65283 5.32735 8.59007 5.45287 8.46456C5.72482 8.21352 5.72482 7.77421 5.45287 7.52317L2.58688 4.63627L5.45287 1.77028C5.72482 1.51924 5.72482 1.07993 5.45287 0.828896C5.20183 0.556941 4.76252 0.556941 4.51148 0.828896L1.16435 4.17603C0.89239 4.42707 0.89239 4.86638 1.16435 5.11742L4.51148 8.46456C4.637 8.59007 4.80436 8.65283 4.97172 8.65283Z"
+                            fill="#fff"></path>
+                        </svg>
+                      </button>
+                      <div v-if="isOpenBgmMenu" class="w-full flex flex-col gap-2  rounded  p-3 pt-5">
+                        <NuxtLink class="mb-2" @click="showNavigationBar = false" to="/bgm2022">AHG-2022</NuxtLink>
+                        <NuxtLink @click="showNavigationBar = false" to="/bgm2285">AHG-2285</NuxtLink>
+                      </div>
+                    </li>
+
+                    <li class="mt-6">
+                      <button @click="isOpenBpmMenu = !isOpenBpmMenu"
+                        class="flex gap-2 w-full justify-between items-center" to="/bpm300">Blood Pressure Monitor
+                        <svg class="rotate-180" width="12" height="12" viewBox="0 0 6 9" fill="none"
+                          xmlns="http://www.w3.org/2000/svg" data-v-eeadef4d="">
+                          <path
+                            d="M4.97172 8.65283C5.15999 8.65283 5.32735 8.59007 5.45287 8.46456C5.72482 8.21352 5.72482 7.77421 5.45287 7.52317L2.58688 4.63627L5.45287 1.77028C5.72482 1.51924 5.72482 1.07993 5.45287 0.828896C5.20183 0.556941 4.76252 0.556941 4.51148 0.828896L1.16435 4.17603C0.89239 4.42707 0.89239 4.86638 1.16435 5.11742L4.51148 8.46456C4.637 8.59007 4.80436 8.65283 4.97172 8.65283Z"
+                            fill="#fff"></path>
+                        </svg>
+                      </button>
+                      <div v-if="isOpenBpmMenu" class="rounded bottom-0 p-3 pt-5">
+                        <NuxtLink @click="showNavigationBar = false" to="/bpm300" class="mt-2">AHG-300
+                        </NuxtLink>
+                      </div>
+                    </li>
+                  </ul>
+                </Transition>
+              </div>
             </li>
-            <li class="w-full text-center flex">
-              <NuxtLink @click="showNavigationBar = false" to="/support" class="w-full py-4 rounded-xl">
+            <li class="w-full  flex">
+              <NuxtLink @click="showNavigationBar = false" to="/support" class="w-full pt-4 rounded-xl">
                 SUPPORT
               </NuxtLink>
             </li>
-            <li class="w-full text-center flex">
-              <NuxtLink @click="showNavigationBar = false" to="/distributor" class="w-full py-4 rounded-xl">
+            <li class="w-full flex">
+              <NuxtLink @click="showNavigationBar = false" to="/distributor" class="w-full pt-4 rounded-xl">
                 Distribution
               </NuxtLink>
             </li>
-            <li class="w-full text-center flex">
-              <NuxtLink @click="showNavigationBar = false" to="/about-us" class="w-full py-4 rounded-xl">
+            <li class="w-full  flex">
+              <NuxtLink @click="showNavigationBar = false" to="/about-us" class="w-full pt-4 rounded-xl">
                 ABOUT US
               </NuxtLink>
             </li>
-            <li class="w-full text-center flex">
-              <NuxtLink @click="showNavigationBar = false" to="/contact-us" class="w-full py-4 rounded-xl">
+            <li class="w-full  flex">
+              <NuxtLink @click="showNavigationBar = false" to="/contact-us" class="w-full pt-4 rounded-xl">
                 GET IN TOUCH
               </NuxtLink>
             </li>
@@ -145,12 +189,14 @@
 
 const showNavigationBar = ref(false);
 const isOpenProductMenu = ref(false);
+const isOpenMobileProductMenu = ref(false);
 
 const isOpenBgmMenu = ref(false);
 const isOpenBpmMenu = ref(false);
 watch(isOpenBgmMenu, (val) => {
   if (val == true) {
     isOpenBpmMenu.value = false;
+
   }
 })
 watch(isOpenBpmMenu, (val) => {
@@ -158,10 +204,16 @@ watch(isOpenBpmMenu, (val) => {
     isOpenBgmMenu.value = false;
   }
 });
-watch(isOpenProductMenu,(val)=>{
-  if(val==false){
-    isOpenBgmMenu.value=false;
-    isOpenBpmMenu.value=false;
+watch(isOpenProductMenu, (val) => {
+  if (val == false) {
+    isOpenBgmMenu.value = false;
+    isOpenBpmMenu.value = false;
+  }
+})
+watch(isOpenMobileProductMenu, (val) => {
+  if (val == false) {
+    isOpenBgmMenu.value = false;
+    isOpenBpmMenu.value = false;
   }
 })
 </script>
