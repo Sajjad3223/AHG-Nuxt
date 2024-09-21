@@ -28,12 +28,12 @@
       </div>
     </div>
 
-    <div class="w-full font-bold text-xl h-[100px] bg-lightColor text-blackColor flex items-center justify-center">
+    <div class="w-full font-bold section-size h-[100px] bg-lightColor text-blackColor flex items-center justify-center">
       {{ data?.data?.addressSectionTitle }}
     </div>
 
-    <div class="bg-blackColor py-[100px] flex justify-center items-center">
-      <div class="flex flex-col container mx-auto text-white space-y-5 text-base">
+    <div class="bg-blackColor py-[50px] md:py-[100px] flex justify-center items-center">
+      <div class="flex flex-col container mx-auto text-white space-y-5 section-size text-[30px]">
         <p>
           <b>{{ data?.data?.addressTitle }}</b> <br>
           {{ data?.data?.address }}

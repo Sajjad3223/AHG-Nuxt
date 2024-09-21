@@ -32,7 +32,7 @@
         <p class="text-mob md:!text-[27px] font-normal w-[98%] whitespace-pre-wrap">
           {{ data.data.description }}
         </p>
-        <h2 class="mb-2 mt-8 md:mb-8 md:mt-12 section-size md:text-xl font-bold">
+        <h2 class="mb-2 mt-8 md:mb-8 md:mt-12 section-size md:text-[45px] font-bold">
           {{ data.data.productsSectionTitle }}
         </h2>
         <div class="flex justify-center w-full" v-if="loading">

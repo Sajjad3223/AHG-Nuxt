@@ -18,9 +18,9 @@
           </div>
         </div>
         <div class="col-span-full w-full md:!w-[300px] mt-2 ml-auto relative flex items-center">
-          <GoogleTranslateSelect class="w-full" :languages="langs" default-language-code="en"
+          <!-- <GoogleTranslateSelect class="w-full" :languages="langs" default-language-code="en"
             default-page-language-code="en" :fetch-browser-language="false" trigger="click"
-            @select="handleGoogleTranslateSelect" />
+            @select="handleGoogleTranslateSelect" /> -->
 
         </div>
       </div>
