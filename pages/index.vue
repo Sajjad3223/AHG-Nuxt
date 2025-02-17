@@ -73,10 +73,10 @@
              xl:max-h-[550px] rounded-[30px] flex flex-col items-stretch justify-between relative p-5
               lg:px-8 xl:py-12" v-for="item in [...utilStore.products].splice(2, 4)">
               <div class="flex flex-col">
-                <h4 class="text-[22px] md:text-[42px] uppercase">
+                <h4 class="text-[22px] md:text-[42px] uppercase line-clamp-2" :title="item.title">
                   {{ item.title }}
                 </h4>
-                <div class="my-5 lg:mt-10 lg:mb-0 text-mob md:text-tiny max-w-[90%] font-light md:whitespace-pre-wrap">
+                <div class="my-5 lg:mt-10 lg:mb-0 text-mob md:text-tiny max-w-[90%] font-light text-justify line-clamp-4">
                   {{ item.shortDescription }}
                 </div>
               </div>

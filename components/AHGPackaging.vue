@@ -12,8 +12,8 @@
       <div class="absolute  block right-0 top-1/2 -translate-y-1/2" v-if="!isBpm">
         <img :src="image" :alt="title" class="max-w-[50vw]">
         <span class="absolute hidden -top-1 md:top-[8%] right-4 md:right-[12vw] leading-4 md:leading-8">
-          <b>{{ shortDescription.split('\r\n')[0] ?? shortDescription }}</b> <br>
-          {{ shortDescription.split('\r\n')[1] ?? '' }}
+          <b>{{ shortDescription?.split('\r\n')[0] ?? shortDescription }}</b> <br>
+          {{ shortDescription?.split('\r\n')[1] ?? '' }}
         </span>
       </div>
       <div class="absolute  block  right-[5%] top-1/2 -translate-y-1/2" v-else>

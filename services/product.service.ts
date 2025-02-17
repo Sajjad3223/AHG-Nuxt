@@ -2,6 +2,8 @@ import type { Bgm2022Data } from "~/models/Entities/Bgm2022Data";
 import type { Category, ProductCard } from "~/models/Entities/CategoryData";
 import type { Bpm300PageData } from "~/models/Entities/SupportPageData";
 import { FetchApi } from "~/utilities/CustomApiFetch";
+import type {ProductDto, ProductMenuItem} from "~/models/Entities/ProductDto";
+import type {ApiResponse} from "~/models/apiResponse";
 
 export const getBPM300PageData = () => {
   return FetchApi<Bpm300PageData>("/Product/GetBpmData");
@@ -18,3 +20,6 @@ export const getCategoryData = () => {
 export const getProductCardsData = () => {
   return FetchApi<ProductCard[]>("/product/getProductCards");
 };
+export const getProductById = (id:number):Promise<ApiResponse<ProductDto>> =>{
+  return FetchApi<ProductDto>(`/product/byId?productId=${id}`);
+}

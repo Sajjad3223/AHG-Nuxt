@@ -22,5 +22,6 @@ export interface SiteSettings {
 }
 export interface FooterItem {
   title: string;
+  url?:string | null;
   links: { displayTitle: string; url: string }[];
 }

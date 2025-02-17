@@ -8,7 +8,76 @@
       </nuxt-link>
       <ul
         class="hidden ml-auto uppercase md:flex items-center gap-5 text-xs lg:text-[16px] xl:gap-[6vw] 2xl:gap-16 text-white">
-        <li>
+        <TheHeaderLink v-for="link in utilStore.headerLinks" :key="link.title" :link="link" />
+        <!--        <li v-for="link in utilStore.headerLinks" :key="link.title" class="relative">
+          <button v-if="!link.url" v-click-outside="() => isOpenProductMenu = false" class="flex items-center gap-2 uppercase"
+                  @click.self="isOpenProductMenu = !isOpenProductMenu">
+            {{ link.title }}
+            <svg :class="isOpenProductMenu ? 'rotate-90' : '-rotate-90'" width="12" height="12" viewBox="0 0 6 9"
+                 fill="none" xmlns="http://www.w3.org/2000/svg" data-v-eeadef4d="">
+              <path
+                  d="M4.97172 8.65283C5.15999 8.65283 5.32735 8.59007 5.45287 8.46456C5.72482 8.21352 5.72482 7.77421 5.45287 7.52317L2.58688 4.63627L5.45287 1.77028C5.72482 1.51924 5.72482 1.07993 5.45287 0.828896C5.20183 0.556941 4.76252 0.556941 4.51148 0.828896L1.16435 4.17603C0.89239 4.42707 0.89239 4.86638 1.16435 5.11742L4.51148 8.46456C4.637 8.59007 4.80436 8.65283 4.97172 8.65283Z"
+                  fill="#fff"></path>
+            </svg>
+            <Transition name="layout" mode="out-in">
+              <ul v-if="isOpenProductMenu"
+                  class="absolute top-6 text-left z-10 min-w-[200px] bg-black/90 shadow-sm rounded p-3 gap-2 flex flex-col">
+                <li v-for="subLink in link.links" :key="subLink.displayTitle">
+                  <NuxtLink class="flex gap-2 w-full justify-between items-center py-2"
+                            :to="subLink.url">{{ subLink.displayTitle }}
+                    <svg class="rotate-180" width="12" height="12" viewBox="0 0 6 9" fill="none"
+                         xmlns="http://www.w3.org/2000/svg" data-v-eeadef4d="">
+                      <path
+                          d="M4.97172 8.65283C5.15999 8.65283 5.32735 8.59007 5.45287 8.46456C5.72482 8.21352 5.72482 7.77421 5.45287 7.52317L2.58688 4.63627L5.45287 1.77028C5.72482 1.51924 5.72482 1.07993 5.45287 0.828896C5.20183 0.556941 4.76252 0.556941 4.51148 0.828896L1.16435 4.17603C0.89239 4.42707 0.89239 4.86638 1.16435 5.11742L4.51148 8.46456C4.637 8.59007 4.80436 8.65283 4.97172 8.65283Z"
+                          fill="#fff"></path>
+                    </svg>
+                  </NuxtLink>
+                </li>
+                &lt;!&ndash;                <li>
+                                  <button @click="isOpenBgmMenu = true" class="flex gap-2 w-full justify-between items-center"
+                                    to="/bgm2022">Blood Glucose Monitor
+                                    <svg class="rotate-180" width="12" height="12" viewBox="0 0 6 9" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg" data-v-eeadef4d="">
+                                      <path
+                                        d="M4.97172 8.65283C5.15999 8.65283 5.32735 8.59007 5.45287 8.46456C5.72482 8.21352 5.72482 7.77421 5.45287 7.52317L2.58688 4.63627L5.45287 1.77028C5.72482 1.51924 5.72482 1.07993 5.45287 0.828896C5.20183 0.556941 4.76252 0.556941 4.51148 0.828896L1.16435 4.17603C0.89239 4.42707 0.89239 4.86638 1.16435 5.11742L4.51148 8.46456C4.637 8.59007 4.80436 8.65283 4.97172 8.65283Z"
+                                        fill="#fff"></path>
+                                    </svg>
+                                  </button>
+                                </li>&ndash;&gt;
+
+                &lt;!&ndash;                <li class="mt-6">
+                                  <button @click="isOpenBpmMenu = !isOpenBpmMenu" class="flex gap-2 w-full justify-between items-center"
+                                    to="/bpm300">Blood Pressure Monitor
+                                    <svg class="rotate-180" width="12" height="12" viewBox="0 0 6 9" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg" data-v-eeadef4d="">
+                                      <path
+                                        d="M4.97172 8.65283C5.15999 8.65283 5.32735 8.59007 5.45287 8.46456C5.72482 8.21352 5.72482 7.77421 5.45287 7.52317L2.58688 4.63627L5.45287 1.77028C5.72482 1.51924 5.72482 1.07993 5.45287 0.828896C5.20183 0.556941 4.76252 0.556941 4.51148 0.828896L1.16435 4.17603C0.89239 4.42707 0.89239 4.86638 1.16435 5.11742L4.51148 8.46456C4.637 8.59007 4.80436 8.65283 4.97172 8.65283Z"
+                                        fill="#fff"></path>
+                                    </svg>
+                                  </button>
+                                  <Transition name="page" mode="out-in">
+                                    <div v-if="isOpenBgmMenu"
+                                      class="bg-black  min-w-[150px] flex flex-col gap-2 absolute -right-[155px] rounded  top-0 p-3">
+                                      <NuxtLink @click="isOpenProductMenu = false" to="/bgm2022">AHG-2022</NuxtLink>
+                                      <NuxtLink @click="isOpenProductMenu = false" to="/bgm2285">AHG-2285</NuxtLink>
+                                    </div>
+                                  </Transition>
+                                  <Transition name="page" mode="out-in">
+                                    <div v-if="isOpenBpmMenu"
+                                      class="bg-black min-w-[150px] absolute -right-[155px] rounded bottom-0 p-3">
+                                      <NuxtLink @click="isOpenProductMenu = false" to="/bpm300" class="mt-2">AHG-300</NuxtLink>
+                                    </div>
+                                  </Transition>
+                                </li>&ndash;&gt;
+              </ul>
+            </Transition>
+          </button>
+          <NuxtLink v-else :to="link.url" class="uppercase">
+            {{link.title}}
+          </NuxtLink>
+
+        </li>-->
+<!--        <li>
           <NuxtLink to="/">
             Home
           </NuxtLink>
@@ -26,6 +95,17 @@
             <Transition name="layout" mode="out-in">
               <ul v-if="isOpenProductMenu"
                 class="absolute top-6 text-left z-10 min-w-[225px] bg-black/90 shadow-sm rounded p-3">
+                <li >
+                  <NuxtLink  class="flex gap-2 w-full justify-between items-center"
+                    to="/bgm2022">Blood Glucose Monitor
+                    <svg class="rotate-180" width="12" height="12" viewBox="0 0 6 9" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" data-v-eeadef4d="">
+                      <path
+                        d="M4.97172 8.65283C5.15999 8.65283 5.32735 8.59007 5.45287 8.46456C5.72482 8.21352 5.72482 7.77421 5.45287 7.52317L2.58688 4.63627L5.45287 1.77028C5.72482 1.51924 5.72482 1.07993 5.45287 0.828896C5.20183 0.556941 4.76252 0.556941 4.51148 0.828896L1.16435 4.17603C0.89239 4.42707 0.89239 4.86638 1.16435 5.11742L4.51148 8.46456C4.637 8.59007 4.80436 8.65283 4.97172 8.65283Z"
+                        fill="#fff"></path>
+                    </svg>
+                  </NuxtLink>
+                </li>
                 <li>
                   <button @click="isOpenBgmMenu = true" class="flex gap-2 w-full justify-between items-center"
                     to="/bgm2022">Blood Glucose Monitor
@@ -86,7 +166,7 @@
           <NuxtLink to="/contact-us">
             GET IN TOUCH
           </NuxtLink>
-        </li>
+        </li>-->
       </ul>
       <button class="w-8 flex md:hidden flex-col gap-2 ml-auto" @click="showNavigationBar = true">
         <span class="w-full h-px bg-white rounded-full"></span>
@@ -187,10 +267,13 @@
 
 <script setup lang="ts">
 
+import TheHeaderLink from "~/components/TheHeaderLink.vue";
+
+const utilStore = useUtilStore();
+
 const showNavigationBar = ref(false);
 const isOpenProductMenu = ref(false);
 const isOpenMobileProductMenu = ref(false);
-
 const isOpenBgmMenu = ref(false);
 const isOpenBpmMenu = ref(false);
 watch(isOpenBgmMenu, (val) => {
@@ -219,13 +302,6 @@ watch(isOpenMobileProductMenu, (val) => {
 </script>
 
 <style lang="scss" scoped>
-nav {
-  a {
-    &.router-link-exact-active {
-      color: rgb(0, 145, 255);
-    }
-  }
-}
 
 .fade-slide-enter-active,
 .fade-slide-leave-active {
