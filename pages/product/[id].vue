@@ -5,7 +5,7 @@
         <div class="relative flex flex-col justify-center">
           <img :src="`${ProductImageDomain}/${data.data.imageName}`" :alt="data.data.title"
                class="mx-auto w-[70%] mb-5 block md:hidden" />
-          <h1 class="text-[90px] font-bold leading-[1.1]">
+          <h1 class="text-[80px] font-bold leading-[1.1]">
             {{ data?.data?.title }}
           </h1>
           <div class="flex font-bold ahg items-center text-[45px] gap-2 lg:mt-5 mt-2">
@@ -36,9 +36,8 @@
       <div class="container mx-auto py-[10px] md:py-[80px] flex flex-col items-stretch">
         <div class="my-8 md:my-14">
           <div class="flex items-center gap-1">
-            <span class="section-size1 text-[45px] font-bold">AHG-2285</span>
+            <span class="section-size1 text-[45px] font-bold">{{ data.data.detailTitle  }}</span>
           </div>
-          <p class="section-size text-[36px] md:mb-3 mb-2">{{ data.data.detailTitle }}</p>
           <p class="text-mob text-[19.5px]">
             {{ data.data.detailShortDescription }}
           </p>
@@ -120,40 +119,18 @@
 
             </div>
           </div>
-
-<!--          <div class="flex flex-col-reverse lg:flex-row gap-5">
-            <div class="flex flex-col-reverse lg:flex-row gap-5"
-                 v-if="data.data.features.length > 0 && data.data.features?.find(f => f.title == 'Test Strips Specifications')">
-              <div class="min-w-fit flex-1 flex flex-col space-y-8">
-                <span class="section-size text-[35px] font-bold">
-                  Test Strips Specifications
-                </span>
-                <ul class="list-disc ml-5 !mt-5 font-medium">
-                  <li class="text-mob text-[17px]" v-for="item in data.data.features?.find(f => f.title == 'Test Strips Specifications')
-                    ?.description?.split('\r\n')">
-                    {{ item }}
-                  </li>
-                </ul>
-              </div>
-              <div class="md:flex relative  hidden">
-                <img :src="getBgm2285Image(data.data.featureImageName)" :alt="data.data.title"
-                     class=" relative -right-36 -top-[180px]  z-[1]">
-              </div>
-            </div>
-
-          </div>-->
         </div>
       </div>
     </div>
 
-    <div class="bg-white py-[50px] md:py-[100px] relative">
+    <div v-if="false" class="bg-white py-[50px] md:py-[100px] relative">
       <div class="container mx-auto flex flex-col justify-between">
-        <h2 class="text-[50px] section-size1 font-bold">
+        <!-- <h2 class="text-[50px] section-size1 font-bold">
           {{ data.data.informationTitle }}
         </h2>
         <span class=" text-[23.8px] text-mob mt-2">
           {{ data.data.informationShortDescription }}
-        </span>
+        </span> -->
         <div class="flex items-center gap-4">
           <div class="flex-1 mt-8 md:mt-16 grid grid-cols-1 lg:grid-cols-6 gap-1">
             <div class="lg:col-span-4 border border-black rounded-[20px] flex
