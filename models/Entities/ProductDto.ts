@@ -1,6 +1,7 @@
 export interface ProductDto {
     id: number
     title: string
+    slug: string
     shortDescription: string
     description: any
     buttonTitle: string

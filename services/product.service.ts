@@ -20,6 +20,6 @@ export const getCategoryData = () => {
 export const getProductCardsData = () => {
   return FetchApi<ProductCard[]>("/product/getProductCards");
 };
-export const getProductById = (id:number):Promise<ApiResponse<ProductDto>> =>{
-  return FetchApi<ProductDto>(`/product/byId?productId=${id}`);
+export const getProductBySlug = (slug:string):Promise<ApiResponse<ProductDto>> =>{
+  return FetchApi<ProductDto>(`/product/bySlug/${slug}`);
 }

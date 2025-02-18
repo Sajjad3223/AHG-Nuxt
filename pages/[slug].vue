@@ -4,12 +4,12 @@
       <div class="flex flex-col container mx-auto">
         <div class="relative flex flex-col justify-center">
           <img :src="`${ProductImageDomain}/${data.data.imageName}`" :alt="data.data.title"
-               class="mx-auto w-[70%] mb-5 block md:hidden" />
+            class="mx-auto w-[70%] mb-5 block md:hidden" />
           <h1 class="text-[80px] font-bold leading-[1.1]">
             {{ data?.data?.title }}
           </h1>
           <div class="flex font-bold ahg items-center text-[45px] gap-2 lg:mt-5 mt-2">
-<!--            <p>AHG-2285</p>-->
+            <p>{{ data.data.slug }}</p>
           </div>
           <div class="flex items-center my-5 md:my-10 gap-10 lg:w-[65%]">
             <div class="flex flex-col space-y-4  text-mob text-[18px] leading-tight">
@@ -23,7 +23,7 @@
           </div>
           <div class="flex items-end justify-center gap-2 w-2/5 relative lg:absolute -right-12 -bottom-32  lg:m-0">
             <img :src="`${ProductImageDomain}/${data.data.imageName}`" :alt="data.data.title"
-                 class="max-h-[420px]  b-banner lg:max-h-[420px] hidden md:block" />
+              class="max-h-[420px]  b-banner lg:max-h-[420px] hidden md:block" />
           </div>
         </div>
         <AHGButton :to="data.data.buttonLink" color="white" class="font-medium" width="200px" is-show-more>
@@ -36,15 +36,16 @@
       <div class="container mx-auto py-[10px] md:py-[80px] flex flex-col items-stretch">
         <div class="my-8 md:my-14">
           <div class="flex items-center gap-1">
-            <span class="section-size1 text-[45px] font-bold">{{ data.data.detailTitle  }}</span>
+            <span class="section-size1 text-[45px] font-bold">{{ data.data.slug }}</span>
           </div>
+          <p class="section-size text-[36px] md:mb-3 mb-2">{{ data.data.detailTitle }}</p>
           <p class="text-mob text-[19.5px]">
             {{ data.data.detailShortDescription }}
           </p>
         </div>
         <div class="grid md:grid-cols-2 gap-3">
           <div v-for="item in data.data.details" :key="item.title"
-               class="flex items-center justify-between gap-2 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
+            class="flex items-center justify-between gap-2 w-full rounded-[20px] p-5 relative bg-lightColor drop-shadow-lg text-blackColor">
             <div class="flex flex-col space-y-1 flex-1">
               <p class="section-size text-[24px] font-bold">{{ item.title }}</p>
               <p class="text-mob text-[17.5px] whitespace-pre-wrap">
@@ -72,7 +73,7 @@
                   <span class="text-mob text-[17px]">{{ item.description }}</span>
                 </div>
                 <hr v-if="index != [...data.data.specifications].splice(0, 8).length - 1"
-                    class="border-black opacity-70">
+                  class="border-black opacity-70">
               </template>
             </div>
             <div class="flex flex-col flex-wrap gap-3">
@@ -87,7 +88,7 @@
           </div>
         </div>
         <img :src="`${ProductImageDomain}/${data.data.specificationImageName}`" alt="specifications"
-             class="w-1/5 scale-110 max-w-[450px] ">
+          class="w-1/5 scale-110 max-w-[450px] ">
       </div>
     </div>
 
@@ -105,7 +106,7 @@
             <div class="grid relative z-[2] pl-3 md:grid-cols-2  lg:gap-x-36 xl:w-5/6">
               <template v-for="item in data.data.features">
                 <div v-if="item.title != 'Test Strips Specifications'"
-                     class="flex flex-col border-b border-black  py-5">
+                  class="flex flex-col border-b border-black  py-5">
                   <p class="text-[20px] font-bold">
                     {{ item.title }}
                   </p>
@@ -146,7 +147,7 @@
                 </ul>
               </div>
               <img src="~/assets/images/bgmPage/2022/img_10.png" alt=""
-                   class="mx-auto h-auto w-full md:w-[65%] md:h-[135px] self-center">
+                class="mx-auto h-auto w-full md:w-[65%] md:h-[135px] self-center">
               <div class="flex flex-col self-end">
                 <p class="text-[20px] font-bold">
                   Independent Lancet Holder
@@ -184,7 +185,7 @@
                 </ul>
               </div>
               <img src="~/assets/images/bgmPage/2022/img_12.png" alt=""
-                   class="mx-auto self-center max-w-[37%] max-h-[200px]">
+                class="mx-auto self-center max-w-[37%] max-h-[200px]">
             </div>
             <div class="lg:col-span-3 border border-black rounded-[20px] flex items-center gap-5 p-6">
               <div class="flex flex-col flex-1">
@@ -199,10 +200,10 @@
                 </ul>
               </div>
               <img src="~/assets/images/bgmPage/2022/img_13.png" alt=" 11 Depth Settings:"
-                   class="mx-auto self-center max-w-[35%] max-h-[200px]">
+                class="mx-auto self-center max-w-[35%] max-h-[200px]">
             </div>
             <div
-                class="lg:col-span-full border border-black rounded-[20px] flex flex-col items-start lg:flex-row lg:items-center p-6">
+              class="lg:col-span-full border border-black rounded-[20px] flex flex-col items-start lg:flex-row lg:items-center p-6">
               <div class="flex flex-col lg:w-[70%]">
                 <p class="text-[20px] font-bold">
                   2-in-1 Button & Lancet Ejector:
@@ -226,14 +227,14 @@
 
     <!-- <TheAHG2022 second-title="SHARE WITH YOUR DOCTOR" /> -->
 
-    <AHGPackaging v-if="data.data.secondBannerTitle" :title="data.data.secondBannerTitle" :description="data.data.secondBannerDescription"
-                  :image="getBgm2285Image(data.data.secondBannerImageName)"
-                  :short-description="data.data.secondBannerShortDescription" />
+    <AHGPackaging v-if="data.data.secondBannerTitle" :title="data.data.secondBannerTitle"
+      :description="data.data.secondBannerDescription" :image="getBgm2285Image(data.data.secondBannerImageName)"
+      :short-description="data.data.secondBannerShortDescription" />
 
     <AHGSupport color="black" manual-button :title="data.data.supportBannerTitle"
-                :description="data.data.supportBannerShortDescription" :button-link="data.data.supportBannerFirstButtonLink"
-                :button-text="data.data.supportBannerFirstButtonTitle" :manual-link="data.data.supportBannerSecondButtonLink"
-                :manual-text="data.data.supportBannerSecondButtonTitle" />
+      :description="data.data.supportBannerShortDescription" :button-link="data.data.supportBannerFirstButtonLink"
+      :button-text="data.data.supportBannerFirstButtonTitle" :manual-link="data.data.supportBannerSecondButtonLink"
+      :manual-text="data.data.supportBannerSecondButtonTitle" />
 
   </div>
   <div v-else class="flex justify-center items-center my-5">
@@ -242,19 +243,19 @@
 </template>
 
 <script setup lang="ts">
-import {getProductById} from "~/services/product.service";
-import type {ProductDto} from "~/models/Entities/ProductDto";
-import type {ApiResponse} from "~/models/apiResponse";
-import {getBgm2285DetailImage, getBgm2285Image} from "~/utilities/ImageDirectories";
+import { getProductBySlug } from "~/services/product.service";
+import type { ProductDto } from "~/models/Entities/ProductDto";
+import type { ApiResponse } from "~/models/apiResponse";
+import { getBgm2285DetailImage, getBgm2285Image } from "~/utilities/ImageDirectories";
 import AHGButton from "~/components/base/AHGButton.vue";
 import AHGPackaging from "~/components/AHGPackaging.vue";
-import {ProductDetailsDomain, ProductImageDomain} from "~/utilities/api.config";
+import { ProductDetailsDomain, ProductImageDomain } from "~/utilities/api.config";
 
 const route = useRoute();
-const id = Number(route.params.id);
+const slug = route.params.slug.toString();
 
 const nuxtApp = useNuxtApp();
-const {data , pending} = await useAsyncData(`GetProductById-${id}`,()=>getProductById(id),{
+const { data, pending } = await useAsyncData(`GetProductBySlug-${slug}`, () => getProductBySlug(slug), {
   getCachedData(key) {
     const data = nuxtApp.payload?.data[key]
     if (!data) {
@@ -264,9 +265,9 @@ const {data , pending} = await useAsyncData(`GetProductById-${id}`,()=>getProduc
   },
   deep: false
 });
-if(!data.value?.isSuccess){
-  if(process.server){
-    throw createError({statusCode:404,message:'Product Not Found'})
+if (!data.value?.isSuccess) {
+  if (process.server) {
+    throw createError({ statusCode: 404, message: 'Product Not Found' })
   }
 }
 
