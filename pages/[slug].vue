@@ -99,14 +99,16 @@
             {{ data.data.featureShortDescription }}
           </h6>
 
-          <div class="mt-8 ">
+          <div class="mt-8 relative">
             <p class="section-size text-[29px] font-bold">
               {{ data.data.featureTitle }}
             </p>
-            <div class="grid relative z-[2] pl-3 md:grid-cols-2  lg:gap-x-36 xl:w-5/6">
+            <div :class="['grid z-[2] pl-3 md:grid-cols-2 lg:gap-x-36 xl:w-5/6',{'pb-32':data.data.featureImageName != null}]">
               <template v-for="item in data.data.features">
                 <div v-if="item.title != 'Test Strips Specifications'"
-                  class="flex flex-col border-b border-black  py-5">
+                  class="flex flex-col border-b border-black py-5 h-max">
+                  <img v-if="item.imageName" :src="`${ProductFeaturesDomain}/${item.imageName}`" alt="specifications"
+                       class="w-full max-w-[450px] ">
                   <p class="text-[20px] font-bold">
                     {{ item.title }}
                   </p>
@@ -117,7 +119,11 @@
                   </ul>
                 </div>
               </template>
-
+              <div v-if="data.data.featureImageName" class="md:flex hidden mt-[200px]">
+                <img :src="getFeatureImage(data.data.featureImageName)" :alt="data.data.featureTitle" class="absolute max-h-[500px] -right-24 bottom-0">
+              </div>
+<!--              <img :src="`${ProductFeaturesDomain}/${data.data.featureImageName}`" alt="feature image"
+              class="absolute bottom-0 right-0 w-1/2">-->
             </div>
           </div>
         </div>
@@ -246,10 +252,10 @@
 import { getProductBySlug } from "~/services/product.service";
 import type { ProductDto } from "~/models/Entities/ProductDto";
 import type { ApiResponse } from "~/models/apiResponse";
-import { getBgm2285DetailImage, getBgm2285Image } from "~/utilities/ImageDirectories";
+import {getBgm2285DetailImage, getBgm2285Image, getFeatureImage} from "~/utilities/ImageDirectories";
 import AHGButton from "~/components/base/AHGButton.vue";
 import AHGPackaging from "~/components/AHGPackaging.vue";
-import { ProductDetailsDomain, ProductImageDomain } from "~/utilities/api.config";
+import {ProductDetailsDomain, ProductFeaturesDomain, ProductImageDomain} from "~/utilities/api.config";
 
 const route = useRoute();
 const slug = route.params.slug.toString();
