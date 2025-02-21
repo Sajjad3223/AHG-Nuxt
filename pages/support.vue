@@ -48,7 +48,7 @@
             v-for="item in catalogues?.data">
             <h4 class="text-title text-nowrap">{{ item.title.split("AHG")[0] }}</h4>
             <h5 class="text-title font-bold " v-if="item.title.toLowerCase().split('ahg')[1]">AHG{{
-              item.title.toLowerCase().split("ahg")[1] }}
+              item.title.split("ahg")[1] }}
             </h5>
             <img :src="getCatalogImage(item.imageName)" :alt="item.title" class="my-6 h-[250px] mx-auto">
             <BaseAHGButton target="_blank" :to="getCatalogFile(item.fileName)" color="black" is-show-more
