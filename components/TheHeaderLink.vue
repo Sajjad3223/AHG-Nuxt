@@ -12,9 +12,10 @@
       <Transition name="layout" mode="out-in">
         <ul v-if="isOpenProductMenu"
             class="absolute top-6 text-left z-10 min-w-[200px] bg-black/90 shadow-sm rounded p-3 gap-2 flex flex-col">
-          <li v-for="subLink in link.links" :key="subLink.displayTitle">
-            <NuxtLink class="flex gap-2 w-full justify-between items-center py-2"
-                      :to="subLink.url">{{ subLink.displayTitle }}
+          <TheHeaderLinkItem v-for="subLink in link.links" :key="subLink.displayTitle" :subLink="subLink" />
+<!--          <li v-for="subLink in link.links" :key="subLink.displayTitle" class="relative">
+            <NuxtLink @click="isOpenSubMenu = !isOpenSubMenu" class="flex gap-2 w-full justify-between items-center py-2"
+                      :to="subLink.url == '#' ? null : subLink.url">{{ subLink.displayTitle }}
               <svg class="rotate-180" width="12" height="12" viewBox="0 0 6 9" fill="none"
                    xmlns="http://www.w3.org/2000/svg" data-v-eeadef4d="">
                 <path
@@ -22,7 +23,13 @@
                     fill="#fff"></path>
               </svg>
             </NuxtLink>
-          </li>
+            <Transition name="page" mode="out-in">
+              <div v-if="isOpenSubMenu" v-click-outside="() => isOpenSubMenu = false"
+                   class="bg-black  min-w-[150px] flex flex-col gap-2 absolute -right-[170px] rounded top-0 p-3">
+                <NuxtLink v-for="subLinkItem in subLink.subLinks" @click="isOpenProductMenu = false" :to="subLinkItem.url">{{subLinkItem.displayTitle}}</NuxtLink>
+              </div>
+            </Transition>
+          </li>-->
         </ul>
       </Transition>
     </button>
@@ -35,11 +42,13 @@
 
 <script setup lang="ts">
 import type {FooterItem} from "~/models/Entities/SiteSettings";
+import TheHeaderLinkItem from "~/components/TheHeaderLinkItem.vue";
 
 const props = defineProps<{
   link:FooterItem
 }>()
 const isOpenProductMenu = ref(false);
+
 </script>
 
 <style>

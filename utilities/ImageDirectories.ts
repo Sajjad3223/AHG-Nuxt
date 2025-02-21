@@ -45,6 +45,10 @@ export const getBgm2285SpecificationsImage = (imageName: string) => {
 //
 
 
+export const getFeatureImage = (imageName: string) => {
+  return `${ImageDomain}/images/Products/${imageName}`;
+};
+
 export const getLandingPageImage = (imageName: string) => {
   return `${ImageDomain}/images/LandingPage/${imageName}`;
 };
