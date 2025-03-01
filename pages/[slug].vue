@@ -103,12 +103,11 @@
             <p class="section-size text-[29px] font-bold">
               {{ data.data.featureTitle }}
             </p>
-            <div :class="['grid z-[2] pl-3 md:grid-cols-2 lg:gap-x-36 xl:w-5/6',{'pb-32':data.data.featureImageName != null}]">
+            <div :class="['grid z-[2] pl-3 md:grid-cols-2 lg:gap-x-36 xl:w-5/6',
+            {'pb-32':data.data.featureImageName != null}]">
               <template v-for="item in data.data.features">
                 <div v-if="item.title != 'Test Strips Specifications'"
                   class="flex flex-col border-b border-black py-5 h-max">
-                  <img v-if="item.imageName" :src="`${ProductFeaturesDomain}/${item.imageName}`" alt="specifications"
-                       class="w-full max-w-[450px] ">
                   <p class="text-[20px] font-bold">
                     {{ item.title }}
                   </p>
